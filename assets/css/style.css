@@ -1425,19 +1425,19 @@ section {
   text-decoration: none;
 }
 #footer .footer-bottom {
-  border-top: 1px solid #3b0e41;
+
   z-index: 2;
   position: relative;
   padding-top: 40px;
   padding-bottom: 40px;
 }
-#footer .copyright {
+/* #footer .copyright {
   float: left;
 }
 #footer .credits {
   float: right;
   font-size: 13px;
-}
+} */
 @media (max-width: 768px) {
   #footer .copyright, #footer .credits {
     float: none;
@@ -1464,4 +1464,11 @@ video {
 
 .theme-color{
   color: rgb(241, 7, 7);
+}
+
+
+.formbg{
+  background-color: rgba(240, 128, 128, 0.966);
+  border-radius: 4em;
+
 }
