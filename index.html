@@ -29,6 +29,17 @@
 
 
 
+  <!-- Slick Slider CSS -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+<!-- jQuery first, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!-- Slick Slider JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css?v=1" rel="stylesheet">
 
@@ -44,7 +55,7 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero">
-    <video id="videoloop"  src="assets/img/backvideo2.mp4" autoplay loop playsinline muted></video>
+    <video id="videoloop"  src="assets/img/Computer.mp4" autoplay loop playsinline muted></video>
     <div class="hero-container">
       <h1> <span class="theme-color"> G</span>reek  <span class="theme-color">I</span>nsurance <span class="theme-color">L</span>eaders</h1>
       <h2>Γιατί ασφαλίζοντας την υγεία και την περιουσία μας,
@@ -124,7 +135,7 @@
 
               <div class="col-lg-6 col-md-12  flex-column">
                 <ul>
-                  <li><i class="ri-check-double-line"></i>Ασφάλιση Σκαφών Αναψυχής     </li>
+                  <li><i class="ri-check-double-line"></i>Ασφάλιση Σκαφών Αναψυχής</li>
                   <li><i class="ri-check-double-line"></i>Ασφάλιση Ταξιδίου</li>
                   <li><i class="ri-check-double-line"></i> Αγροτική Ασφάλιση</li>
                   <li><i class="ri-check-double-line"></i> Ομαδική Ασφάλιση</li>
@@ -136,6 +147,23 @@
             </div>
 
             <a href="#more" class="btn-learn-more">Μάθε Περισσοτερα</a>
+          </div>
+
+          
+        </div>
+
+        <div class="row">
+          <div class="container">
+            <section class="logo-carousel slider" data-arrows="true">
+              <div class="slide"><img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image1.png"></div>
+              <div class="slide"><img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image2.png"></div>
+              <div class="slide"><img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image3.png"></div>
+              <div class="slide"><img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image4.png"></div>
+              <div class="slide"><img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image5.png"></div>
+              <div class="slide"><img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image6.png"></div>
+              <div class="slide"><img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image7.png"></div>
+              <div class="slide"><img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image8.png"></div>
+            </section>
           </div>
         </div>
 
@@ -772,6 +800,32 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+
+  <script>
+    $(document).ready(function() {
+  $('.logo-carousel').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    arrows: true,
+    dots: false,
+    pauseOnHover: false,
+    responsive: [{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 4
+      }
+    }, {
+      breakpoint: 520,
+      settings: {
+        slidesToShow: 2
+      }
+    }]
+  });
+});
+  </script>
 
 </body>
 
