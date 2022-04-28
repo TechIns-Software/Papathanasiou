@@ -157,15 +157,18 @@
     justify-content: center;
     align-items: center;
     padding: 15px;
-    background: #a64bf4;
-    background: -webkit-linear-gradient(45deg, #00dbde, #fc00ff);
+    background: #686666;
+    /* background: -webkit-linear-gradient(45deg, #00dbde, #fc00ff);
     background: -o-linear-gradient(45deg, #00dbde, #fc00ff);
     background: -moz-linear-gradient(45deg, #00dbde, #fc00ff);
-    background: linear-gradient(45deg, #00dbde, #fc00ff);
+    background: linear-gradient(45deg, #00dbde, #fc00ff); */
     
   }
   
   .wrap-contact100 {
+    -webkit-box-shadow: 0px 2px 20px 10px rgba(0,0,0,0.29); 
+    box-shadow: 0px 2px 20px 10px rgba(0,0,0,0.29);
+
     width: 500px;
     background: #fff;
     border-radius: 10px;
@@ -202,6 +205,7 @@
     border-bottom: 2px solid #d9d9d9;
     padding-bottom: 13px;
     margin-bottom: 27px;
+
   }
   
   .label-input100 {
@@ -528,7 +532,7 @@
   }
   
   .select2-container .select2-results__option[aria-selected="true"] {
-    background: #a64bf4;
+    background: #fafafa;
     background: -webkit-linear-gradient(right, #00dbde, #fc00ff);
     background: -o-linear-gradient(right, #00dbde, #fc00ff);
     background: -moz-linear-gradient(right, #00dbde, #fc00ff);
@@ -537,7 +541,7 @@
   }
   
   .select2-container .select2-results__option--highlighted[aria-selected] {
-    background: #a64bf4;
+    background: #f1f1f1;
     background: -webkit-linear-gradient(right, #00dbde, #fc00ff);
     background: -o-linear-gradient(right, #00dbde, #fc00ff);
     background: -moz-linear-gradient(right, #00dbde, #fc00ff);

@@ -148,6 +148,55 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/*---------------------------------------------
+#header for services 
+----------------------------------------*/
+
+#header1 {
+  background: rgb(145, 4, 4);
+  transition: all 0.5s;
+  z-index: 997;
+  position: relative;
+  height: 70px;
+}
+@media (max-width: 992px) {
+  #header1 {
+    height: 60px;
+  }
+}
+#header1.fixed-top, #header.header-inner-pages {
+  background: rgba(148, 13, 13, 0.411);
+}
+#header1.fixed-top {
+  position: fixed;
+}
+#header1 .logo {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+#header1 .logo a {
+  color: #fff;
+}
+#header1 .logo img {
+  max-height: 40px;
+}
+
+.scrolled-offset {
+  margin-top: 70px;
+}
+@media (max-width: 991px) {
+  .scrolled-offset {
+    margin-top: 60px;
+  }
+}
+
+
+
 /*--------------------------------------------------------------
 # Header Social Links
 --------------------------------------------------------------*/

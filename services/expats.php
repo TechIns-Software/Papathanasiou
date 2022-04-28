@@ -2,6 +2,7 @@
 $title = "EXPATS INSURANCE  | G.I.L";
 include_once 'serv_header.php';
 ?>
+
 <section>
     <div class="container">
         <div class="section-title  ">
