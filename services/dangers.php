@@ -32,14 +32,14 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
         <hr style="border: 2px solid orange;">
            
             <div class="py-2">
-                <label for="email">Διεύθυνση ηλεκτρονικού ταχυδρομείου *</label>
+                <label >Διεύθυνση ηλεκτρονικού ταχυδρομείου *</label>
                 <input type="email" class="form-control" style="background-color: lightgray;" id="email">
             </div>
 
     
             
             <div class="py-2">
-                <label for="offerfor">Το αυτοκίνητό σας είναι :</label>
+                <label >Το αυτοκίνητό σας είναι :</label>
               <select style="background-color: lightgray;"  class="form-select" name="" id="agecar">
                         <option  value="0-5 ετών">0-5 ετών </option>
                         <option  value="6-10 ετών">6-10 ετών </option>
@@ -52,7 +52,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
             
             <div class="py-2">
-                <label for="offerfor">Η κατοικία σας είναι :</label>
+                <label >Η κατοικία σας είναι :</label>
                 <select style="background-color: lightgray;" class="form-select " id="home">
                         <option value="Μη ιδιόκτητη κατοικία">Μη ιδιόκτητη κατοικία</option>
                         <option value="Ιδιόκτητη κατοικία με δανειακή υποχρέωση">Ιδιόκτητη κατοικία με δανειακή υποχρέωση</option>
@@ -64,7 +64,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
             
             <div class="py-2">
-                <label for="offerfor">Η οικογένειά σας αποτελείται :</label>
+                <label>Η οικογένειά σας αποτελείται :</label>
                 <select style="background-color: lightgray;" class="form-select " id="family">
                         <option value="Από εμένα μόνο">Από εμένα μόνο</option>
                         <option value="Από τον/την σύζυγο μου και εμένα">Από τον/την σύζυγο μου και εμένα</option>
@@ -78,7 +78,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label for="quest2">Αν έχετε παιδιά, τότε σίγουρα γνωρίζετε πως το κάθε παιδί χρειάζεται τουλάχιστον € 5000 το χρόνο για τα έξοδά του, έως και την ηλικία των 18. Πόσα λοιπόν είναι τα έξοδα αυτά, για όλα τα παιδιά της οικογένειάς σας συνολικά; </label>
+                <label >Αν έχετε παιδιά, τότε σίγουρα γνωρίζετε πως το κάθε παιδί χρειάζεται τουλάχιστον € 5000 το χρόνο για τα έξοδά του, έως και την ηλικία των 18. Πόσα λοιπόν είναι τα έξοδα αυτά, για όλα τα παιδιά της οικογένειάς σας συνολικά; </label>
                 <select class="form-select " id="quest2" style="background-color: lightgray;">
                         <option value="Έως 50.000 €">Έως 50.000 € </option>
                         <option value=" Από 50.000 € έως και 100.000 €">Από 50.000 € έως και 100.000 €</option>
@@ -89,7 +89,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label for="quest3">Σε περίπτωση που απουσιάσει για οποιοδήποτε λόγο το εισόδημά σας, έχετε εξασφαλίσει με κάποιο τρόπο αυτό το κεφάλαιο;</label>
+                <label >Σε περίπτωση που απουσιάσει για οποιοδήποτε λόγο το εισόδημά σας, έχετε εξασφαλίσει με κάποιο τρόπο αυτό το κεφάλαιο;</label>
                 <select class="form-select " id="quest3" style="background-color: lightgray;">
                         <option value=" OXI">OXI</option>
                         <option value="NAI">NAI</option>
@@ -101,7 +101,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label for="quest4">Εμπιστεύεστε το Εθνικό Σύστημα Υγείας :</label>
+                <label >Εμπιστεύεστε το Εθνικό Σύστημα Υγείας :</label>
                 <select class="form-select " id="quest4" style="background-color: lightgray;">
                         <option value=" OXI">OXI</option>
                         <option value="NAI">NAI</option>

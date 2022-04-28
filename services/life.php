@@ -32,13 +32,13 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
         <hr style="border: 2px solid orange;">
            
             <div class="py-2">
-                <label for="email">Διεύθυνση ηλεκτρονικού ταχυδρομείου *</label>
+                <label >Διεύθυνση ηλεκτρονικού ταχυδρομείου *</label>
                 <input type="email" class="form-control" style="background-color: lightgray;" id="email">
             </div>
 
             <div class="py-2">
 
-                <label for="name">Το ονοματεπώνυμό σας </label>
+                <label >Το ονοματεπώνυμό σας </label>
                 <input type="text" class="form-control" style="background-color: lightgray;" id="name">
             </div>
 
@@ -46,54 +46,54 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
             <div class="py-2">
 
-                <label for="date_birth">Ημερομηνία γέννησης  *</label>
+                <label >Ημερομηνία γέννησης  *</label>
                 <input type="text" class="form-control" style="background-color: lightgray;" id="date_birth">
             </div>
 
             <div class="py-2">
-                <label for="loc">Πόσα παιδία έχετε ; Ποια η ηλικία τους ;</label>
+                <label >Πόσα παιδία έχετε ; Ποια η ηλικία τους ;</label>
                 <input type="text" class="form-control" style="background-color: lightgray;" id="quest1">
             </div>
 
 
             <div class="py-2">
-                <label for="loc">Ποιες οι δανειακές σας υποχρεώσεις σε ποσό;</label>
+                <label >Ποιες οι δανειακές σας υποχρεώσεις σε ποσό;</label>
                 <input type="text" class="form-control" style="background-color: lightgray;" id="quest2">
             </div>
 
             <div class="py-2">
-                <label for="loc">Υπάρχουν αποθεματικά ή ακίνητη μη χρησιμοποιημένη περιουσία και σε τι ποσά;</label>
+                <label >Υπάρχουν αποθεματικά ή ακίνητη μη χρησιμοποιημένη περιουσία και σε τι ποσά;</label>
                 <input type="text" class="form-control" style="background-color: lightgray;" id="quest3">
             </div>
 
 
             <div class="py-2">
-                <label for="loc">Έχετε κάποιο άλλο κίνητρο ασφάλισης; Αν ναι, σε τι ποσό;</label>
+                <label >Έχετε κάποιο άλλο κίνητρο ασφάλισης; Αν ναι, σε τι ποσό;</label>
                 <input type="text" class="form-control" style="background-color: lightgray;" id="quest4">
             </div>
 
 
             
             <div class="py-2">
-                <label for="loc">Ποιο είναι το επάγγελμά σας; *</label>
+                <label >Ποιο είναι το επάγγελμά σας; *</label>
                 <input type="text" class="form-control" style="background-color: lightgray;" id="quest5">
             </div>
 
             <div class="py-2">
-                <label for="loc">Σε ποια περιφέρεια της Ελλάδας μένετε; *</label>
+                <label >Σε ποια περιφέρεια της Ελλάδας μένετε; *</label>
                 <input type="text" class="form-control" style="background-color: lightgray;" id="quest6">
             </div>
 
 
             <div class="py-2">
-                <label for="loc">Επιθυμείτε τα χρήματα που δίνετε να αποταμιεύονται; Αν ναι, τι ποσό ανά μήνα μπορείτε να διαθέσετε για Αποταμίευση;</label>
+                <label >Επιθυμείτε τα χρήματα που δίνετε να αποταμιεύονται; Αν ναι, τι ποσό ανά μήνα μπορείτε να διαθέσετε για Αποταμίευση;</label>
                 <input type="text" class="form-control" style="background-color: lightgray;" id="quest7">
             </div>
 
 
             
             <div class="py-2">
-                <label for="safehospital">Σας ενδιαφέρουν καλύψεις όπως: </label>
+                <label >Σας ενδιαφέρουν καλύψεις όπως: </label>
                 <select style="background-color: lightgray;" class="form-select " id="quest8">
                         <option value="Μόνιμη Ολική Ανικανότητα">Μόνιμη Ολική Ανικανότητα</option>
                         <option value="Κάλυψη Ασθένειας ή Ατυχήματος μετά την 7η ή 14η ημέρα που δεν μπορώ να εργαστώ">Κάλυψη Ασθένειας ή Ατυχήματος μετά την 7η ή 14η ημέρα που δεν μπορώ να εργαστώ</option>
@@ -106,7 +106,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
         
             
             <div class="py-2">
-                <label for="offerfor">Τι ποσό μπορείτε να διαθέσετε ετησίως ;</label>
+                <label >Τι ποσό μπορείτε να διαθέσετε ετησίως ;</label>
                 <select style="background-color: lightgray;" class="form-select " id="quest9">
                         <option value="0-50€">0-50€</option>
                         <option value="51-100€">51-100€</option>

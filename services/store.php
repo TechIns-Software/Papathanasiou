@@ -32,13 +32,13 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             <hr style="border: 2px solid blue;">
 
             <div class="py-2">
-                <label for="email">Διεύθυνση ηλεκτρονικού ταχυδρομείου *</label>
+                <label >Διεύθυνση ηλεκτρονικού ταχυδρομείου *</label>
                 <input type="email" class="form-control" style="background-color: lightgray;" id="email">
             </div>
 
             <div class="py-2">
 
-                <label for="name">Το ονοματεπώνυμό σας </label>
+                <label >Το ονοματεπώνυμό σας </label>
                 <input type="text" class="form-control" style="background-color: lightgray;" id="fullname">
             </div>
 
@@ -46,33 +46,33 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
             <div class="py-2">
 
-                <label for="date_birth">Ποιό είναι το έτος κατασκευής του επαγγελματικού χώρου σας; *</label>
+                <label >Ποιό είναι το έτος κατασκευής του επαγγελματικού χώρου σας; *</label>
                 <input type="text" class="form-control" style="background-color: lightgray;" id="store_creation">
             </div>
 
             <div class="py-2">
 
-                <label for="loc">Πόσα τετραγωνικά μέτρα είναι ο επαγγελματικός χώρος σας; *</label>
+                <label >Πόσα τετραγωνικά μέτρα είναι ο επαγγελματικός χώρος σας; *</label>
                 <input type="text" class="form-control" style="background-color: lightgray;" id="store_long">
             </div>
 
 
             
             <div class="py-2">
-                <label for="familynames"> Ποιός είναι ο Τ.Κ. (ταχυδρομικός κώδικας) του επαγγελματικού χώρου σας; *</label>
+                <label > Ποιός είναι ο Τ.Κ. (ταχυδρομικός κώδικας) του επαγγελματικού χώρου σας; *</label>
                 <input type="text" class="form-control" id="postcode" style="background-color: lightgray;">
             </div>
 
 
             <div class="py-2">
-                <label for="familynames"> Τι είδος επιχείρησης στεγάζεται στον επαγγελματικό σας χώρο; *</label>
+                <label > Τι είδος επιχείρησης στεγάζεται στον επαγγελματικό σας χώρο; *</label>
                 <input type="text" class="form-control" id="quest1" style="background-color: lightgray;">
             </div>
 
 
 
             <div class="py-2">
-                <label for="offerfor">Είστε ο ιδιοκτήτης του επαγγελματικού χώρου; *</label>
+                <label >Είστε ο ιδιοκτήτης του επαγγελματικού χώρου; *</label>
                 <select style="background-color: lightgray;" class="form-select" name="" id="quest2">
                     <option value="ΝΑΙ">ΝΑΙ </option>
                     <option value="ΟΧΙ">ΟΧΙ</option>
@@ -84,7 +84,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label for="offerfor">Εργάζεστε σε αυτόν; *</label>
+                <label >Εργάζεστε σε αυτόν; *</label>
                 <select style="background-color: lightgray;" class="form-select"  id="quest3">
                     <option value="ΝΑΙ">ΝΑΙ </option>
                     <option value="ΟΧΙ">ΟΧΙ</option>
@@ -95,7 +95,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             
 
             <div class="py-2">
-                <label for="offerfor">Είναι ισόγειο ή βρίσκεται σε όροφο; *</label>
+                <label >Είναι ισόγειο ή βρίσκεται σε όροφο; *</label>
                 <select style="background-color: lightgray;" class="form-select"  id="quest4">
                     <option value="Ισόγειο">Ισόγειο </option>
                     <option value="Σε όροφο">Σε όροφο</option>
@@ -105,13 +105,13 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
            
 
             <div class="py-2">
-                <label for="familynames">  Άν έχετε απαντήσει "Σε Όροφο", σε ποιόν όροφο βρίσκεται ο επαγγελματικός σας χώρος;</label>
+                <label >  Άν έχετε απαντήσει "Σε Όροφο", σε ποιόν όροφο βρίσκεται ο επαγγελματικός σας χώρος;</label>
                 <input type="text" class="form-control" id="quest5" style="background-color: lightgray;">
             </div>
 
 
             <div class="py-2">
-                <label for="offerfor">Επιθυμείτε κάλυψη σεισμού; *</label>
+                <label >Επιθυμείτε κάλυψη σεισμού; *</label>
                 <select style="background-color: lightgray;" class="form-select"  id="quest6">
                     <option value="ΝΑΙ">ΝΑΙ </option>
                     <option value="ΟΧΙ">ΟΧΙ</option>
@@ -120,7 +120,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label for="offerfor">Έχει υπάρξει κάποια ζημία τα τελευταία 5 χρόνια στον επαγγελματικό σας χώρο; *</label>
+                <label >Έχει υπάρξει κάποια ζημία τα τελευταία 5 χρόνια στον επαγγελματικό σας χώρο; *</label>
                 <select style="background-color: lightgray;" class="form-select"  id="quest7">
                     <option value="ΝΑΙ">ΝΑΙ </option>
                     <option value="ΟΧΙ">ΟΧΙ</option>
@@ -129,7 +129,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
             
             <div class="py-2">
-                <label for="offerfor">Επιθυμείτε ασφάλιση περιεχομένου; *</label>
+                <label >Επιθυμείτε ασφάλιση περιεχομένου; *</label>
                 <select style="background-color: lightgray;" class="form-select"  id="quest8">
                     <option value="ΝΑΙ">ΝΑΙ </option>
                     <option value="ΟΧΙ">ΟΧΙ</option>
@@ -140,7 +140,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label for="offerfor">Πώς θα επιθυμούσατε να επικοινωνήσουμε μαζί σας; *</label>
+                <label >Πώς θα επιθυμούσατε να επικοινωνήσουμε μαζί σας; *</label>
                 <select style="background-color: lightgray;" class="form-select " id="quest9">
                     <option value="Τηλεφωνικά">Τηλεφωνικά</option>
                     <option value="Μέσω e-mail">Μέσω e-mail</option>

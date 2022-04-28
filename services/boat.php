@@ -27,13 +27,13 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             <hr style="border: 2px solid blue;">
 
             <div class="py-2">
-                <label for="email">Διεύθυνση ηλεκτρονικού ταχυδρομείου *</label>
+                <label>Διεύθυνση ηλεκτρονικού ταχυδρομείου *</label>
                 <input type="email" class="form-control" style="background-color: lightgray;" id="email">
             </div>
 
             <div class="py-2">
 
-                <label for="name">Το ονοματεπώνυμό σας </label>
+                <label >Το ονοματεπώνυμό σας </label>
                 <input type="text" class="form-control" style="background-color: lightgray;" id="name">
             </div>
 
@@ -70,7 +70,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label for="offerfor">Ποιό είναι το είδος του σκάφους σας; *</label>
+                <label >Ποιό είναι το είδος του σκάφους σας; *</label>
                 <select style="background-color: lightgray;" class="form-select" id="quest5">
                     <option value="L/S Μη ταχύπλοο">L/S Μη ταχύπλοο </option>
                     <option value="S/B Ταχύπλοο">S/B Ταχύπλοο</option>
@@ -82,7 +82,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label for="offerfor">Ποιά είναι χρήση του σκάφους σας; *</label>
+                <label >Ποιά είναι χρήση του σκάφους σας; *</label>
                 <select style="background-color: lightgray;" class="form-select " id="quest6">
                     <option value="Επαγγελματικής Αναψυχής με μόνιμο πλήρωμα">Επαγγελματικής Αναψυχής με μόνιμο πλήρωμα</option>
                     <option value="Επαγγελματικής Αναψυχής χωρίς μόνιμο πλήρωμα">Επαγγελματικής Αναψυχής χωρίς μόνιμο πλήρωμα</option>
@@ -93,25 +93,25 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label for="koinasfalia">Πόση συνολική ιπποδύναμη έχει το σκάφος σας; * </label>
+                <label >Πόση συνολική ιπποδύναμη έχει το σκάφος σας; * </label>
                 <input class="form-control " type="text" id="quest7" style="background-color: lightgray;">
             </div>
 
 
             <div class="py-2">
-                <label for="quest1">Ποιό είναι το μήκος του σκάφους σας; *</label>
+                <label >Ποιό είναι το μήκος του σκάφους σας; *</label>
                 <input class="form-control " type="text" id="quest8" style="background-color: lightgray;">
             </div>
 
 
             <div class="py-2">
-                <label for="quest1">Ποιά είναι η αξία του σκάφους σας; *</label>
+                <label >Ποιά είναι η αξία του σκάφους σας; *</label>
                 <input class="form-control " type="text" id="quest9" style="background-color: lightgray;">
             </div>
 
 
             <div class="py-2">
-                <label for="quest2">Έχει υπάρξει κάποια ζημία τα τελευταία 5 χρόνια στο σκάφος σας; *</label>
+                <label >Έχει υπάρξει κάποια ζημία τα τελευταία 5 χρόνια στο σκάφος σας; *</label>
                 <select class="form-select " id="quest10" style="background-color: lightgray;">
                     <option value="Ναι">Ναι </option>
                     <option value=" Όχι">Όχι</option>
@@ -122,7 +122,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label for="quest2">Επιθυμείτε συμπληρωματική κάλυψη αστικής ευθύνης κατά τη διάρκεια ενασχόλησης με θαλάσσια σπόρ (Μόνο για σκάφη ιδιωτικής αναψυχής);</label>
+                <label >Επιθυμείτε συμπληρωματική κάλυψη αστικής ευθύνης κατά τη διάρκεια ενασχόλησης με θαλάσσια σπόρ (Μόνο για σκάφη ιδιωτικής αναψυχής);</label>
                 <select class="form-select " id="quest11" style="background-color: lightgray;">
                     <option value="Ναι">Ναι </option>
                     <option value=" Όχι">Όχι</option>
@@ -132,7 +132,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label for="quest2">Επιθυμείτε συμπληρωματική κάλυψη έκρηξης και πυρκαγιάς;</label>
+                <label >Επιθυμείτε συμπληρωματική κάλυψη έκρηξης και πυρκαγιάς;</label>
                 <select class="form-select " id="quest12" style="background-color: lightgray;">
                     <option value="Ναι">Ναι </option>
                     <option value=" Όχι">Όχι</option>
@@ -142,7 +142,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label for="quest2">Επιθυμείτε συμπληρωματική κάλυψη αμέλειας χειριστή, κακόβουλης βλάβης και κινδύνων της θάλασσας;</label>
+                <label>Επιθυμείτε συμπληρωματική κάλυψη αμέλειας χειριστή, κακόβουλης βλάβης και κινδύνων της θάλασσας;</label>
                 <select class="form-select " id="quest13" style="background-color: lightgray;">
                     <option value="Ναι">Ναι </option>
                     <option value=" Όχι">Όχι</option>
@@ -153,7 +153,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label for="quest2">Επιθυμείτε συμπληρωματική κάλυψη ιδίων ζημιών κατά τη μεταφορά;</label>
+                <label >Επιθυμείτε συμπληρωματική κάλυψη ιδίων ζημιών κατά τη μεταφορά;</label>
                 <select class="form-select " id="quest14" style="background-color: lightgray;">
                     <option value="Ναι">Ναι </option>
                     <option value=" Όχι">Όχι</option>
@@ -164,7 +164,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
             
             <div class="py-2">
-                <label for="quest2">Επιθυμείτε συμπληρωματική κάλυψη προσωπικών αντικειμένων έως 1.500€;</label>
+                <label >Επιθυμείτε συμπληρωματική κάλυψη προσωπικών αντικειμένων έως 1.500€;</label>
                 <select class="form-select " id="quest15" style="background-color: lightgray;">
                     <option value="Ναι">Ναι </option>
                     <option value=" Όχι">Όχι</option>

@@ -32,13 +32,13 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
         <hr style="border: 2px solid green;">
            
             <div class="py-2">
-                <label for="email">Διεύθυνση ηλεκτρονικού ταχυδρομείου *</label>
+                <label >Διεύθυνση ηλεκτρονικού ταχυδρομείου *</label>
                 <input type="email" class="form-control" style="background-color: lightgray;" id="email">
             </div>
 
             <div class="py-2">
 
-                <label for="name">Το ονοματεπώνυμό σας </label>
+                <label>Το ονοματεπώνυμό σας </label>
                 <input type="text" class="form-control" style="background-color: lightgray;" id="fullname">
             </div>
 
@@ -51,13 +51,13 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
             <div class="py-2">
 
-                <label for="date_birth">Πότε είναι η έναρξη του ταξιδίου; *</label>
+                <label >Πότε είναι η έναρξη του ταξιδίου; *</label>
                 <input type="date" class="form-control" style="background-color: lightgray;" id="trip_start">
             </div>
 
             <div class="py-2">
 
-                <label for="loc">Πότε είναι η λήξη του ταξιδίου; * </label>
+                <label >Πότε είναι η λήξη του ταξιδίου; * </label>
                 <input type="date" class="form-control" style="background-color: lightgray;" id="trip_end">
             </div>
 
@@ -66,7 +66,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label for="familynames"> Ποίος είναι ο προορισμός σας; *</label>
+                <label> Ποίος είναι ο προορισμός σας; *</label>
                 <input type="text" class="form-control" id="quest1" style="background-color: lightgray;">
             </div>
 
@@ -74,7 +74,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             
             
             <div class="py-2">
-                <label for="offerfor">Υπάρχουν ενδιάμεσες στάσεις σε κάποια/ες χώρα/ες; * </label>
+                <label >Υπάρχουν ενδιάμεσες στάσεις σε κάποια/ες χώρα/ες; * </label>
                 <select style="background-color: lightgray;" class="form-select " id="quest2">
                         <option value="Ναι">Ναι</option>
                         <option value=" Όχι">Όχι</option>
@@ -85,19 +85,19 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
             
             <div class="py-2">
-                <label for="familynames"> Αν υπάρχουν ενδιάμεσες στάσεις, σε ποιά/ες χώρα/ες είναι ;</label>
+                <label > Αν υπάρχουν ενδιάμεσες στάσεις, σε ποιά/ες χώρα/ες είναι ;</label>
                 <input type="text" class="form-control" id="quest3" style="background-color: lightgray;">
             </div>
 
 
             <div class="py-2">
-                <label for="familynames"> Πόσοι είναι οι ταξιδιώτες; *</label>
+                <label > Πόσοι είναι οι ταξιδιώτες; *</label>
                 <input type="text" class="form-control" id="quest4" style="background-color: lightgray;">
             </div>
 
 
             <div class="py-2">
-                <label for="offerfor">Επιθυμείτε, πέραν της βασικής κάλυψης, και κάλυψη ακύρωσης ταξιδίου; * </label>
+                <label >Επιθυμείτε, πέραν της βασικής κάλυψης, και κάλυψη ακύρωσης ταξιδίου; * </label>
                 <select style="background-color: lightgray;" class="form-select " id="quest5">
                         <option value="Ναι">Ναι</option>
                         <option value=" Όχι">Όχι</option>
@@ -106,7 +106,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             </div>
 
             <div class="py-2">
-                <label for="offerfor">Επιθυμείτε, πέραν της βασικής κάλυψης, και κάλυψη απώλειας αποσκευών;  * </label>
+                <label>Επιθυμείτε, πέραν της βασικής κάλυψης, και κάλυψη απώλειας αποσκευών;  * </label>
                 <select style="background-color: lightgray;" class="form-select " id="quest6">
                         <option value="Ναι">Ναι</option>
                         <option value=" Όχι">Όχι</option>
@@ -115,7 +115,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             </div>
 
             <div class="py-2">
-                <label for="offerfor">Πώς θα επιθυμούσατε να επικοινωνήσουμε μαζί σας;  * </label>
+                <label >Πώς θα επιθυμούσατε να επικοινωνήσουμε μαζί σας;  * </label>
                     <select style="background-color: lightgray;" class="form-select " id="quest7">
                         <option value="Τηλεφωνικά">Τηλεφωνικά</option>
                         <option value=" Μέσω e-mail">Μέσω e-mail</option>

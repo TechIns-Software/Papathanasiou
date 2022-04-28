@@ -32,13 +32,13 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             <hr style="border: 2px solid blue;">
 
             <div class="py-2">
-                <label for="email">Διεύθυνση ηλεκτρονικού ταχυδρομείου *</label>
+                <label >Διεύθυνση ηλεκτρονικού ταχυδρομείου *</label>
                 <input type="email" class="form-control" style="background-color: lightgray;" id="email">
             </div>
 
             <div class="py-2">
 
-                <label for="name">Το ονοματεπώνυμό σας </label>
+                <label >Το ονοματεπώνυμό σας </label>
                 <input type="text" class="form-control" style="background-color: lightgray;" id="name">
             </div>
 
@@ -46,20 +46,20 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
             <div class="py-2">
 
-                <label for="date_birth">Ημερομηνία γέννησης (εάν η προσφορά αφορά τον υιό/ την κόρη σας, πληκτρολογήστε τη δικιά του/της ημερομηνία γέννησης) *</label>
+                <label >Ημερομηνία γέννησης (εάν η προσφορά αφορά τον υιό/ την κόρη σας, πληκτρολογήστε τη δικιά του/της ημερομηνία γέννησης) *</label>
                 <input type="text" class="form-control" style="background-color: lightgray;" id="date_birth">
             </div>
 
             <div class="py-2">
 
-                <label for="loc">Ζείτε στο Νομό; *</label>
+                <label >Ζείτε στο Νομό; *</label>
                 <input type="text" class="form-control" style="background-color: lightgray;" id="loc">
             </div>
 
 
 
             <div class="py-2">
-                <label for="offerfor">Η προσφορά Υγείας είναι: *</label>
+                <label >Η προσφορά Υγείας είναι: *</label>
                 <select style="background-color: lightgray;" class="form-select" name="" id="offerfor">
                     <option value="Για εσάς μόνο ή για κάποιο άλλο μέλος της οικογένειάς σας ">Για εσάς μόνο ή για κάποιο άλλο μέλος της οικογένειάς σας </option>
                     <option value="Για εσάς και τον/την σύντροφό σας">Για εσάς και τον/την σύντροφό σας</option>
@@ -71,7 +71,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             </div>
 
             <div class="py-2">
-                <label for="familynames"> Το ονοματεπώνυμο και η ημερομηνία γέννησης του/της/των μελών που θέλετε να λάβετε πρόταση ασφάλισης είναι:</label>
+                <label > Το ονοματεπώνυμο και η ημερομηνία γέννησης του/της/των μελών που θέλετε να λάβετε πρόταση ασφάλισης είναι:</label>
                 <input type="text" class="form-control" id="familynames" style="background-color: lightgray;">
             </div>
 
@@ -79,7 +79,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label for="offerfor">Ποιο είναι το ποσό που θα σας έκανε να αισθανθείτε ασφαλής, εφόσον υπήρχε διαθέσιμο μόνο για επείγουσες περιπτώσεις ΥΓΕΙΑΣ για το κάθε μέλος της οικογένειάς σας ξεχωριστά :</label>
+                <label >Ποιο είναι το ποσό που θα σας έκανε να αισθανθείτε ασφαλής, εφόσον υπήρχε διαθέσιμο μόνο για επείγουσες περιπτώσεις ΥΓΕΙΑΣ για το κάθε μέλος της οικογένειάς σας ξεχωριστά :</label>
                 <select style="background-color: lightgray;" class="form-select " id="safeamount">
                     <option value="20.000">20.000 €</option>
                     <option value="50.000">50.000</option>
@@ -92,7 +92,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label for="safehospital">Ποια είναι η Ιδιωτική Κλινική που θα επιλέγατε σε περίπτωση νοσηλείας ή επέμβασης ; </label>
+                <label >Ποια είναι η Ιδιωτική Κλινική που θα επιλέγατε σε περίπτωση νοσηλείας ή επέμβασης ; </label>
                 <select style="background-color: lightgray;" class="form-select " id="safehospital">
                     <option value="Metropolitan General Αθηνών">Metropolitan General Αθηνών</option>
                     <option value="Διαβαλκανικό Ιατρικό Κέντρο Θεσσαλονίκης">Διαβαλκανικό Ιατρικό Κέντρο Θεσσαλονίκης</option>
@@ -110,7 +110,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label for="koinasfalia">Δικαιούστε κοινωνική ασφάλιση; (ΕΟΠΥΥ/ΕΦΚΑ); </label>
+                <label >Δικαιούστε κοινωνική ασφάλιση; (ΕΟΠΥΥ/ΕΦΚΑ); </label>
                 <select class="form-select " id="koinasfalia" style="background-color: lightgray;">
                     <option value="NAI">NAI</option>
                     <option value=" OXI">OXI</option>
@@ -119,7 +119,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label for="quest1">Θα προτιμούσατε να πληρώνετε λιγότερα στην Ασφαλιστική εταιρία, αλλά να συμμετέχετε στην περίπτωση νοσηλείας; </label>
+                <label >Θα προτιμούσατε να πληρώνετε λιγότερα στην Ασφαλιστική εταιρία, αλλά να συμμετέχετε στην περίπτωση νοσηλείας; </label>
                 <select class="form-select " id="quest1" style="background-color: lightgray;">
                     <option value="NAI">NAI</option>
                     <option value=" OXI">OXI</option>
@@ -128,7 +128,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label for="quest2">Θα θέλατε να συμμετέχετε σε περίπτωση νοσηλείας με το ποσό ή το ποσοστό; </label>
+                <label >Θα θέλατε να συμμετέχετε σε περίπτωση νοσηλείας με το ποσό ή το ποσοστό; </label>
                 <select class="form-select " id="quest2" style="background-color: lightgray;">
                     <option value="0€">0€ </option>
                     <option value=" 500€">500€</option>
@@ -140,7 +140,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label for="quest3">Θα σας ενδιέφερε να μπορείτε να επισκεφτείτε Ιατρούς και Διαγνωστικά Κέντρα πληρώνοντας μόνο μία μικρή συμμετοχή;</label>
+                <label >Θα σας ενδιέφερε να μπορείτε να επισκεφτείτε Ιατρούς και Διαγνωστικά Κέντρα πληρώνοντας μόνο μία μικρή συμμετοχή;</label>
                 <select class="form-select " id="quest3" style="background-color: lightgray;">
                     <option value="NAI">NAI</option>
                     <option value=" OXI">OXI</option>
@@ -151,7 +151,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label for="quest4">Σας ενδιαφέρει η νοσηλεία εκτός Ευρώπης;</label>
+                <label >Σας ενδιαφέρει η νοσηλεία εκτός Ευρώπης;</label>
                 <select class="form-select " id="quest4" style="background-color: lightgray;">
                     <option value="NAI">NAI</option>
                     <option value=" OXI">OXI</option>

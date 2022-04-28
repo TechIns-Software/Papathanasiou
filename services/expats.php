@@ -32,14 +32,14 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             <hr style="border: 2px solid red;">
 
             <div class="py-2">
-                <label for="email">Διεύθυνση ηλεκτρονικού ταχυδρομείου *</label>
+                <label >Διεύθυνση ηλεκτρονικού ταχυδρομείου *</label>
                 <input type="email" class="form-control" style="background-color: lightgray;" id="email">
             </div>
 
 
 
             <div class="py-2">
-                <label for="offerfor">Your Family is: *</label>
+                <label >Your Family is: *</label>
                 <select style="background-color: lightgray;" class="form-select" name="" id="familytype">
                     <option value="It is just me">It is just me </option>
                     <option value="It is me and my partner">It is me and my partner</option>
@@ -49,19 +49,19 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label for="date_birth">Your birth date is/Your Family's members birth dates are:</label>
+                <label >Your birth date is/Your Family's members birth dates are:</label>
                 <input type="text" class="form-control" style="background-color: lightgray;" id="date_birth">
             </div>
 
 
 
             <div class="py-2">
-                <label for="name">You live/ ready to move in the Greek City/ region: </label>
+                <label >You live/ ready to move in the Greek City/ region: </label>
                 <input type="text" class="form-control" style="background-color: lightgray;" id="movegreece">
             </div>
 
             <div class="py-2">
-                <label for="offerfor">Do you have social Insurance in Greece?</label>
+                <label >Do you have social Insurance in Greece?</label>
                 <select style="background-color: lightgray;" class="form-select " id="socialinsurance">
                     <option value="Yes">Yes </option>
                     <option value="No">No </option>
@@ -71,7 +71,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             </div>
 
             <div class="py-2">
-                <label for="offerfor">Do you have a Greek Tax Number?</label>
+                <label >Do you have a Greek Tax Number?</label>
                 <select style="background-color: lightgray;" class="form-select " id="greektaxnumber">
                     <option value="Yes">Yes </option>
                     <option value="No">No </option>
@@ -82,7 +82,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label for="offerfor">Do you have/ Will you buy a car from Greece?</label>
+                <label >Do you have/ Will you buy a car from Greece?</label>
                 <select style="background-color: lightgray;" class="form-select " id="carbuy">
                     <option value="Yes">Yes </option>
                     <option value="No">No </option>
@@ -92,7 +92,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label for="offerfor">Do you have/ Will you buy a Boat from Greece?</label>
+                <label >Do you have/ Will you buy a Boat from Greece?</label>
                 <select style="background-color: lightgray;" class="form-select " id="boatbuy">
                     <option value="Yes">Yes </option>
                     <option value="No">No </option>
@@ -102,7 +102,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label for="offerfor">Do you have/ Will you have your own Business in Greece?</label>
+                <label >Do you have/ Will you have your own Business in Greece?</label>
                 <select style="background-color: lightgray;" class="form-select " id="ownbuisness">
                     <option value="Yes">Yes </option>
                     <option value="No">No </option>
@@ -113,7 +113,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
             
             <div class="py-2">
-                <label for="offerfor">if you do have your own Business in Greece, do you need Liability?</label>
+                <label >if you do have your own Business in Greece, do you need Liability?</label>
                 <select style="background-color: lightgray;" class="form-select " id="liability">
                     <option value="Yes">Yes </option>
                     <option value="No">No </option>
@@ -123,7 +123,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label for="offerfor">About Health Insurance, what is the most important for you?</label>
+                <label >About Health Insurance, what is the most important for you?</label>
                 <select style="background-color: lightgray;" class="form-select " id="abouthealthincs">
                     <option value="Healthcare in Doctors and Examinations">Healthcare in Doctors and Examinations </option>
                     <option value="Coverage of Surgeries and Hospital care">Coverage of Surgeries and Hospital care </option>
@@ -134,7 +134,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label for="offerfor">About Health Insurance, do you need a basic program just to be usable for a residence card?</label>
+                <label >About Health Insurance, do you need a basic program just to be usable for a residence card?</label>
                 <select style="background-color: lightgray;" class="form-select " id="basicprogram">
                     <option value="Yes">Yes </option>
                     <option value="No">No </option>
@@ -144,7 +144,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label for="offerfor">In which amount would you prefer to participate in the cost of hospital?</label>
+                <label >In which amount would you prefer to participate in the cost of hospital?</label>
                 <select style="background-color: lightgray;" class="form-select " id="costhospital">
                     <option value="0€">0€ </option>
                     <option value="1500€">1500€ </option>
@@ -155,7 +155,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label for="offerfor">Is there a Greek private Hospital that you prefer instead of all the others?</label>
+                <label >Is there a Greek private Hospital that you prefer instead of all the others?</label>
                 <select style="background-color: lightgray;" class="form-select " id="preferhospital">
                     <option value="Yes">Yes </option>
                     <option value="No">No </option>
@@ -164,13 +164,13 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label for="offerfor">If there is a Greek private Hospital that you prefer instead of all the others, which one is that?</label>
+                <label >If there is a Greek private Hospital that you prefer instead of all the others, which one is that?</label>
                 <input type="text" class="form-control" style="background-color: lightgray;" id="whichhospital">
             </div>
 
 
             <div class="py-2">
-                <label for="offerfor">What is the upper limit of coverage that you would prefer to have for a hospital for each member of your family per year?</label>
+                <label >What is the upper limit of coverage that you would prefer to have for a hospital for each member of your family per year?</label>
                 <select style="background-color: lightgray;" class="form-select " id="upperlimithospital">
                     <option value="20.000">20.000 </option>
                     <option value="50.000">50.000 </option>
@@ -184,14 +184,14 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label for="offerfor">What is the annual budget that you can pay for a Health Insurance Program?</label>
+                <label >What is the annual budget that you can pay for a Health Insurance Program?</label>
                 <input type="text" class="form-control" style="background-color: lightgray;" id="annualhealthbuget">
             </div>
 
 
 
             <div class="py-2">
-                <label for="offerfor">Would you like an Insurance Broker from Greek Insurance Leaders to contact with you? *</label>
+                <label >Would you like an Insurance Broker from Greek Insurance Leaders to contact with you? *</label>
                 <select style="background-color: lightgray;" class="form-select " id="broker">
                     <option value="Yes">Yes </option>
                     <option value="No">No </option>
@@ -201,7 +201,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label for="offerfor">What is the best way for you to contact? *</label>
+                <label >What is the best way for you to contact? *</label>
                 <select style="background-color: lightgray;" class="form-select " id="communication">
                     <option value="By messenger">By messenger </option>
                     <option value="By E-mail">By E-mail </option>
@@ -211,18 +211,18 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label for="offerfor">What is your name?</label>
+                <label >What is your name?</label>
                 <input type="text" class="form-control" style="background-color: lightgray;" id="name">
             </div>
 
 
             <div class="py-2">
-                <label for="offerfor">Your e-mail address is: *</label>
+                <label >Your e-mail address is: *</label>
                 <input type="text" class="form-control" style="background-color: lightgray;" id="email2">
             </div>
 
             <div class="py-2">
-                <label for="offerfor">What is your Telephone number?</label>
+                <label >What is your Telephone number?</label>
                 <input type="text" class="form-control" style="background-color: lightgray;" id="number">
             </div>
 
