@@ -1,223 +1,149 @@
 <?php
-$title = "Ασφαλιση Ζωής | G.I.L";
+$title = "Ασφάλιση Ζωής | G.I.L";
 include_once 'serv_header.php';
+
+$todayyear = date('Y');
+$todaymonth = date('m');
+$todayday = date('d');
+
+
+$today = $todayyear . '-' . $todaymonth . '-' . $todayday . 'T00:00';
+$nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:00';
 ?>
-<section>
-    <div class="container">
-        <div class="section-title  ">
-            <h2>Ασφαλιση Ζωής</h2>
-        </div>
-        <p class="px-5  mx-5">Εξασφαλίστε την οικογένειά σας με κάτι εξαιρετικά πιο πολύτιμο από ένα οικονομικό σωσίβιο σε μια δύσκολη στιγμή. Είναι μια έμπρακτη απόδειξη ότι μεριμνάτε για το μέλλον των ανθρώπων που αγαπάτε και οι οποίοι εξαρτώνται οικονομικά από εσάς. Είναι μια πράξη αγάπης και ευθύνης </p>
+
+
+
+
+
+<section >
+    <div class="container text-center">
+
+
+        <!-- <p class="px-5  mx-5">Η INTERAMERICAN μέσω των προγραμμάτων Υγείας BeWell σας δίνει τη δυνατότητα να δημιουργήσετε τη δική σας πρόταση ασφάλισης, προσαρμοσμένη στις δικές σας ανάγκες, αλλά και στις δικές σας οικονομικές δυνατότητες</p> -->
+
+        <img src="../assets/img/logo1.png" class="img-fluid mx-auto text-center" alt="">
     </div>
 </section>
 
-<div class="container-fluid formbg">
-
-    <div class="container-fluid text-center d-flex w-50 justify-content-center  ">
-        <div>
-            <h2> Προσφορά Ασφάλισης Ζωής </h2>
-            <div class="card my-3">
-                <div class="card-body">
-                    <p class="text-center"><strong>Διεύθυνση ηλεκτρονικού ταχυδρομείου</strong></p>
-                    <div class="form-check mb-2 ">
-                        <input class="form-control" type="email" name="email" id="email" />
-                    </div>
-                </div>
+<div class="container formcont" >
+    <div class="row">
+        <div class="col-md-12 offset-md-12 ">
+        <h3>Προσφορά Ασφάλισης Ζωής</h3>
+        <hr style="border: 2px solid orange;">
+           
+            <div class="py-2">
+                <label for="email">Διεύθυνση ηλεκτρονικού ταχυδρομείου *</label>
+                <input type="email" class="form-control" style="background-color: lightgray;" id="email">
             </div>
 
+            <div class="py-2">
 
-            <div class="card my-3">
-                <div class="card-body">
-                    <p class="text-center"><strong>Ονοματεπώνυμο</strong></p>
-                    <div class="form-check mb-2 ">
-                        <input class="form-control" type="email" name="email" id="email" />
-                    </div>
-                </div>
-            </div>
-
-            <div class="card my-3">
-                <div class="card-body">
-                    <p class="text-center"><strong>Ημερομηνία Γέννησης </strong></p>
-                    <div class="form-check mb-2 ">
-                        <input class="form-control" type="date" name="email" id="email" />
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="card my-3">
-                <div class="card-body">
-                    <p class="text-center"><strong>Πόσα παιδιά έχετε; Ποια η ηλικία τους; </strong></p>
-                    <div class="form-check mb-2 ">
-                        <input class="form-control" type="text" name="email" id="email" />
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="card my-3">
-                <div class="card-body">
-                    <p class="text-center"><strong>Ποιες οι δανειακές σας υποχρεώσεις σε ποσό; </strong></p>
-                    <div class="form-check mb-2 ">
-                        <input class="form-control" type="text" name="email" id="email" />
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="card my-3">
-                <div class="card-body">
-                    <p class="text-center"><strong>Υπάρχουν αποθεματικά ή ακίνητη μη χρησιμοποιημένη περιουσία και σε τι ποσά;</strong></p>
-                    <div class="form-check mb-2 ">
-                        <input class="form-control" type="text" name="email" id="email" />
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="card my-3">
-                <div class="card-body">
-                    <p class="text-center"><strong>Έχετε κάποιο άλλο κίνητρο ασφάλισης; Αν ναι, σε τι ποσό; </strong></p>
-                    <div class="form-check mb-2 ">
-                        <input class="form-control" type="text" name="email" id="email" />
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="card my-3">
-                <div class="card-body">
-                    <p class="text-center"><strong>Ποιο είναι το επάγγελμά σας; </strong></p>
-                    <div class="form-check mb-2 ">
-                        <input class="form-control" type="text" name="email" id="email" />
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="card my-3">
-                <div class="card-body">
-                    <p class="text-center"><strong>Σε ποια περιφέρεια της Ελλάδας μένετε;</strong></p>
-                    <div class="form-check mb-2 ">
-                        <input class="form-control" type="text" name="email" id="email" />
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="card my-3">
-                <div class="card-body">
-                    <p class="text-center"><strong>Επιθυμείτε τα χρήματα που δίνετε να αποταμιεύονται; Αν ναι, τι ποσό ανά μήνα μπορείτε να διαθέσετε για Αποταμίευση; </strong></p>
-                    <div class="form-check mb-2 ">
-                        <input class="form-control" type="text" name="email" id="email" />
-                    </div>
-                </div>
+                <label for="name">Το ονοματεπώνυμό σας </label>
+                <input type="text" class="form-control" style="background-color: lightgray;" id="name">
             </div>
 
 
 
+            <div class="py-2">
 
-            <div class="card my-3 ">
-                <div class="card-body">
-                    <p class="text-center"><strong>Σας ενδιαφέρουν καλύψεις όπως :</strong></p>
+                <label for="date_birth">Ημερομηνία γέννησης  *</label>
+                <input type="text" class="form-control" style="background-color: lightgray;" id="date_birth">
+            </div>
 
-                    <div class="form-check mb-2 ">
-                        <input class="form-check-input" type="radio" name="exampleForm" id="radio2Example1" />
-                        <label class="form-check-label" for="radio2Example1">
-                            Μόνιμη Ολική Ανικανότητα
-                        </label>
-                    </div>
-                    <div class="form-check mb-2">
-                        <input class="form-check-input" type="radio" name="exampleForm" id="radio2Example2" />
-                        <label class="form-check-label" for="radio2Example2">
-                            Κάλυψη Ασθένειας ή Ατυχήματος μετά την 7η ή 14η ημέρα που δεν μπορώ να εργαστώ
-                        </label>
-                    </div>
-
-                    <div class="form-check mb-2">
-                        <input class="form-check-input" type="radio" name="exampleForm" id="radio2Example4" />
-                        <label class="form-check-label" for="radio2Example4">
-                            Κάλυψη Μερικής Ανικάνοτητας
-                        </label>
-                    </div>
-
-
-                    <div class="form-check mb-2">
-                        <input class="form-check-input" type="radio" name="exampleForm" id="radio2Example4" />
-                        <label class="form-check-label" for="radio2Example4">
-                            Τίποτα από τα παραπάνω
-                        </label>
-                    </div>
-                </div>
-
+            <div class="py-2">
+                <label for="loc">Πόσα παιδία έχετε ; Ποια η ηλικία τους ;</label>
+                <input type="text" class="form-control" style="background-color: lightgray;" id="quest1">
             </div>
 
 
-            <div class="card my-3 ">
-                <div class="card-body">
-                    <p class="text-center"><strong>Τι ποσό μπορείτε να διαθέσετε ετησίως ;</strong></p>
+            <div class="py-2">
+                <label for="loc">Ποιες οι δανειακές σας υποχρεώσεις σε ποσό;</label>
+                <input type="text" class="form-control" style="background-color: lightgray;" id="quest2">
+            </div>
 
-                    <div class="form-check mb-2 ">
-                        <input class="form-check-input" type="radio" name="exampleForm" id="radio2Example1" />
-                        <label class="form-check-label" for="radio2Example1">
-                            0-50€
-                        </label>
-                    </div>
-                    <div class="form-check mb-2">
-                        <input class="form-check-input" type="radio" name="exampleForm" id="radio2Example2" />
-                        <label class="form-check-label" for="radio2Example2">
-                            51-100€
-                        </label>
-                    </div>
-
-                    <div class="form-check mb-2">
-                        <input class="form-check-input" type="radio" name="exampleForm" id="radio2Example4" />
-                        <label class="form-check-label" for="radio2Example4">
-                            100-150€
-                        </label>
-                    </div>
-
-
-                    <div class="form-check mb-2">
-                        <input class="form-check-input" type="radio" name="exampleForm" id="radio2Example4" />
-                        <label class="form-check-label" for="radio2Example4">
-                            Περισσότερο
-                        </label>
-                    </div>
-                </div>
-
+            <div class="py-2">
+                <label for="loc">Υπάρχουν αποθεματικά ή ακίνητη μη χρησιμοποιημένη περιουσία και σε τι ποσά;</label>
+                <input type="text" class="form-control" style="background-color: lightgray;" id="quest3">
             </div>
 
 
-
-            <div class="card my-3">
-                <div class="card-body">
-                    <p class="text-center"><strong>Έχω ενημερωθεί για την επεξεργασία των προσωπικών μου δεδομένων και συναινώ σε αυτήν, όπως ειδικά ορίζεται στο κεφάλαιο "Όροι GDPR" (βλέπε κάτω μέρος σελίδας)</strong></p>
-                    <div class="form-check mb-2 ">
-                        <input type="checkbox" id="horns" name="horns">
-                    </div>
-                </div>
+            <div class="py-2">
+                <label for="loc">Έχετε κάποιο άλλο κίνητρο ασφάλισης; Αν ναι, σε τι ποσό;</label>
+                <input type="text" class="form-control" style="background-color: lightgray;" id="quest4">
             </div>
 
 
-            <div class="card my-3">
-                <div class="card-body">
-                    <p class="text-center"><strong>Επιθυμώ να ενημερώνομαι για μελλοντικές προωθητικές ενέργειες που αφορούν σε προϊόντα και υπηρεσίες της Greek Insurance Leaders</strong></p>
-                    <div class="form-check mb-2 ">
-                        <input type="checkbox" id="horns" name="horns">
-                    </div>
-                </div>
+            
+            <div class="py-2">
+                <label for="loc">Ποιο είναι το επάγγελμά σας; *</label>
+                <input type="text" class="form-control" style="background-color: lightgray;" id="quest5">
+            </div>
+
+            <div class="py-2">
+                <label for="loc">Σε ποια περιφέρεια της Ελλάδας μένετε; *</label>
+                <input type="text" class="form-control" style="background-color: lightgray;" id="quest6">
             </div>
 
 
-            <div class="btn btn-primary  my-5">Υποβολή Φόρμας</div>
+            <div class="py-2">
+                <label for="loc">Επιθυμείτε τα χρήματα που δίνετε να αποταμιεύονται; Αν ναι, τι ποσό ανά μήνα μπορείτε να διαθέσετε για Αποταμίευση;</label>
+                <input type="text" class="form-control" style="background-color: lightgray;" id="quest7">
+            </div>
 
+
+            
+            <div class="py-2">
+                <label for="safehospital">Σας ενδιαφέρουν καλύψεις όπως: </label>
+                <select style="background-color: lightgray;" class="form-select " id="quest8">
+                        <option value="Μόνιμη Ολική Ανικανότητα">Μόνιμη Ολική Ανικανότητα</option>
+                        <option value="Κάλυψη Ασθένειας ή Ατυχήματος μετά την 7η ή 14η ημέρα που δεν μπορώ να εργαστώ">Κάλυψη Ασθένειας ή Ατυχήματος μετά την 7η ή 14η ημέρα που δεν μπορώ να εργαστώ</option>
+                        <option value="Κάλυψη Μερικής Ανικάνοτητας">Κάλυψη Μερικής Ανικάνοτητας</option>
+                        <option value="Τίποτα από τα παραπάνω">Τίποτα από τα παραπάνω</option>
+                    </select>
+            </div>
+
+
+        
+            
+            <div class="py-2">
+                <label for="offerfor">Τι ποσό μπορείτε να διαθέσετε ετησίως ;</label>
+                <select style="background-color: lightgray;" class="form-select " id="quest9">
+                        <option value="0-50€">0-50€</option>
+                        <option value="51-100€">51-100€</option>
+                        <option value="100-150€">100-150€</option>
+                        <option value="Περισσότερο"> Περισσότερο</option>
+                    </select>
+            </div>
+
+
+        
+            <div class="py-2">
+                <label >Έχω ενημερωθεί για την επεξεργασία των προσωπικών μου δεδομένων και συναινώ σε αυτήν, όπως ειδικά ορίζεται στο κεφάλαιο "Όροι GDPR" (βλέπε κάτω μέρος σελίδας) *</label>
+                <input class=" form-check" type="checkbox" id="gdpr">
+              
+            </div>
+
+
+                        
+            <div class="py-2">
+                <label >Επιθυμώ να ενημερώνομαι για μελλοντικές προωθητικές ενέργειες που αφορούν σε προϊόντα και υπηρεσίες της Greek Insurance Leaders</label>
+                <input class=" form-check" type="checkbox" id="newsletter">
+            </div>
+
+            <p class="text-muted"> Ένα αντίγραφο των απαντήσεών σας θα σταλεί μέσω ηλεκτρονικού ταχυδρομείου στη διεύθυνση που παρείχατε.</p>
+            <a href="#">Εδώ μπορείτε να δείτε τους όρους GDPR </a> 
+
+            <div class="py-2">
+                <button class="btn btn-danger">Υποβολή Φόρμας</button>
+                
+            </div>
 
         </div>
     </div>
 
-</div>
 
+
+</div>
 
 
 

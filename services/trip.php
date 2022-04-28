@@ -1,227 +1,156 @@
 <?php
-$title = "Ασφάλιση Ταξιδίου | G.I.L";
+$title = "Ταξιδιωτική Ασφάλιση| G.I.L";
 include_once 'serv_header.php';
 
-$todayyear=date('Y');
-$todaymonth=date('m');
-$todayday=date('d');
+$todayyear = date('Y');
+$todaymonth = date('m');
+$todayday = date('d');
 
 
- $today=$todayyear.'-'.$todaymonth.'-'.$todayday.'T00:00';
- $nextyeartoday=($todayyear+1).'-'.$todaymonth.'-'.$todayday.'T00:00';
-
+$today = $todayyear . '-' . $todaymonth . '-' . $todayday . 'T00:00';
+$nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:00';
 ?>
-<section>
-    <div class="container">
-        <div class="section-title  ">
-            <h2>Ασφάλιση Ταξιδίου</h2>
-        </div>
-        <p class="px-5  mx-5">Ταξιδέψτε σε όλον τον κόσμο με ασφάλεια, καθώς η ταξιδιωτική ασφάλιση INTERAMERICAN σάς προσφέρει την ταξιδιωτική βοήθεια που χρειάζεστε σε κάθε σας ταξίδι. Σας εξασφαλίζει μια σειρά από ταξιδιωτικές καλύψεις για συνηθισμένα απρόοπτα, όπως η καθυστέρηση πτήσης, η απώλεια αποσκευών και εγγράφων ή η ακύρωση ενός προγραμματισμένου ταξιδιού
-                     </p>
+
+
+
+
+
+<section >
+    <div class="container text-center">
+
+
+        <!-- <p class="px-5  mx-5">Η INTERAMERICAN μέσω των προγραμμάτων Υγείας BeWell σας δίνει τη δυνατότητα να δημιουργήσετε τη δική σας πρόταση ασφάλισης, προσαρμοσμένη στις δικές σας ανάγκες, αλλά και στις δικές σας οικονομικές δυνατότητες</p> -->
+
+        <img src="../assets/img/logo1.png" class="img-fluid mx-auto text-center" alt="">
     </div>
 </section>
 
-<div class="container-fluid formbg">
-
-    <div class="container-fluid text-center d-flex w-50 justify-content-center  ">
-        <div>
-            <h2> Προσφορά Ταξιδιωτικής Ασφάλισης</h2>
-            <div class="card my-3">
-                <div class="card-body">
-                    <p class="text-center"><strong>Διεύθυνση ηλεκτρονικού ταχυδρομείου</strong></p>
-                    <div class="form-check mb-2 ">
-                        <input class="form-control" type="email" name="email" id="email" />
-                    </div>
-                </div>
+<div class="container formcont" >
+    <div class="row">
+        <div class="col-md-12 offset-md-12 ">
+        <h3>Προσφορά Ταξιδιωτικής Ασφάλισης</h3>
+        <hr style="border: 2px solid green;">
+           
+            <div class="py-2">
+                <label for="email">Διεύθυνση ηλεκτρονικού ταχυδρομείου *</label>
+                <input type="email" class="form-control" style="background-color: lightgray;" id="email">
             </div>
 
+            <div class="py-2">
 
-            <div class="card my-3">
-                <div class="card-body">
-                    <p class="text-center"><strong>Ονοματεπώνυμο</strong></p>
-                    <div class="form-check mb-2 ">
-                        <input class="form-control" type="text" name="email" id="email" />
-                    </div>
-                </div>
+                <label for="name">Το ονοματεπώνυμό σας </label>
+                <input type="text" class="form-control" style="background-color: lightgray;" id="fullname">
             </div>
 
-            <div class="card my-3">
-                <div class="card-body">
-                    <p class="text-center"><strong>Το τηλέφωνό σας είναι: </strong></p>
-                    <div class="form-check mb-2 ">
-                        <input class="form-control" type="text" name="text" id="email" />
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="card my-3">
-                <div class="card-body">
-                    <p class="text-center"><strong>Πότε είναι η έναρξη του ταξιδίου;  </strong></p>
-                    <div class="form-check mb-2 ">
-                    <input type="datetime-local" id="meeting-time" name="meeting-time" value="<?php echo $today; ?>" min="<?php echo $today; ?>" max="<?php echo $nextyeartoday; ?>">
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="card my-3">
-                <div class="card-body">
-                    <p class="text-center"><strong>Πότε είναι η λήξη του ταξιδίου; * </strong></p>
-                    <div class="form-check mb-2 ">
-                    <input type="datetime-local" id="meeting-time" name="meeting-time" value="<?php echo $today; ?>" min="<?php echo $today; ?>" >
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="card my-3">
-                <div class="card-body">
-                    <p class="text-center"><strong>Ποίος είναι ο προορισμός σας; *</strong></p>
-                    <div class="form-check mb-2 ">
-                        <input class="form-control" type="text" name="email" id="email" />
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="card my-3 ">
-                <div class="card-body">
-                    <p class="text-center"><strong>Υπάρχουν ενδιάμεσες στάσεις σε κάποια/ες χώρα/ες; * </strong></p>
-
-                    <div class="form-check mb-2 ">
-                        <input class="form-check-input" type="radio" name="exampleForm" id="radio2Example1" />
-                        <label class="form-check-label" for="radio2Example1">
-                            NAI
-                        </label>
-                    </div>
-                    <div class="form-check mb-2">
-                        <input class="form-check-input" type="radio" name="exampleForm" id="radio2Example2" />
-                        <label class="form-check-label" for="radio2Example2">
-                            OXI
-                        </label>
-                    </div>
-                </div>
-
+            <div class="py-2">
+                <label >Το τηλέφωνό σας είναι:  *</label>
+                <input class="form-control "  type="text" id="phone" style="background-color: lightgray;">
             </div>
 
 
 
-            <div class="card my-3">
-                <div class="card-body">
-                    <p class="text-center"><strong>Αν υπάρχουν ενδιάμεσες στάσεις, σε ποιά/ες χώρα/ες είναι; * </strong></p>
-                    <div class="form-check mb-2 ">
-                        <input class="form-control" type="text" name="email" id="email" />
-                    </div>
-                </div>
+            <div class="py-2">
+
+                <label for="date_birth">Πότε είναι η έναρξη του ταξιδίου; *</label>
+                <input type="date" class="form-control" style="background-color: lightgray;" id="trip_start">
+            </div>
+
+            <div class="py-2">
+
+                <label for="loc">Πότε είναι η λήξη του ταξιδίου; * </label>
+                <input type="date" class="form-control" style="background-color: lightgray;" id="trip_end">
             </div>
 
 
             
-            <div class="card my-3">
-                <div class="card-body">
-                    <p class="text-center"><strong>Πόσοι είναι οι ταξιδιώτες; * </strong></p>
-                    <div class="form-check mb-2 ">
-                        <input class="form-control" type="text" name="email" id="email" />
-                    </div>
-                </div>
+
+
+            <div class="py-2">
+                <label for="familynames"> Ποίος είναι ο προορισμός σας; *</label>
+                <input type="text" class="form-control" id="quest1" style="background-color: lightgray;">
             </div>
 
 
-
-
-            <div class="card my-3 ">
-                <div class="card-body">
-                    <p class="text-center"><strong>Επιθυμείτε, πέραν της βασικής κάλυψης, και κάλυψη ακύρωσης ταξιδίου; * </strong></p>
-
-                    <div class="form-check mb-2 ">
-                        <input class="form-check-input" type="radio" name="exampleForm" id="radio2Example1" />
-                        <label class="form-check-label" for="radio2Example1">
-                            NAI
-                        </label>
-                    </div>
-                    <div class="form-check mb-2">
-                        <input class="form-check-input" type="radio" name="exampleForm" id="radio2Example2" />
-                        <label class="form-check-label" for="radio2Example2">
-                            OXI
-                        </label>
-                    </div>
-                </div>
-
+            
+            
+            <div class="py-2">
+                <label for="offerfor">Υπάρχουν ενδιάμεσες στάσεις σε κάποια/ες χώρα/ες; * </label>
+                <select style="background-color: lightgray;" class="form-select " id="quest2">
+                        <option value="Ναι">Ναι</option>
+                        <option value=" Όχι">Όχι</option>
+     
+                    </select>
             </div>
 
 
-            <div class="card my-3 ">
-                <div class="card-body">
-                    <p class="text-center"><strong>Επιθυμείτε, πέραν της βασικής κάλυψης, και κάλυψη απώλειας αποσκευών; *</strong></p>
-
-                    <div class="form-check mb-2 ">
-                        <input class="form-check-input" type="radio" name="exampleForm" id="radio2Example1" />
-                        <label class="form-check-label" for="radio2Example1">
-                        ΝΑΙ
-                        </label>
-                    </div>
-                    <div class="form-check mb-2">
-                        <input class="form-check-input" type="radio" name="exampleForm" id="radio2Example2" />
-                        <label class="form-check-label" for="radio2Example2">
-                        ΟΧΙ
-                        </label>
-                    </div>
-                </div>
-
+            
+            <div class="py-2">
+                <label for="familynames"> Αν υπάρχουν ενδιάμεσες στάσεις, σε ποιά/ες χώρα/ες είναι ;</label>
+                <input type="text" class="form-control" id="quest3" style="background-color: lightgray;">
             </div>
 
 
-
-            <div class="card my-3 ">
-                <div class="card-body">
-                    <p class="text-center"><strong>Πώς θα επιθυμούσατε να επικοινωνήσουμε μαζί σας; *</strong></p>
-
-                    <div class="form-check mb-2 ">
-                        <input class="form-check-input" type="radio" name="exampleForm" id="radio2Example1" />
-                        <label class="form-check-label" for="radio2Example1">
-                        Τηλεφωνικά
-                        </label>
-                    </div>
-                    <div class="form-check mb-2">
-                        <input class="form-check-input" type="radio" name="exampleForm" id="radio2Example2" />
-                        <label class="form-check-label" for="radio2Example2">
-                        Μέσω e-mail
-                        </label>
-                    </div>
-                </div>
-
+            <div class="py-2">
+                <label for="familynames"> Πόσοι είναι οι ταξιδιώτες; *</label>
+                <input type="text" class="form-control" id="quest4" style="background-color: lightgray;">
             </div>
 
 
-            <div class="card my-3">
-                <div class="card-body">
-                    <p class="text-center"><strong>Έχω ενημερωθεί για την επεξεργασία των προσωπικών μου δεδομένων και συναινώ σε αυτήν, όπως ειδικά ορίζεται στο κεφάλαιο "Όροι GDPR" (βλέπε κάτω μέρος σελίδας)</strong></p>
-                    <div class="form-check mb-2 ">
-                        <input type="checkbox" id="horns" name="horns">
-                    </div>
-                </div>
+            <div class="py-2">
+                <label for="offerfor">Επιθυμείτε, πέραν της βασικής κάλυψης, και κάλυψη ακύρωσης ταξιδίου; * </label>
+                <select style="background-color: lightgray;" class="form-select " id="quest5">
+                        <option value="Ναι">Ναι</option>
+                        <option value=" Όχι">Όχι</option>
+     
+                    </select>
+            </div>
+
+            <div class="py-2">
+                <label for="offerfor">Επιθυμείτε, πέραν της βασικής κάλυψης, και κάλυψη απώλειας αποσκευών;  * </label>
+                <select style="background-color: lightgray;" class="form-select " id="quest6">
+                        <option value="Ναι">Ναι</option>
+                        <option value=" Όχι">Όχι</option>
+     
+                    </select>
+            </div>
+
+            <div class="py-2">
+                <label for="offerfor">Πώς θα επιθυμούσατε να επικοινωνήσουμε μαζί σας;  * </label>
+                    <select style="background-color: lightgray;" class="form-select " id="quest7">
+                        <option value="Τηλεφωνικά">Τηλεφωνικά</option>
+                        <option value=" Μέσω e-mail">Μέσω e-mail</option>
+                    </select>
             </div>
 
 
-            <div class="card my-3">
-                <div class="card-body">
-                    <p class="text-center"><strong>Επιθυμώ να ενημερώνομαι για μελλοντικές προωθητικές ενέργειες που αφορούν σε προϊόντα και υπηρεσίες της Greek Insurance Leaders</strong></p>
-                    <div class="form-check mb-2 ">
-                        <input type="checkbox" id="horns" name="horns">
-                    </div>
-                </div>
+                        
+            <div class="py-2">
+                <label >Έχω ενημερωθεί για την επεξεργασία των προσωπικών μου δεδομένων και συναινώ σε αυτήν, όπως ειδικά ορίζεται στο κεφάλαιο "Όροι GDPR" (βλέπε κάτω μέρος σελίδας) *</label>
+                <input class=" form-check" type="checkbox" id="gdpr">
+              
             </div>
 
 
-            <div class="btn btn-primary  my-5">Υποβολή Φόρμας</div>
+                        
+            <div class="py-2">
+                <label >Επιθυμώ να ενημερώνομαι για μελλοντικές προωθητικές ενέργειες που αφορούν σε προϊόντα και υπηρεσίες της Greek Insurance Leaders</label>
+                <input class=" form-check" type="checkbox" id="newsletter">
+            </div>
 
+            <p class="text-muted"> Ένα αντίγραφο των απαντήσεών σας θα σταλεί μέσω ηλεκτρονικού ταχυδρομείου στη διεύθυνση που παρείχατε.</p>
+            <a href="#">Εδώ μπορείτε να δείτε τους όρους GDPR </a> 
+
+            <div class="py-2">
+                <button class="btn btn-danger">Υποβολή Φόρμας</button>
+                
+            </div>
 
         </div>
     </div>
 
-</div>
 
+
+</div>
 
 
 
