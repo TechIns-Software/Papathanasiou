@@ -73,18 +73,18 @@
             <ul>
               <li><a href="../services/health.php">Ασφάλιση Υγείας </a></li>
               <li><a href="../services/life.php">Ασφάλιση Ζωής</a></li>
-              <li><a href="../services/store.php">Ασφάλιση Παιδιού</a></li>
-              <li><a href="../services/store.php">Ασφάλιση Αποταμίευσης</a></li>
-              <li><a href="../services/store.php">Ασφάλιση Αυτοκινήτου</a></li>
+              <li><a href="#">Ασφάλιση Παιδιού</a></li>
+              <li><a href="../services/apotam.php">Ασφάλιση Αποταμίευσης</a></li>
+              <li><a href="../services/car.php">Ασφάλιση Αυτοκινήτου</a></li>
               <li><a href="../services/store.php">Ασφάλιση Επιχείρησης</a></li>
-              <li><a href="../services/store.php">Ασφάλιση Κατοικίας</a></li>
-              <li><a href="../services/leisure.php">Ασφάλιση Σκαφών Αναψυχής</a></li>
+              <li><a href="../services/residence.php">Ασφάλιση Κατοικίας</a></li>
+              <li><a href="../services/boat.php">Ασφάλιση Σκαφών Αναψυχής</a></li>
               <li><a href="../services/trip.php"> Ταξιδιωτική Ασφάλιση</a></li>
-              <li><a href="../services/team.php">Αγροτική Ασφάλιση</a></li>
+              <li><a href="#">Αγροτική Ασφάλιση</a></li>
               <li><a href="../services/team.php">Ομαδική Ασφάλιση</a></li>
-              <li><a href="../services/team.php">Expats Insurance</a></li>
-              <li><a href="../services/team.php">Capital Invest</a></li>
-              <li><a href="../services/team.php">Διερεύνηση Αναγκών</a></li>
+              <li><a href="../services/expats.php">Expats Insurance</a></li>
+              <li><a href="#">Capital Invest</a></li>
+              <li><a href="../services/dangers.php">Ας Γνωριστούμε Καλύτερα</a></li>
               
             </ul>
           </li>
