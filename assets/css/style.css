@@ -1604,6 +1604,18 @@ video {
   }
 }
 
+.daybutton{
+  border-bottom: 1px solid red;
+  font-size: 1em;
+}
+
+.daybutton p{
+  font-size: .9em;
+}
+
+.fa-down-long{
+  color: red;
+}
 
   
 .row {
@@ -1618,4 +1630,11 @@ video {
 
 .servimg{
   border-radius: 1em;
+}
+
+.formcont{
+  -webkit-box-shadow: 5px 5px 23px 5px rgba(0,0,0,0.65); 
+box-shadow: 5px 5px 23px 5px rgba(0,0,0,0.65);
+border-radius: 1em;
+
 }

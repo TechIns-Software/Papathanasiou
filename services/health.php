@@ -229,19 +229,17 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             
 
             <div class="py-2">
-                <button class="btn btn-danger">Υποβολή Φόρμας</button>
+                <button class="btn btn-danger" id="submit-form">Υποβολή Φόρμας</button>
 
             </div>
 
 
             
 
-            <div class=" d-flex  fs-4 px-2 justify-content-between  daybutton border-bottom" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                <p class=" d-flex py-2 "> <a href=""> Όροι GDPR</a> </p>
+            <div class=" d-flex  fs-4 px-2 justify-content-between  daybutton  " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <p class=" d-flex py-2 ">* Όροι GDPR  </p>   <i class="  py-3  align-middle fa-solid fa-down-long  fa-xs"></i>
             </div>
 
-            
-            
             <div class="col-12 my-3">
                 <div class="row">
                     <div class="collapse" id="collapseExample">
@@ -395,3 +393,5 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 <?php
 include_once 'serv_footer.php';
 ?>
+
+<script src="../jsforms/healthform.js"></script>

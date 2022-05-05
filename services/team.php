@@ -195,8 +195,8 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
 
-            <div class=" d-flex  fs-4 px-2 justify-content-between  daybutton border-bottom" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                <p class=" d-flex py-2 "> <a href=""> Όροι GDPR</a> </p>
+            <div class=" d-flex  fs-4 px-2 justify-content-between  daybutton  " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <p class=" d-flex py-2 ">* Όροι GDPR  </p>   <i class="  py-3  align-middle fa-solid fa-down-long  fa-xs"></i>
             </div>
 
             

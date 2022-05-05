@@ -1,5 +1,5 @@
 <?php
-$title = "Ασφάλιση Σκάφους | G.I.L";
+$title = "Ασφάλεια Αποταμίευσης| G.I.L";
 include_once 'serv_header.php';
 
 $todayyear = date('Y');
@@ -23,7 +23,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 <div class="container formcont">
     <div class="row">
         <div class="col-md-12 offset-md-12 ">
-            <h3>Προσφορά Ασφάλισης Σκάφους</h3>
+            <h3> Ασφάλεια Αποταμίευσης</h3>
             <hr style="border: 2px solid blue;">
 
             <div class="py-2">
@@ -33,7 +33,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
             <div class="py-2">
 
-                <label ">Το ονοματεπώνυμό σας </label>
+                <label>Το ονοματεπώνυμό σας </label>
                 <input type="text" class="form-control" style="background-color: lightgray;" id="name">
             </div>
 
@@ -52,7 +52,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label>Ποιό είναι το είδος του σκάφους σας; *</label>
+                <label>Σε ποιά περιφέρεια της Ελλάδας μένετε;*</label>
                 <select style="background-color: lightgray;" class="form-select" id="quest1">
                     <option value="Ανατολική Μακεδονία και Θράκη">Ανατολική Μακεδονία και Θράκη </option>
                     <option value="Δυτική Μακεδονία">Δυτική Μακεδονία</option>
@@ -71,59 +71,24 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label >Ποιά είναι η οικογενειακή σας κατάσταση; *</label>
-                <select style="background-color: lightgray;" class="form-select " id="quest2">
-                    <option value="Άγαμος">Άγαμος</option>
-                    <option value="Έγγαμος">Έγγαμος</option>
+                <label >Εώς σήμερα, πως έχετε φροντίσει για την αποταμίευση χρημάτων για το μέλλον σας και για το μέλλον της οικογένειάς σας;</label>
+                <input class="form-control " type="text" id="quest2" style="background-color: lightgray;">
+            </div>
+
+
+
+            <div class="py-2">
+                <label >Γνωρίζετε πώς και πόσο θα επηρεάσουν το επίπεδο ζωης σας οι αλλαγές που φέρνουν οι ασφαλιστικές μεταρρυθμίσεις;</label>
+                <select style="background-color: lightgray;" class="form-select " id="quest3">
+                    <option value="Ναι, γνωρίζω">Ναι, γνωρίζω</option>
+                    <option value="Όχι, δεν γνωρίζω">Όχι, δεν γνωρίζω</option>
+                    <option value="Δεν είμαι σίγουρος/η">Δεν είμαι σίγουρος/η</option>
                 </select>
             </div>
 
 
             <div class="py-2">
-                <label >Έχετε εξαρτώμενα μέλη; *</label>
-                <select class="form-select " id="quest3" style="background-color: lightgray;">
-                    <option value="Ναι">Ναι </option>
-                    <option value=" Όχι">Όχι</option>
-
-                </select>
-            </div>
-
-
-
-
-            <div class="py-2">
-                <label >Αν απαντήσατε "Ναι", πόσα παιδιά έχετε; Ποια η ηλικία τους;</label>
-                <input class="form-control " type="text" id="quest4" style="background-color: lightgray;">
-            </div>
-
-
-            <div class="py-2">
-                <label >Εργάζεστε; *</label>
-                <select class="form-select " id="quest5" style="background-color: lightgray;">
-                    <option value="Ναι">Ναι </option>
-                    <option value=" Όχι">Όχι</option>
-
-                </select>
-            </div>
-
-            <div class="py-2">
-                <label >Εάν εργάζεστε, ποιό είναι το επάγγελμά σας;</label>
-                <input class="form-control " type="text" id="quest6" style="background-color: lightgray;">
-            </div>
-
-            <div class="py-2">
-                <label >Ποιά είναι τα μηνιαία ανελαστικά πάγια της οικογένειάς σας; *</label>
-                <input class="form-control " type="text" id="quest7" style="background-color: lightgray;">
-            </div>
-
-            <div class="py-2">
-                <label >Ποιες οι δανειακές σας υποχρεώσεις σε ποσό;</label>
-                <input class="form-control " type="text" id="quest8" style="background-color: lightgray;">
-            </div>
-
-
-            <div class="py-2">
-                <label>Πώς θα αντιμετώπιζε η οικογένειά σας τα οικονομικά προβλήματα που θα προέκυπταν αν δεν υπήρχε το δικό σας εισόδημα; *</label>
+                <label>Πώς σκοπεύετε να αναπληρώσετε το εισόδημά σας κατά τη συνταξιοδότησή σας;</label>
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="Διαθέσιμες Αποταμιεύσεις" id="check1">
                     <label class="form-check-label" >
@@ -146,18 +111,18 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
                 </div>
 
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value=" Δουλειά Συζύγου" id="check4" >
+                    <input class="form-check-input" type="checkbox" value="Ιδιωτικό συνταξιοδοτικό πρόγραμμα" id="check4" >
                     <label class="form-check-label" >
-                    Δουλειά Συζύγου
+                    Ιδιωτικό συνταξιοδοτικό πρόγραμμα
                     </label>
                 </div>
 
 
 
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value=" Δεν θα είχαν τρόπο" id="check5" >
+                    <input class="form-check-input" type="checkbox" value="Δεν γνωρίζω" id="check5" >
                     <label class="form-check-label" >
-                    Δεν θα είχαν τρόπο
+                    Δεν γνωρίζω
                     </label>
                 </div>
 
@@ -174,8 +139,8 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label >Τι ποσό μπορείτε να διαθέσετε ετησίως; *</label>
-                <select class="form-select " id="quest9" style="background-color: lightgray;">
+                <label >Τι ποσό μπορείτε να διαθέσετε μηνιαίως; *</label>
+                <select class="form-select " id="quest4" style="background-color: lightgray;">
                     <option value="0-50€">0-50€ </option>
                     <option value=" 51-100€">51-100€</option>
                     <option value=" 101-150€">101-150€</option>
@@ -186,25 +151,32 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label>Τι κεφάλαιο θα επιθυμούσατε να λάβουν τα εξαρτώμενα μέλη σε περίπτωση απώλειας ζωής; *</label>
+                <label>Πόσα χρόνια σκοπεύετε να αποταμιεύσετε τα χρήματά σας; *</label>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="50.000€" id="amount1">
+                    <input class="form-check-input" type="checkbox" value="5 έτη" id="amount1">
                     <label class="form-check-label" >
-                    50.000€
+                    5 έτη
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="100.000€" id="amount2" >
+                    <input class="form-check-input" type="checkbox" value="10 έτη" id="amount2" >
                     <label class="form-check-label" >
-                    100.000€
+                   10 έτη
                     </label>
                 </div>
 
 
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="200.000€" id="amount3" >
+                    <input class="form-check-input" type="checkbox" value="20 έτη" id="amount3" >
                     <label class="form-check-label" >
-                    200.000€
+                    20 έτη
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="30 έτη" id="amount4" >
+                    <label class="form-check-label" >
+                    30 έτη
                     </label>
                 </div>
 
@@ -220,23 +192,96 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label >Σας ενδιαφέρουν συμπληρωματικές καλύψεις όπως: *</label>
-                <select class="form-select " id="quest10" style="background-color: lightgray;">
-                    <option value="Μόνιμη Ολική Ανικανότητα">Μόνιμη Ολική Ανικανότητα </option>
-                    <option value="Κάλυψη Ασθένειας ή Ατυχήματος μετά την 7η ή 14η ημέρα που δεν μπορώ να εργαστώ">Κάλυψη Ασθένειας ή Ατυχήματος μετά την 7η ή 14η ημέρα που δεν μπορώ να εργαστώ</option>
-                    <option value="Κάλυψη Μερικής Ανικάνοτητας">Κάλυψη Μερικής Ανικάνοτητας</option>
-                    <option value="Καμία από τις παραπάνω">Καμία από τις παραπάνω</option>
+                <label >Θα θέλατε να σχεδιάσουμε μαζί ένα πρόγραμμα αποταμίευσης με επενδυτικό χαρακτήρα;</label>
+                <select class="form-select " id="quest5" style="background-color: lightgray;">
+                     <option value="Ναι">Ναι</option>
+                    <option value="Όχι">Όχι</option>
 
                 </select>
             </div>
 
 
-
             <div class="py-2">
-                <label>Επιθυμείτε τα χρήματα που δίνετε να αποταμιεύονται; Αν ναι, τι ποσό ανά μήνα μπορείτε να διαθέσετε για Αποταμίευση;</label>
-                <input class="form-control " type="text" id="quest11"   style="background-color: lightgray;">
+                <label >Πόσο καλά γνωρίζετε τις ομολογιακές επενδύσεις;</label>
+                <select class="form-select " id="quest6" style="background-color: lightgray;">
+                     <option value="Πολύ Καλά">Πολύ Καλά</option>
+                    <option value="Αρκετά Καλά">Αρκετά Καλά</option>
+                    <option value="Λίγο">Λίγο</option>
+                    <option value="Καθόλου">Καθόλου</option>
+                </select>
             </div>
 
+
+            <div class="py-2">
+                <label >Πόσο καλά γνωρίζετε τις μετοχικές επενδύσεις;</label>
+                <select class="form-select " id="quest7" style="background-color: lightgray;">
+                     <option value="Πολύ Καλά">Πολύ Καλά</option>
+                    <option value="Αρκετά Καλά">Αρκετά Καλά</option>
+                    <option value="Λίγο">Λίγο</option>
+                    <option value="Καθόλου">Καθόλου</option>
+                </select>
+            </div>
+
+            <div class="py-2">
+                <label >Πώς θα χαρακτηρίζατε την επενδυτική σας εμπειρία συνολικά(ομολογιακές ή και μετοχικές τοποθετήσεις) έως σήμερα;</label>
+                <select class="form-select " id="quest8" style="background-color: lightgray;">
+                     <option value="Θετική">Θετική</option>
+                    <option value="Ουδέτερη">Ουδέτερη</option>
+                    <option value="Αρνητική">Αρνητική</option>
+                    <option value="Δεν έχω μεγάλη εμπειρία έως σήμερα">Δεν έχω μεγάλη εμπειρία έως σήμερα</option>
+                </select>
+            </div>
+
+            <div class="py-2">
+                <label >Σε ποιο βαθμό τα έσοδα σας καλύπτουν τα έξοδά σας:</label>
+                <select class="form-select " id="quest9" style="background-color: lightgray;">
+                     <option value="Iκανοποιητικά">Iκανοποιητικά</option>
+                    <option value="Οριακά">Οριακά</option>
+                    <option value="Δεν Καλύπτουν">Δεν Καλύπτουν</option>
+                </select>
+            </div>
+
+            <div class="py-2">
+                <label >Θα επιθυμούσατε να σχεδιάσουμε ένα απόταμιευτικό πρόγραμμα σε συνδυασμό με ασφάλεια ζωής;</label>
+                <select class="form-select " id="quest10" style="background-color: lightgray;">
+                     <option value="Ναι">Ναι</option>
+                    <option value="Όχι">Όχι</option>
+                    <option value="Ίσως">Ίσως</option>
+                </select>
+            </div>
+
+
+            <div class="py-2">
+                <label>Αν ναι, σας ενδιαφέρουν συμπληρωματικές καλύψεις όπως:</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Μόνιμη Ολική Ανικανότητα" id="amount1">
+                    <label class="form-check-label" >
+                    Μόνιμη Ολική Ανικανότητα
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Κάλυψη Ασθένειας ή Ατυχήματος μετά την 7η ή 14η ημέρα που δεν μπορώ να εργαστώ" id="amount2" >
+                    <label class="form-check-label" >
+                    Κάλυψη Ασθένειας ή Ατυχήματος μετά την 7η ή 14η ημέρα που δεν μπορώ να εργαστώ
+                    </label>
+                </div>
+
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Κάλυψη Μερικής Ανικάνοτητας" id="amount3" >
+                    <label class="form-check-label" >
+                    Κάλυψη Μερικής Ανικάνοτητας
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Καμία από τις παραπάνω" id="amount4" >
+                    <label class="form-check-label" >
+                    Καμία από τις παραπάνω
+                    </label>
+                </div>
+
+            </div>
 
 
             <div class="py-2">
@@ -251,7 +296,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
   
 
             <div class="py-2">
-                <label>Έχω ενημερωθεί για την επεξεργασία των προσωπικών μου δεδομένων και συναινώ σε αυτήν, όπως ειδικά ορίζεται στο κεφάλαιο "Όροι GDPR" (βλέπε κάτω μέρος σελίδας) *</label>
+                <label>* Έχω ενημερωθεί για την επεξεργασία των προσωπικών μου δεδομένων και συναινώ σε αυτήν, όπως ειδικά ορίζεται στο κεφάλαιο "Όροι GDPR" (βλέπε κάτω μέρος σελίδας)</label>
                 <input class=" form-check" type="checkbox" id="gdpr">
 
             </div>
@@ -268,12 +313,9 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
                 <button class="btn btn-danger">Υποβολή Φόρμας</button>
             </div>
 
-            
-
-            <div class=" d-flex  fs-4 px-2 justify-content-between  daybutton border-bottom" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                <p class=" d-flex py-2 "> <a href=""> Όροι GDPR</a> </p>
+            <div class=" d-flex  fs-4 px-2 justify-content-between  daybutton  " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <p class=" d-flex py-2 ">* Όροι GDPR  </p>   <i class="  py-3  align-middle fa-solid fa-down-long  fa-xs"></i>
             </div>
-
             
             
             <div class="col-12 my-3">

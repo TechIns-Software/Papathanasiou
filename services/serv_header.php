@@ -19,6 +19,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap" rel="stylesheet">
 
+<script src="https://kit.fontawesome.com/16f09725b0.js" crossorigin="anonymous"></script>
+
   <!-- Vendor CSS Files -->
   <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -27,7 +29,7 @@
   <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <link rel="stylesheet" type="text/css" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" type="text/css" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
 
 <link rel="stylesheet" type="text/css" href="../assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 
@@ -43,7 +45,7 @@
 
 <link rel="stylesheet" type="text/css" href="../assets/css/util.css">
 <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
-
+ -->
 
 
   <!-- Template Main CSS File -->
@@ -72,18 +74,19 @@
           <li class="dropdown"><a href="../index.html#services"><span>Υπηρεσίες</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="../services/health.php">Ασφάλιση Υγείας </a></li>
-              <li><a href="../services/life.php">Ασφάλιση Ζωής</a></li>
               <li><a href="#">Ασφάλιση Παιδιού</a></li>
-              <li><a href="../services/apotam.php">Ασφάλιση Αποταμίευσης</a></li>
+              <li><a href="../services/life.php">Ασφάλιση Ζωής</a></li>
               <li><a href="../services/car.php">Ασφάλιση Αυτοκινήτου</a></li>
-              <li><a href="../services/store.php">Ασφάλιση Επιχείρησης</a></li>
               <li><a href="../services/residence.php">Ασφάλιση Κατοικίας</a></li>
+              <li><a href="../services/apotam.php">Ασφάλιση Αποταμίευσης</a></li>
+              <li><a href="../services/store.php">Ασφάλιση Επιχείρησης</a></li>
               <li><a href="../services/boat.php">Ασφάλιση Σκαφών Αναψυχής</a></li>
               <li><a href="../services/trip.php"> Ταξιδιωτική Ασφάλιση</a></li>
               <li><a href="#">Αγροτική Ασφάλιση</a></li>
               <li><a href="../services/team.php">Ομαδική Ασφάλιση</a></li>
+              <li><a href="#">Property Insurance </a></li>
               <li><a href="../services/expats.php">Expats Insurance</a></li>
-              <li><a href="#">Capital Invest</a></li>
+              <li><a href="#">Online Health Application</a></li>
               <li><a href="../services/dangers.php">Ας Γνωριστούμε Καλύτερα</a></li>
               
             </ul>

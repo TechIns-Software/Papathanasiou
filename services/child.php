@@ -1,5 +1,5 @@
 <?php
-$title = "Αγροτική Ασφάλιση| G.I.L";
+$title = "Ασφάλεια Παιδιού| G.I.L";
 include_once 'serv_header.php';
 
 $todayyear = date('Y');
@@ -12,8 +12,13 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 ?>
 
 
+
+
+
 <section>
     <div class="container text-center">
+
+
         <!-- <p class="px-5  mx-5">Η INTERAMERICAN μέσω των προγραμμάτων Υγείας BeWell σας δίνει τη δυνατότητα να δημιουργήσετε τη δική σας πρόταση ασφάλισης, προσαρμοσμένη στις δικές σας ανάγκες, αλλά και στις δικές σας οικονομικές δυνατότητες</p> -->
 
         <img src="../assets/img/logo1.png" class="img-fluid mx-auto text-center" alt="">
@@ -23,8 +28,8 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 <div class="container formcont">
     <div class="row">
         <div class="col-md-12 offset-md-12 ">
-            <h3>Αγροτική Ασφάλιση</h3>
-            <hr style="border: 2px solid green;">
+            <h3>Προσφορά Ασφάλειας Παιδιού</h3>
+            <hr style="border: 2px solid blue;">
 
             <div class="py-2">
                 <label>Διεύθυνση ηλεκτρονικού ταχυδρομείου *</label>
@@ -33,19 +38,25 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
             <div class="py-2">
 
-                <label >Το ονοματεπώνυμό σας </label>
+                <label>Ονοματεπώνυμο* </label>
                 <input type="text" class="form-control" style="background-color: lightgray;" id="name">
             </div>
 
-
-
             <div class="py-2">
-                <label>Το τηλέφωνό σας είναι:</label>
+                <label>Το τηλέφωνό σας είναι: </label>
                 <input class="form-control " type="text" id="phone" style="background-color: lightgray;">
             </div>
 
+
+
             <div class="py-2">
-                <label>Σε ποιά περιφέρεια της Ελλάδας μένετε;*</label>
+
+                <label>Ποιά είναι η ημερομηνία γέννησης του παιδιού/ των παιδιών σας ; *</label>
+                <input type="text" class="form-control" style="background-color: lightgray;" id="date_birth">
+            </div>
+
+            <div class="py-2">
+                <label>Σε ποιά περιφέρεια της Ελλάδας δραστηριοποιείται η επιχείρησή σας;</label>
                 <select style="background-color: lightgray;" class="form-select" id="quest1">
                     <option value="Ανατολική Μακεδονία και Θράκη">Ανατολική Μακεδονία και Θράκη </option>
                     <option value="Δυτική Μακεδονία">Δυτική Μακεδονία</option>
@@ -63,31 +74,205 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             </div>
 
             <div class="py-2">
-                <label>Σε ποιά περιοχή, συγκεκριμένα, βρίσκεται η καλλιέργειάς σας; (Τ.Κ) *</label>
-                <input class="form-control " type="text" id="quest1" style="background-color: lightgray;">
-            </div>
-
-
-
-            <div class="py-2">
-                <label>Τι είδους καλλιέργειας θέλετε να ασφαλίσετε; *</label>
-                <input class="form-control " type="text" id="quest2" style="background-color: lightgray;">
-            </div>
-
-            <div class="py-2">
-                <label>Παρακαλούμε επισυνάψτε την δήλωση ΟΣΔΕ σας, προκειμένου να είμαστε ακριβείς ως προς την έκδοση προσφοράς.</label>
-                <input class="form-control " type="file" id="quest3" style="background-color: lightgray;">
-            </div>
-
-
-            <div class="py-2">
-                <label>Πώς θα επιθυμούσατε να επικοινωνήσουμε μαζί σας; *</label>
-                <select class="form-select " id="quest16" style="background-color: lightgray;">
-                    <option value="Τηλεφωνικά">Τηλεφωνικά</option>
-                    <option value=" Μέσω e-mail">Μέσω e-mail</option>
-
+                <label>Ποιο είναι το ποσό που θα σας έκανε να αισθανθείτε ασφαλής, εφόσον υπήρχε διαθέσιμο μόνο για επείγουσες περιπτώσεις ΥΓΕΙΑΣ για το κάθε τέκνο σας ξεχωριστά :</label>
+                <select style="background-color: lightgray;" class="form-select " id="quest2">
+                    <option value="20.000">20.000 €</option>
+                    <option value="50.000">50.000</option>
+                    <option value="100.000">100.000</option>
+                    <option value="300.000"> 300.000</option>
+                    <option value="500.000"> 500.000</option>
+                    <option value=" 100.000.000"> 100.000.000</option>
                 </select>
             </div>
+
+            <div class="py-2">
+                <label>Ποια/ποιές είναι η Ιδιωτική/ες Κλινική/ες που θα επιλέγατε σε περίπτωση νοσηλείας ή επέμβασης του παιδιού σας ;*</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Metropolitan General Αθηνών" id="amount1">
+                    <label class="form-check-label">
+                        Metropolitan General Αθηνών
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Διαβαλκανικό Ιατρικό Κέντρο Θεσσαλονίκης" id="amount2">
+                    <label class="form-check-label">
+                        Διαβαλκανικό Ιατρικό Κέντρο Θεσσαλονίκης
+                    </label>
+                </div>
+
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Υγεία Αθηνών" id="amount3">
+                    <label class="form-check-label">
+                        Υγεία Αθηνών
+                    </label>
+                </div>
+
+
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Ιασώ Αθηνών" id="amount4">
+                    <label class="form-check-label">
+                        Ιασώ Αθηνών
+                    </label>
+                </div>
+
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Άγιος Λουκάς Θεσσαλονίκης" id="amount5">
+                    <label class="form-check-label">
+                        Άγιος Λουκάς Θεσσαλονίκης
+                    </label>
+                </div>
+
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Αθηναϊκή Mediclinic" id="amount6">
+                    <label class="form-check-label">
+                        Αθηναϊκή Mediclinic
+                    </label>
+                </div>
+
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Παιδιατρικό Κέντρο Αθηνών" id="amount7">
+                    <label class="form-check-label">
+                        Παιδιατρικό Κέντρο Αθηνών
+                    </label>
+                </div>
+
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Γενική Κλινική Θεσσαλονίκης" id="amount8">
+                    <label class="form-check-label">
+                        Γενική Κλινική Θεσσαλονίκης
+                    </label>
+
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value=" Ευρωκλινική Παίδων" id="amount9">
+                    <label class="form-check-label">
+                        Ευρωκλινική Παίδων
+                    </label>
+
+                </div>
+
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Άλλο" id="amountother">
+                    <label class="form-check-label">
+                        Άλλο:
+                    </label>
+                    <input class="form-control " type="text" id="amountanser" disabled style="background-color: lightgray;">
+                </div>
+            </div>
+
+            <div class="py-2">
+                <label>Είναι καλυμένο/α το παιδί/ τα παιδιά σας από κοινωνική ασφάλιση; (ΕΟΠΥΥ/ΕΦΚΑ)</label>
+                <select class="form-select " id="quest3" style="background-color: lightgray;">
+                    <option value="NAI">NAI</option>
+                    <option value=" OXI">OXI</option>
+                </select>
+            </div>
+
+
+            <div class="py-2">
+                <label>Θα προτιμούσατε να πληρώνετε λιγότερα στην Ασφαλιστική εταιρία, αλλά να συμμετέχετε στην περίπτωση νοσηλείας;</label>
+                <select class="form-select " id="quest4" style="background-color: lightgray;">
+                    <option value="NAI">NAI</option>
+                    <option value=" OXI">OXI</option>
+                </select>
+            </div>
+
+            <div class="py-2">
+                <label>Θα θέλατε να συμμετέχετε σε περίπτωση νοσηλείας με το ποσό ή το ποσοστό;</label>
+                <select class="form-select " id="quest5" style="background-color: lightgray;">
+                    <option value="0€">0€</option>
+                    <option value=" 500€">500€</option>
+                    <option value=" 1500€">1500€</option>
+                    <option value=" 2000€">2000€</option>
+                    <option value=" 20%">20%</option>
+                </select>
+            </div>
+
+            <div class="py-2">
+                <label>Θα σας ενδιέφερε να μπορεί το παιδί σας να επισκέπτεται Ιατρούς και Διαγνωστικά Κέντρα πληρώνοντας μόνο μία μικρή συμμετοχή;</label>
+                <select class="form-select " id="quest6" style="background-color: lightgray;">
+                    <option value="NAI">NAI</option>
+                    <option value=" OXI">OXI</option>
+                </select>
+            </div>
+
+
+            <div class="py-2">
+                <label>Σας ενδιαφέρει η νοσηλεία εκτός Ευρώπης ; *</label>
+                <select class="form-select " id="quest7" style="background-color: lightgray;">
+                    <option value="NAI">NAI</option>
+                    <option value="OXI">OXI</option>
+                </select>
+            </div>
+
+            <div class="py-2">
+                <label>Σας ενδιαφέρει η αποκατάσταση μετά από μεγάλες επεμβάσεις ;*</label>
+                <select class="form-select " id="quest8" style="background-color: lightgray;">
+                    <option value="NAI">NAI</option>
+                    <option value="OXI">OXI</option>
+                </select>
+            </div>
+
+            <div class="py-2">
+                <label>Ποιο είναι το ποσό που είστε διατεθιμένοι να διαθέσετε μηνιαίως για την ασφάλιση Υγείας του παιδιού σας;</label>
+                <select class="form-select " id="quest9" style="background-color: lightgray;">
+                    <option value="20€">20€</option>
+                    <option value="50€">50€</option>
+                    <option value="100€">100€</option>
+                    <option value="150€">150€</option>
+                    <option value="Περισσότερο από 150€">Περισσότερο από 150€</option>
+                </select>
+            </div>
+
+
+            <div class="py-2">
+                <label> Εώς σήμερα πώς έχετε φροντίσει για την οικονομική υποστήριξη των παιδιών σας στο μέλλον;</label>
+                <input type="text" class="form-control" id="quest10" style="background-color: lightgray;">
+            </div>
+
+            <div class="py-2">
+                <label>Έχετε σκεφτεί με ποιόν τρόπο θα  εξασφαλίσετε τις σπουδές του παιδιού/ των παιδιών σας;</label>
+                <select class="form-select " id="quest11" style="background-color: lightgray;">
+                    <option value="NAI">NAI</option>
+                    <option value="OXI">OXI</option>
+                </select>
+            </div>
+
+            <div class="py-2">
+                <label>Αν όχι, θα θέλατε να σχεδιάσουμε μαζί έναν τρόπο αποταμίευσης για να βοηθήσετε τα παιδιά σας να πετύχουν στο μέλλον τους στόχους και τα όνειρά τους;</label>
+                <select class="form-select " id="quest12" style="background-color: lightgray;">
+                    <option value="NAI">NAI</option>
+                    <option value="OXI">OXI</option>
+                </select>
+            </div>
+
+            
+            <div class="py-2">
+                <label>Τι κεφάλαιο επιθυμείτε να βάζετε μηνιαίως για αποταμίευση, για το κάθε τέκνο σας;</label>
+                <select class="form-select " id="quest13" style="background-color: lightgray;">
+                    <option value="50€">50€</option>
+                    <option value="100€">100€</option>
+                    <option value="200€">200€</option>
+                </select>
+            </div>
+
+
+            <div class="py-2">
+                <label>Τι κεφάλαιο επιθυμείτε να βάζετε μηνιαίως για αποταμίευση, για το κάθε τέκνο σας;</label>
+                <select class="form-select " id="quest14" style="background-color: lightgray;">
+                    <option value="Τηλεφωνικά">Τηλεφωνικά</option>
+                    <option value="Μέσω e-mail">Μέσω e-mail</option>
+                </select>
+            </div>
+
 
             <div class="py-2">
                 <label>Έχω ενημερωθεί για την επεξεργασία των προσωπικών μου δεδομένων και συναινώ σε αυτήν, όπως ειδικά ορίζεται στο κεφάλαιο "Όροι GDPR" (βλέπε κάτω μέρος σελίδας) *</label>
@@ -95,28 +280,28 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
             </div>
 
+
+
             <div class="py-2">
                 <label>Επιθυμώ να ενημερώνομαι για μελλοντικές προωθητικές ενέργειες που αφορούν σε προϊόντα και υπηρεσίες της Greek Insurance Leaders</label>
                 <input class=" form-check" type="checkbox" id="newsletter">
             </div>
 
             <p class="text-muted"> Ένα αντίγραφο των απαντήσεών σας θα σταλεί μέσω ηλεκτρονικού ταχυδρομείου στη διεύθυνση που παρείχατε.</p>
-         
+
 
             <div class="py-2">
-                <button class="btn btn-danger">Υποβολή Φόρμας</button>
+                <button class="btn btn-danger" id="submit-form">Υποβολή Φόρμας</button>
+
             </div>
 
 
-            
 
-  
+
             <div class=" d-flex  fs-4 px-2 justify-content-between  daybutton  " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                <p class=" d-flex py-2 ">* Όροι GDPR  </p>   <i class="  py-3  align-middle fa-solid fa-down-long  fa-xs"></i>
+                <p class=" d-flex py-2 ">* Όροι GDPR </p> <i class="  py-3  align-middle fa-solid fa-down-long  fa-xs"></i>
             </div>
 
-            
-            
             <div class="col-12 my-3">
                 <div class="row">
                     <div class="collapse" id="collapseExample">
@@ -162,15 +347,16 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
                                     </ul>
 
-                                    <p> 
-                                    <b>
-                                        1.  Κάθε πληροφορία που αφορά ταυτοποιημένο ή ταυτοποιήσιμο φυσικό πρόσωπο («υποκείμενο των δεδομένων») όπως αναγνωριστικό στοιχείο ταυτότητας [όνομα, αριθμό ταυτότητας, σωματική, φυσιολογική, ψυχολογική, οικονομική, πολιτιστική ή κοινωνική ταυτότητα του φυσικού προσώπου (Άρθρο 4 Κανονισμού ΕΕ 2016/679)].</b>
-                                        </p>
+                                    <p>
+                                        <b>
+                                            1. Κάθε πληροφορία που αφορά ταυτοποιημένο ή ταυτοποιήσιμο φυσικό πρόσωπο («υποκείμενο των δεδομένων») όπως αναγνωριστικό στοιχείο ταυτότητας [όνομα, αριθμό ταυτότητας, σωματική, φυσιολογική, ψυχολογική, οικονομική, πολιτιστική ή κοινωνική ταυτότητα του φυσικού προσώπου (Άρθρο 4 Κανονισμού ΕΕ 2016/679)].</b>
+                                    </p>
 
-                                     
 
-                                        <p> 
-                                    <b> 2. Πρόκειται για δεδομένα που αφορούν ενδεικτικά την υγεία, καθώς και την φυλετική ή εθνοτική καταγωγή κ.λπ. (Άρθρο 9 Κανονισμού ΕΕ 2016/679). </b></p>
+
+                                    <p>
+                                        <b> 2. Πρόκειται για δεδομένα που αφορούν ενδεικτικά την υγεία, καθώς και την φυλετική ή εθνοτική καταγωγή κ.λπ. (Άρθρο 9 Κανονισμού ΕΕ 2016/679). </b>
+                                    </p>
 
                                     <b> Για πόσο χρόνο θα κρατάτε τα δεδομένα μου σε αρχείο;</b>
 
@@ -270,3 +456,5 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 <?php
 include_once 'serv_footer.php';
 ?>
+
+<script src="../jsforms/healthform.js"></script>
