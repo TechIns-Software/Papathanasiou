@@ -16,7 +16,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
     <div class="container text-center">
         <!-- <p class="px-5  mx-5">Η INTERAMERICAN μέσω των προγραμμάτων Υγείας BeWell σας δίνει τη δυνατότητα να δημιουργήσετε τη δική σας πρόταση ασφάλισης, προσαρμοσμένη στις δικές σας ανάγκες, αλλά και στις δικές σας οικονομικές δυνατότητες</p> -->
 
-        <img src="../assets/img/logo1.png" class="img-fluid mx-auto text-center" alt="">
+        <img src="../assets/img/logo1.png" class="img-fluid mx-auto text-center" alt="logo">
     </div>
 </section>
 
