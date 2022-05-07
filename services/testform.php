@@ -25,25 +25,22 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 			<hr style="border: 2px solid blue;">
 
 			<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSentaiL91WEMhNfHpJO8Pg0Hj_tU9WtTBKbaIarV35RIhbtDQ/formResponse">
-				<input type="hidden" id="inp1" name="entry.739531254" value="">
-				<input type="hidden"  id="inp2" name="entry.1246754399" value="">
-				<input type="hidden" id="inp3" name="entry.1010677732" value="">
 
 				<div class="py-2">
 					<label>Διεύθυνση ηλεκτρονικού ταχυδρομείου *</label>
-					<input type="email" class="form-control" style="background-color: lightgray;" id="email">
+					<input type="email" class="form-control" name="entry.739531254" style="background-color: lightgray;" id="email">
 				</div>
 
 				<div class="py-2">
 
 					<label>Το ονοματεπώνυμό σας </label>
-					<input type="text" class="form-control" style="background-color: lightgray;" id="name">
+					<input type="text" class="form-control" name="entry.1246754399" style="background-color: lightgray;" id="name">
 				</div>
 
 
 				<div class="py-2">
 					<label>Ζείτε στο Νομό;</label>
-					<select style="background-color: lightgray;" class="form-select" id="quest3">
+					<select style="background-color: lightgray;" name="entry.1010677732"  class="form-select" id="quest3">
 						<option value="Νομός1">Νομός1 </option>
 						<option value="Νομός2">Νομός2</option>
 						<option value="Νομός3">Νομός3</option>
