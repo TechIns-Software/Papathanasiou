@@ -27,7 +27,6 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             <hr style="border: 3px solid red;">
 
             <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfc593KeuwLJJMhiHkmQ1xaGHc9BtQXXoNbpoaEo-UaWwE4gQ/formResponse">
-            <!-- <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfc593KeuwLJJMhiHkmQ1xaGHc9BtQXXoNbpoaEo-UaWwE4gQ/formResponse"> -->
             <div class="py-2">
                 <label>Διεύθυνση ηλεκτρονικού ταχυδρομείου *</label>
                 <input type="email" class="form-control" style="background-color: lightgray;" id="email">

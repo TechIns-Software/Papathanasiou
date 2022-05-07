@@ -26,189 +26,197 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             <h3>Προσφορά Ασφάλισης Σκάφους</h3>
             <hr style="border: 2px solid blue;">
 
-            <div class="py-2">
-                <label>Διεύθυνση ηλεκτρονικού ταχυδρομείου *</label>
-                <input type="email" class="form-control" style="background-color: lightgray;" id="email">
-            </div>
+            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfOmHqdANgrb21fpOW5EXt57OTIq24QbFD6OtZIJ0vdVXE90w/formResponse">
+                <div class="py-2">
+                    <label>Διεύθυνση ηλεκτρονικού ταχυδρομείου  <span style="color: red;">  *</span></label>
+                    <input type="email" class="form-control" style="background-color: lightgray;" id="email">
+                </div>
 
-            <div class="py-2">
+                <div class="py-2">
 
-                <label >Το ονοματεπώνυμό σας </label>
-                <input type="text" class="form-control" style="background-color: lightgray;" id="name">
-            </div>
-
-
-
-            <div class="py-2">
-                <label>Το τηλέφωνό σας είναι:</label>
-                <input class="form-control " type="text" id="phone" style="background-color: lightgray;">
-            </div>
-
-            <div class="py-2">
-                <label>Ποιό είναι το όνομα του σκάφους σας; *</label>
-                <input class="form-control " type="text" id="quest1" style="background-color: lightgray;">
-            </div>
+                    <label>Το ονοματεπώνυμό σας  <span style="color: red;">  *</span> </label>
+                    <input type="text" class="form-control" style="background-color: lightgray;" id="fullname">
+                </div>
 
 
 
-            <div class="py-2">
-                <label>Ποιό είναι το έτος κατασκευής του σκάφους σας; *</label>
-                <input class="form-control " type="text" id="quest2" style="background-color: lightgray;">
-            </div>
+                <div class="py-2">
+                    <label>Το τηλέφωνό σας είναι:</label>
+                    <input class="form-control " type="text" id="phone" style="background-color: lightgray;">
+                </div>
 
-            <div class="py-2">
-                <label>Ποιός είναι ο αριθμός Νηολογίου του σκάφους σας; *</label>
-                <input class="form-control " type="text" id="quest3" style="background-color: lightgray;">
-            </div>
-
-
-            <div class="py-2">
-                <label>Ποιό είναι το λιμάνι νηολόγησης; *</label>
-                <input class="form-control " type="text" id="quest4" style="background-color: lightgray;">
-            </div>
+                <div class="py-2">
+                    <label>Ποιό είναι το όνομα του σκάφους σας;  <span style="color: red;">  *</span></label>
+                    <input class="form-control " type="text" id="quest1" style="background-color: lightgray;">
+                </div>
 
 
 
-            <div class="py-2">
-                <label >Ποιό είναι το είδος του σκάφους σας; *</label>
-                <select style="background-color: lightgray;" class="form-select" id="quest5">
-                    <option value="L/S Μη ταχύπλοο">L/S Μη ταχύπλοο </option>
-                    <option value="S/B Ταχύπλοο">S/B Ταχύπλοο</option>
-                    <option value="S/Y Ιστιοπλοϊκό">S/Y Ιστιοπλοϊκό</option>
-                    <option value="J/S Jet Ski"> J/S Jet Ski</option>
-                    <option value="I/B Φουσκωτό"> I/B Φουσκωτό</option>
-                </select>
-            </div>
+                <div class="py-2">
+                    <label>Ποιό είναι το έτος κατασκευής του σκάφους σας;  <span style="color: red;">  *</span></label>
+                    <input class="form-control " type="text" id="quest2" style="background-color: lightgray;">
+                </div>
+
+                <div class="py-2">
+                    <label>Ποιός είναι ο αριθμός Νηολογίου του σκάφους σας;  <span style="color: red;">  *</span></label>
+                    <input class="form-control " type="text" id="quest3" style="background-color: lightgray;">
+                </div>
 
 
-            <div class="py-2">
-                <label >Ποιά είναι χρήση του σκάφους σας; *</label>
-                <select style="background-color: lightgray;" class="form-select " id="quest6">
-                    <option value="Επαγγελματικής Αναψυχής με μόνιμο πλήρωμα">Επαγγελματικής Αναψυχής με μόνιμο πλήρωμα</option>
-                    <option value="Επαγγελματικής Αναψυχής χωρίς μόνιμο πλήρωμα">Επαγγελματικής Αναψυχής χωρίς μόνιμο πλήρωμα</option>
-                    <option value="Ιδιωτικής Αναψυχής">Ιδιωτικής Αναψυχής</option>
-                </select>
-            </div>
+                <div class="py-2">
+                    <label>Ποιό είναι το λιμάνι νηολόγησης;  <span style="color: red;">  *</span></label>
+                    <input class="form-control " type="text" id="quest4" style="background-color: lightgray;">
+                </div>
 
 
 
-            <div class="py-2">
-                <label >Πόση συνολική ιπποδύναμη έχει το σκάφος σας; * </label>
-                <input class="form-control " type="text" id="quest7" style="background-color: lightgray;">
-            </div>
+                <div class="py-2">
+                    <label>Ποιό είναι το είδος του σκάφους σας;  <span style="color: red;">  *</span></label>
+                    <select style="background-color: lightgray;" class="form-select" id="quest5">
+                        <option value="" selected disabled hidden>Διάλεξε εδώ</option>
+                        <option value="L/S Μη ταχύπλοο">L/S Μη ταχύπλοο </option>
+                        <option value="S/B Ταχύπλοο">S/B Ταχύπλοο</option>
+                        <option value="S/Y Ιστιοπλοϊκό">S/Y Ιστιοπλοϊκό</option>
+                        <option value="J/S Jet Ski"> J/S Jet Ski</option>
+                        <option value="I/B Φουσκωτό"> I/B Φουσκωτό</option>
+                    </select>
+                </div>
 
 
-            <div class="py-2">
-                <label >Ποιό είναι το μήκος του σκάφους σας; *</label>
-                <input class="form-control " type="text" id="quest8" style="background-color: lightgray;">
-            </div>
-
-
-            <div class="py-2">
-                <label >Ποιά είναι η αξία του σκάφους σας; *</label>
-                <input class="form-control " type="text" id="quest9" style="background-color: lightgray;">
-            </div>
-
-
-            <div class="py-2">
-                <label >Έχει υπάρξει κάποια ζημία τα τελευταία 5 χρόνια στο σκάφος σας; *</label>
-                <select class="form-select " id="quest10" style="background-color: lightgray;">
-                    <option value="Ναι">Ναι </option>
-                    <option value=" Όχι">Όχι</option>
-
-                </select>
-            </div>
+                <div class="py-2">
+                    <label>Ποιά είναι χρήση του σκάφους σας;  <span style="color: red;">  *</span></label>
+                    <select style="background-color: lightgray;" class="form-select " id="quest6">
+                        <option value="" selected disabled hidden>Διάλεξε εδώ</option>
+                        <option value="Επαγγελματικής Αναψυχής με μόνιμο πλήρωμα">Επαγγελματικής Αναψυχής με μόνιμο πλήρωμα</option>
+                        <option value="Επαγγελματικής Αναψυχής χωρίς μόνιμο πλήρωμα">Επαγγελματικής Αναψυχής χωρίς μόνιμο πλήρωμα</option>
+                        <option value="Ιδιωτικής Αναψυχής">Ιδιωτικής Αναψυχής</option>
+                    </select>
+                </div>
 
 
 
-            <div class="py-2">
-                <label >Επιθυμείτε συμπληρωματική κάλυψη αστικής ευθύνης κατά τη διάρκεια ενασχόλησης με θαλάσσια σπόρ (Μόνο για σκάφη ιδιωτικής αναψυχής);</label>
-                <select class="form-select " id="quest11" style="background-color: lightgray;">
-                    <option value="Ναι">Ναι </option>
-                    <option value=" Όχι">Όχι</option>
-
-                </select>
-            </div>
+                <div class="py-2">
+                    <label>Πόση συνολική ιπποδύναμη έχει το σκάφος σας;  <span style="color: red;">  *</span> </label>
+                    <input class="form-control " type="text" id="quest7" style="background-color: lightgray;">
+                </div>
 
 
-            <div class="py-2">
-                <label >Επιθυμείτε συμπληρωματική κάλυψη έκρηξης και πυρκαγιάς;</label>
-                <select class="form-select " id="quest12" style="background-color: lightgray;">
-                    <option value="Ναι">Ναι </option>
-                    <option value=" Όχι">Όχι</option>
-
-                </select>
-            </div>
+                <div class="py-2">
+                    <label>Ποιό είναι το μήκος του σκάφους σας;  <span style="color: red;">  *</span></label>
+                    <input class="form-control " type="text" id="quest8" style="background-color: lightgray;">
+                </div>
 
 
-            <div class="py-2">
-                <label>Επιθυμείτε συμπληρωματική κάλυψη αμέλειας χειριστή, κακόβουλης βλάβης και κινδύνων της θάλασσας;</label>
-                <select class="form-select " id="quest13" style="background-color: lightgray;">
-                    <option value="Ναι">Ναι </option>
-                    <option value=" Όχι">Όχι</option>
-
-                </select>
-            </div>
+                <div class="py-2">
+                    <label>Ποιά είναι η αξία του σκάφους σας;  <span style="color: red;">  *</span></label>
+                    <input class="form-control " type="text" id="quest9" style="background-color: lightgray;">
+                </div>
 
 
+                <div class="py-2">
+                    <label>Έχει υπάρξει κάποια ζημία τα τελευταία 5 χρόνια στο σκάφος σας;  <span style="color: red;">  *</span></label>
+                    <select class="form-select " id="quest10" style="background-color: lightgray;">
+                        <option value="" selected disabled hidden>Διάλεξε εδώ</option>
+                        <option value="Ναι">Ναι </option>
+                        <option value=" Όχι">Όχι</option>
 
-            <div class="py-2">
-                <label >Επιθυμείτε συμπληρωματική κάλυψη ιδίων ζημιών κατά τη μεταφορά;</label>
-                <select class="form-select " id="quest14" style="background-color: lightgray;">
-                    <option value="Ναι">Ναι </option>
-                    <option value=" Όχι">Όχι</option>
-
-                </select>
-            </div>
-
-
-            
-            <div class="py-2">
-                <label >Επιθυμείτε συμπληρωματική κάλυψη προσωπικών αντικειμένων έως 1.500€;</label>
-                <select class="form-select " id="quest15" style="background-color: lightgray;">
-                    <option value="Ναι">Ναι </option>
-                    <option value=" Όχι">Όχι</option>
-
-                </select>
-            </div>
-
-            <div class="py-2">
-                <label>Πώς θα επιθυμούσατε να επικοινωνήσουμε μαζί σας; *</label>
-                <select class="form-select " id="quest16" style="background-color: lightgray;">
-                    <option value="Τηλεφωνικά">Τηλεφωνικά</option>
-                    <option value=" Μέσω e-mail">Μέσω e-mail</option>
-
-                </select>
-            </div>
-
-            <div class="py-2">
-                <label>Έχω ενημερωθεί για την επεξεργασία των προσωπικών μου δεδομένων και συναινώ σε αυτήν, όπως ειδικά ορίζεται στο κεφάλαιο "Όροι GDPR" (βλέπε κάτω μέρος σελίδας) *</label>
-                <input class=" form-check" type="checkbox" id="gdpr">
-
-            </div>
-
-            <div class="py-2">
-                <label>Επιθυμώ να ενημερώνομαι για μελλοντικές προωθητικές ενέργειες που αφορούν σε προϊόντα και υπηρεσίες της Greek Insurance Leaders</label>
-                <input class=" form-check" type="checkbox" id="newsletter">
-            </div>
-
-            <p class="text-muted"> Ένα αντίγραφο των απαντήσεών σας θα σταλεί μέσω ηλεκτρονικού ταχυδρομείου στη διεύθυνση που παρείχατε.</p>
-         
-
-            <div class="py-2">
-                <button class="btn btn-danger">Υποβολή Φόρμας</button>
-            </div>
+                    </select>
+                </div>
 
 
-            
 
-  
+                <div class="py-2">
+                    <label>Επιθυμείτε συμπληρωματική κάλυψη αστικής ευθύνης κατά τη διάρκεια ενασχόλησης με θαλάσσια σπόρ (Μόνο για σκάφη ιδιωτικής αναψυχής);</label>
+                    <select class="form-select " id="quest11" style="background-color: lightgray;">
+                        <option value="Ναι">Ναι </option>
+                        <option value=" Όχι">Όχι</option>
+                        <option value="" selected disabled hidden>Διάλεξε εδώ</option>
+
+                    </select>
+                </div>
+
+
+                <div class="py-2">
+                    <label>Επιθυμείτε συμπληρωματική κάλυψη έκρηξης και πυρκαγιάς;</label>
+                    <select class="form-select " id="quest12" style="background-color: lightgray;">
+                        <option value="Ναι">Ναι </option>
+                        <option value=" Όχι">Όχι</option>
+                        <option value="" selected disabled hidden>Διάλεξε εδώ</option>
+
+                    </select>
+                </div>
+
+
+                <div class="py-2">
+                    <label>Επιθυμείτε συμπληρωματική κάλυψη αμέλειας χειριστή, κακόβουλης βλάβης και κινδύνων της θάλασσας;</label>
+                    <select class="form-select " id="quest13" style="background-color: lightgray;">
+                        <option value="Ναι">Ναι </option>
+                        <option value=" Όχι">Όχι</option>
+                        <option value="" selected disabled hidden>Διάλεξε εδώ</option>
+                    </select>
+                </div>
+
+
+
+                <div class="py-2">
+                    <label>Επιθυμείτε συμπληρωματική κάλυψη ιδίων ζημιών κατά τη μεταφορά;</label>
+                    <select class="form-select " id="quest14" style="background-color: lightgray;">
+                        <option value="Ναι">Ναι </option>
+                        <option value=" Όχι">Όχι</option>
+                        <option value="" selected disabled hidden>Διάλεξε εδώ</option>
+
+                    </select>
+                </div>
+
+
+
+                <div class="py-2">
+                    <label>Επιθυμείτε συμπληρωματική κάλυψη προσωπικών αντικειμένων έως 1.500€;</label>
+                    <select class="form-select " id="quest15" style="background-color: lightgray;">
+                        <option value="Ναι">Ναι </option>
+                        <option value=" Όχι">Όχι</option>
+                        <option value="" selected disabled hidden>Διάλεξε εδώ</option>
+                    </select>
+                </div>
+
+                <div class="py-2">
+                    <label>Πώς θα επιθυμούσατε να επικοινωνήσουμε μαζί σας;  <span style="color: red;">  *</span></label>
+                    <select class="form-select " id="quest16" style="background-color: lightgray;">
+                        <option value="Τηλεφωνικά">Τηλεφωνικά</option>
+                        <option value=" Μέσω e-mail">Μέσω e-mail</option>
+                        <option value="" selected disabled hidden>Διάλεξε εδώ</option>
+                    </select>
+                </div>
+
+                <div class="py-2">
+                    <label>Έχω ενημερωθεί για την επεξεργασία των προσωπικών μου δεδομένων και συναινώ σε αυτήν, όπως ειδικά ορίζεται στο κεφάλαιο "Όροι GDPR" (βλέπε κάτω μέρος σελίδας)  <span style="color: red;">  *</span></label>
+                    <input class=" form-check" type="checkbox" id="gdpr">
+
+                </div>
+
+                <div class="py-2">
+                    <label>Επιθυμώ να ενημερώνομαι για μελλοντικές προωθητικές ενέργειες που αφορούν σε προϊόντα και υπηρεσίες της Greek Insurance Leaders</label>
+                    <input class=" form-check" type="checkbox" id="newsletter">
+                </div>
+
+                <p class="text-muted"> Ένα αντίγραφο των απαντήσεών σας θα σταλεί μέσω ηλεκτρονικού ταχυδρομείου στη διεύθυνση που παρείχατε.</p>
+
+
+                <div class="py-2">
+                    <button class="btn btn-danger" id="submitform">Υποβολή Φόρμας</button>
+                </div>
+
+            </form>
+
+
+
+
             <div class=" d-flex  fs-4 px-2 justify-content-between  daybutton  " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                <p class=" d-flex py-2 ">* Όροι GDPR  </p>   <i class="  py-3  align-middle fa-solid fa-down-long  fa-xs"></i>
+                <p class=" d-flex py-2 "> <span style="color: red;">  *</span> Όροι GDPR </p> <i class="  py-3  align-middle fa-solid fa-down-long  fa-xs"></i>
             </div>
 
-            
-            
+
+
             <div class="col-12 my-3">
                 <div class="row">
                     <div class="collapse" id="collapseExample">
@@ -254,15 +262,16 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
                                     </ul>
 
-                                    <p> 
-                                    <b>
-                                        1.  Κάθε πληροφορία που αφορά ταυτοποιημένο ή ταυτοποιήσιμο φυσικό πρόσωπο («υποκείμενο των δεδομένων») όπως αναγνωριστικό στοιχείο ταυτότητας [όνομα, αριθμό ταυτότητας, σωματική, φυσιολογική, ψυχολογική, οικονομική, πολιτιστική ή κοινωνική ταυτότητα του φυσικού προσώπου (Άρθρο 4 Κανονισμού ΕΕ 2016/679)].</b>
-                                        </p>
+                                    <p>
+                                        <b>
+                                            1. Κάθε πληροφορία που αφορά ταυτοποιημένο ή ταυτοποιήσιμο φυσικό πρόσωπο («υποκείμενο των δεδομένων») όπως αναγνωριστικό στοιχείο ταυτότητας [όνομα, αριθμό ταυτότητας, σωματική, φυσιολογική, ψυχολογική, οικονομική, πολιτιστική ή κοινωνική ταυτότητα του φυσικού προσώπου (Άρθρο 4 Κανονισμού ΕΕ 2016/679)].</b>
+                                    </p>
 
-                                     
 
-                                        <p> 
-                                    <b> 2. Πρόκειται για δεδομένα που αφορούν ενδεικτικά την υγεία, καθώς και την φυλετική ή εθνοτική καταγωγή κ.λπ. (Άρθρο 9 Κανονισμού ΕΕ 2016/679). </b></p>
+
+                                    <p>
+                                        <b> 2. Πρόκειται για δεδομένα που αφορούν ενδεικτικά την υγεία, καθώς και την φυλετική ή εθνοτική καταγωγή κ.λπ. (Άρθρο 9 Κανονισμού ΕΕ 2016/679). </b>
+                                    </p>
 
                                     <b> Για πόσο χρόνο θα κρατάτε τα δεδομένα μου σε αρχείο;</b>
 
@@ -357,7 +366,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
 
-
+<script src="../jsforms/boat.js"></script>
 
 <?php
 include_once 'serv_footer.php';

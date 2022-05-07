@@ -30,13 +30,13 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
            <form  action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeF8OL86cETw1M3bvk_ufoclxbBUVjetsF_zefJwX6RJ-f7MQ/formResponse">
             <div class="py-2">
-                <label >Διεύθυνση ηλεκτρονικού ταχυδρομείου *</label>
+                <label >Διεύθυνση ηλεκτρονικού ταχυδρομείου <span style="color: red;"> * </span></label>
                 <input type="email" class="form-control" name="emailAddress"  style="background-color: lightgray;" id="email">
             </div>
 
             <div class="py-2">
 
-                <label >Το ονοματεπώνυμό σας </label>
+                <label  >Το ονοματεπώνυμό σας </label>
                 <input type="text" class="form-control" name="entry.122799716" style="background-color: lightgray;" id="name">
             </div>
 
@@ -44,20 +44,20 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
             <div class="py-2">
 
-                <label >Ημερομηνία γέννησης (εάν η προσφορά αφορά τον υιό/ την κόρη σας, πληκτρολογήστε τη δικιά του/της ημερομηνία γέννησης) *</label>
+                <label >Ημερομηνία γέννησης (εάν η προσφορά αφορά τον υιό/ την κόρη σας, πληκτρολογήστε τη δικιά του/της ημερομηνία γέννησης) <span style="color: red;"> *  </span></label>
                 <input type="text" class="form-control"  name="entry.606906244" style="background-color: lightgray;" id="date_birth">
             </div>
 
             <div class="py-2">
 
-                <label >Ζείτε στο Νομό; *</label>
+                <label >Ζείτε στο Νομό; <span style="color: red;"> *  </span></label>
                 <input type="text" class="form-control" name="entry.907161857" style="background-color: lightgray;" id="loc">
             </div>
 
 
 
             <div class="py-2">
-                <label >Η προσφορά Υγείας είναι: *</label>
+                <label >Η προσφορά Υγείας είναι: <span style="color: red;"> *  </span></label>
                 <select style="background-color: lightgray;" name="entry.619773039" class="form-select"  id="offerfor">
                     <option value="Για εσάς μόνο ή για κάποιο άλλο μέλος της οικογένειάς σας ">Για εσάς μόνο ή για κάποιο άλλο μέλος της οικογένειάς σας </option>
                     <option value="Για εσάς και τον/την σύντροφό σας">Για εσάς και τον/την σύντροφό σας</option>
@@ -70,9 +70,12 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
             <div class="py-2">
                 <label > Το ονοματεπώνυμο και η ημερομηνία γέννησης του/της/των μελών που θέλετε να λάβετε πρόταση ασφάλισης είναι:</label>
-                <input type="text" class="form-control" name="entry.1583976706"  id="familynames" style="background-color: lightgray;">
+                <input type="text" class="form-control my-1"  id="familyinfo" style="background-color: lightgray;" placeholder="Γονέας 1">
+                <input type="text" class="form-control my-1"  id="familyinfo_1" style="background-color: lightgray;" placeholder="Γονέας 2">
+                <input type="text" class="form-control my-1"  id="familyinfo_2" style="background-color: lightgray;" placeholder="Παιδί 1">
+                <input type="text" class="form-control my-1"  id="familyinfo_3" style="background-color: lightgray;"placeholder="Παιδί 2">
+                <input type="text" class="form-control my-1"  id="familyinfo_4" style="background-color: lightgray;" placeholder="Παιδί 3">
             </div>
-
 
 
 
@@ -181,12 +184,12 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label>Ονοματεπώνυμο *</label>
+                <label>Ονοματεπώνυμο <span style="color: red;"> *  </span></label>
                 <input class="form-control " type="text"  name="entry.351314268" id="fullname" style="background-color: lightgray;">
             </div>
 
             <div class="py-2">
-                <label>Τηλέφωνο *</label>
+                <label>Τηλέφωνο <span style="color: red;"> *  </span></label>
                 <input class="form-control " type="text" name="entry.2142741617" id="phone" style="background-color: lightgray;">
             </div>
 
@@ -197,21 +200,21 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
             <div class="py-2">
                 <label>Επικοινωνήσατε ήδη με κάποιο Συνεργάτη;</label>
-                <input class="form-control " type="text" name="entry.1038893661" id="synergathepikinonia" style="background-color: lightgray;">
+                <input class="form-control " type="text" name="entry.1038893661"  id="synergathepikinonia" style="background-color: lightgray;">
             </div>
 
 
 
 
             <div class="py-2">
-                <label>Πότε επιθυμείτε να επικοινωνήσουμε μαζί σας τηλεφωνικά; *</label>
+                <label>Πότε επιθυμείτε να επικοινωνήσουμε μαζί σας τηλεφωνικά; <span style="color: red;"> *  </span></label>
                 <input class="form-control" style="background-color: lightgray;" type="datetime-local" id="meeting-time" name="meeting-time" value="<?php echo $today; ?>" min="<?php echo $today; ?>" max="<?php echo $nextyeartoday; ?>">
             </div>
 
 
 
             <div class="py-2">
-                <label>Έχω ενημερωθεί για την επεξεργασία των προσωπικών μου δεδομένων και συναινώ σε αυτήν, όπως ειδικά ορίζεται στο κεφάλαιο "Όροι GDPR" (βλέπε κάτω μέρος σελίδας) *</label>
+                <label>Έχω ενημερωθεί για την επεξεργασία των προσωπικών μου δεδομένων και συναινώ σε αυτήν, όπως ειδικά ορίζεται στο κεφάλαιο "Όροι GDPR" (βλέπε κάτω μέρος σελίδας) <span style="color: red;"> *  </span></label>
                 <input class=" form-check" type="checkbox" name="entry.1240101745" id="gdpr">
 
             </div>
@@ -227,7 +230,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             
 
             <div class="py-2">
-                <button class="btn btn-danger" id="submit-form">Υποβολή Φόρμας</button>
+                <button class="btn btn-danger" id="submitform">Υποβολή Φόρμας</button>
 
             </div>
 
@@ -386,10 +389,9 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
 
-
+<script src="../jsforms/health.js"></script>
 
 <?php
 include_once 'serv_footer.php';
 ?>
 
-<script src="../jsforms/healthform.js"></script>

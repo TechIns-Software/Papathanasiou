@@ -31,6 +31,8 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
         <h3>Προσφορά Ταξιδιωτικής Ασφάλισης</h3>
         <hr style="border: 2px solid green;">
            
+        <!-- <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe-zq63DLJQq71DZtW__I5NpgvBgQCtpF2F2x6Z0OaHVZFWww/formResponse"> -->
+    
             <div class="py-2">
                 <label >Διεύθυνση ηλεκτρονικού ταχυδρομείου *</label>
                 <input type="email" class="form-control" style="background-color: lightgray;" id="email">
@@ -38,12 +40,12 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
             <div class="py-2">
 
-                <label>Το ονοματεπώνυμό σας </label>
+                <label>Ονοματεπώνυμο * </label>
                 <input type="text" class="form-control" style="background-color: lightgray;" id="fullname">
             </div>
 
             <div class="py-2">
-                <label >Το τηλέφωνό σας είναι:  *</label>
+                <label >Το τηλέφωνό σας είναι:  </label>
                 <input class="form-control "  type="text" id="phone" style="background-color: lightgray;">
             </div>
 
@@ -141,10 +143,11 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
           
 
             <div class="py-2">
-                <button class="btn btn-danger">Υποβολή Φόρμας</button>
+                <button class="btn btn-danger" id="submitform">Υποβολή Φόρμας</button>
             </div>
 
 
+            
             
 
 
@@ -301,7 +304,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
 
-
+<script src="../jsforms/trip.js"></script>
 
 
 <?php
