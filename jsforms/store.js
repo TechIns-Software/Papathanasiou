@@ -64,13 +64,15 @@ submitbtn.addEventListener("click", (e) => {
         }
 
         if (gdpr.checked) {
+
+        console.log(dataToPost)
             fetch(url, {
                 method: "POST",
                 mode: "no-cors",
                 header: {
                     'Content-Type': 'application/json'
                 },
-                body: getInputData()
+                body: dataToPost
             })
                 .then(data => {
                     console.log(data);

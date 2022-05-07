@@ -31,16 +31,16 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
         <h3>Προσφορά Ταξιδιωτικής Ασφάλισης</h3>
         <hr style="border: 2px solid green;">
            
-        <!-- <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe-zq63DLJQq71DZtW__I5NpgvBgQCtpF2F2x6Z0OaHVZFWww/formResponse"> -->
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe-zq63DLJQq71DZtW__I5NpgvBgQCtpF2F2x6Z0OaHVZFWww/formResponse">
     
             <div class="py-2">
-                <label >Διεύθυνση ηλεκτρονικού ταχυδρομείου *</label>
+                <label >Διεύθυνση ηλεκτρονικού ταχυδρομείου  <span style="color: red;">  *</span></label>
                 <input type="email" class="form-control" style="background-color: lightgray;" id="email">
             </div>
 
             <div class="py-2">
 
-                <label>Ονοματεπώνυμο * </label>
+                <label>Ονοματεπώνυμο  <span style="color: red;">  *</span> </label>
                 <input type="text" class="form-control" style="background-color: lightgray;" id="fullname">
             </div>
 
@@ -53,13 +53,13 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
             <div class="py-2">
 
-                <label >Πότε είναι η έναρξη του ταξιδίου; *</label>
+                <label >Πότε είναι η έναρξη του ταξιδίου;  <span style="color: red;">  *</span></label>
                 <input type="date" class="form-control" style="background-color: lightgray;" id="trip_start">
             </div>
 
             <div class="py-2">
 
-                <label >Πότε είναι η λήξη του ταξιδίου; * </label>
+                <label >Πότε είναι η λήξη του ταξιδίου;  <span style="color: red;">  *</span> </label>
                 <input type="date" class="form-control" style="background-color: lightgray;" id="trip_end">
             </div>
 
@@ -68,7 +68,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label> Ποίος είναι ο προορισμός σας; *</label>
+                <label> Ποίος είναι ο προορισμός σας;  <span style="color: red;">  *</span></label>
                 <input type="text" class="form-control" id="quest1" style="background-color: lightgray;">
             </div>
 
@@ -76,8 +76,9 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             
             
             <div class="py-2">
-                <label >Υπάρχουν ενδιάμεσες στάσεις σε κάποια/ες χώρα/ες; * </label>
+                <label >Υπάρχουν ενδιάμεσες στάσεις σε κάποια/ες χώρα/ες;  <span style="color: red;">  *</span> </label>
                 <select style="background-color: lightgray;" class="form-select " id="quest2">
+                <option value="" selected disabled hidden>Διάλεξε εδώ</option>
                         <option value="Ναι">Ναι</option>
                         <option value=" Όχι">Όχι</option>
      
@@ -93,14 +94,15 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label > Πόσοι είναι οι ταξιδιώτες; *</label>
+                <label > Πόσοι είναι οι ταξιδιώτες;  <span style="color: red;">  *</span></label>
                 <input type="text" class="form-control" id="quest4" style="background-color: lightgray;">
             </div>
 
 
             <div class="py-2">
-                <label >Επιθυμείτε, πέραν της βασικής κάλυψης, και κάλυψη ακύρωσης ταξιδίου; * </label>
+                <label >Επιθυμείτε, πέραν της βασικής κάλυψης, και κάλυψη ακύρωσης ταξιδίου;  <span style="color: red;">  *</span> </label>
                 <select style="background-color: lightgray;" class="form-select " id="quest5">
+                <option value="" selected disabled hidden>Διάλεξε εδώ</option>
                         <option value="Ναι">Ναι</option>
                         <option value=" Όχι">Όχι</option>
      
@@ -108,8 +110,9 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             </div>
 
             <div class="py-2">
-                <label>Επιθυμείτε, πέραν της βασικής κάλυψης, και κάλυψη απώλειας αποσκευών;  * </label>
+                <label>Επιθυμείτε, πέραν της βασικής κάλυψης, και κάλυψη απώλειας αποσκευών;   <span style="color: red;">  *</span> </label>
                 <select style="background-color: lightgray;" class="form-select " id="quest6">
+                <option value="" selected disabled hidden>Διάλεξε εδώ</option>
                         <option value="Ναι">Ναι</option>
                         <option value=" Όχι">Όχι</option>
      
@@ -117,17 +120,20 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             </div>
 
             <div class="py-2">
-                <label >Πώς θα επιθυμούσατε να επικοινωνήσουμε μαζί σας;  * </label>
+                <label >Πώς θα επιθυμούσατε να επικοινωνήσουμε μαζί σας;   <span style="color: red;">  *</span> </label>
                     <select style="background-color: lightgray;" class="form-select " id="quest7">
+                    <option value="" selected disabled hidden>Διάλεξε εδώ</option>
                         <option value="Τηλεφωνικά">Τηλεφωνικά</option>
                         <option value=" Μέσω e-mail">Μέσω e-mail</option>
                     </select>
             </div>
 
+            
+
 
                         
             <div class="py-2">
-                <label >Έχω ενημερωθεί για την επεξεργασία των προσωπικών μου δεδομένων και συναινώ σε αυτήν, όπως ειδικά ορίζεται στο κεφάλαιο "Όροι GDPR" (βλέπε κάτω μέρος σελίδας) *</label>
+                <label >Έχω ενημερωθεί για την επεξεργασία των προσωπικών μου δεδομένων και συναινώ σε αυτήν, όπως ειδικά ορίζεται στο κεφάλαιο "Όροι GDPR" (βλέπε κάτω μέρος σελίδας)  <span style="color: red;">  *</span></label>
                 <input class=" form-check" type="checkbox" id="gdpr">
               
             </div>
@@ -146,13 +152,13 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
                 <button class="btn btn-danger" id="submitform">Υποβολή Φόρμας</button>
             </div>
 
-
+        </form>
             
             
 
 
             <div class=" d-flex  fs-4 px-2 justify-content-between  daybutton  " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                <p class=" d-flex py-2 ">* Όροι GDPR  </p>   <i class="  py-3  align-middle fa-solid fa-down-long  fa-xs"></i>
+                <p class=" d-flex py-2 "> <span style="color: red;">  *</span> Όροι GDPR  </p>   <i class="  py-3  align-middle fa-solid fa-down-long  fa-xs"></i>
             </div>
 
             

@@ -25,8 +25,8 @@ submitbtn.addEventListener("click", (e) => {
   if (
     email.value &&
     name.value &&
-    trip_start.value &&
-    trip_end.value &&
+    trip_start &&
+    trip_end &&
     destination.value &&
     stops.value &&
     travelers.value &&
@@ -67,7 +67,6 @@ submitbtn.addEventListener("click", (e) => {
 
     dataToPost.append("entry.941353677", contact.value);
 
-
     if (newsletter.checked) {
       dataToPost.append("entry.1762482218", "Ναι");
     } else {
@@ -79,6 +78,8 @@ submitbtn.addEventListener("click", (e) => {
         "entry.90757463",
         "Έχω ενημερωθεί για την επεξεργασία των προσωπικών μου δεδομένων και συναινώ σε αυτήν, όπως ειδικά ορίζεται στο κεφάλαιο Όροι GDPR (βλέπε κάτω μέρος σελίδας)"
       );
+ 
+      console.log(dataToPost)
 
       fetch(url, {
         method: "POST",
@@ -86,7 +87,7 @@ submitbtn.addEventListener("click", (e) => {
         header: {
           "Content-Type": "application/json",
         },
-        body: getInputData(),
+        body:dataToPost,
       })
         .then((data) => {
           console.log(data);

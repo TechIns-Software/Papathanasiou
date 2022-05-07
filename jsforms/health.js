@@ -82,6 +82,8 @@ submitbtn.addEventListener("click", (e) => {
             dataToPost.append("entry.306761765","Επιθυμώ να ενημερώνομαι για μελλοντικές προωθητικές ενέργειες που αφορούν σε προϊόντα και υπηρεσίες της Greek Insurance Leaders")  
         }
 
+        console.log(dataToPost)
+
         if (gdpr.checked) {
             fetch(url, {
                 method: "POST",

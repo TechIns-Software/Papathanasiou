@@ -75,13 +75,14 @@ submitbtn.addEventListener("click", (e) => {
         if (gdpr.checked) {
             dataToPost.append("entry.90757463", "Έχω ενημερωθεί για την επεξεργασία των προσωπικών μου δεδομένων και συναινώ σε αυτήν, όπως ειδικά ορίζεται στο κεφάλαιο Όροι GDPR (βλέπε κάτω μέρος σελίδας)");
             
+            console.log(dataToPost)
             fetch(url, {
                 method: "POST",
                 mode: "no-cors",
                 header: {
                     'Content-Type': 'application/json'
                 },
-                body: getInputData()
+                body: dataToPost
             })
                 .then(data => {
                     console.log(data);
