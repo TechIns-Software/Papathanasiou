@@ -320,7 +320,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <button class="btn btn-danger">Submit Form</button>
+                <button class="btn btn-danger" id="submitform">Submit Form</button>
             </div>
 
             <!-- </form> -->
