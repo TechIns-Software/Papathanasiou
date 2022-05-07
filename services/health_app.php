@@ -26,6 +26,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             <h3> Online Health Insurance Application </h3>
             <hr style="border: 3px solid red;">
 
+            <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfc593KeuwLJJMhiHkmQ1xaGHc9BtQXXoNbpoaEo-UaWwE4gQ/formResponse">
             <!-- <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfc593KeuwLJJMhiHkmQ1xaGHc9BtQXXoNbpoaEo-UaWwE4gQ/formResponse"> -->
             <div class="py-2">
                 <label>Διεύθυνση ηλεκτρονικού ταχυδρομείου *</label>
@@ -322,7 +323,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             <div class="py-2">
                 <button class="btn btn-danger" id="submitform">Submit Form</button>
             </div>
-
+            </form>
             <!-- </form> -->
 
             <div class=" d-flex  fs-4 px-2 justify-content-between  daybutton  " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
