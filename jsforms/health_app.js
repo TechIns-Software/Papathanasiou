@@ -129,9 +129,9 @@
                 dataToPost.append("entry.326607876",psychoinfo.value);
                 dataToPost.append("entry.1078823131",femalappl.value);
                 dataToPost.append("entry.1289962175",femalapplinfo.value);
-                dataToPost.append("entry.222193608",namefinal);
-                dataToPost.append("entry.833470433",emailfinal);
-                dataToPost.append("entry.1187542328",phonefinal);
+                dataToPost.append("entry.222193608",namefinal.value);
+                dataToPost.append("entry.833470433",emailfinal.value);
+                dataToPost.append("entry.1187542328",phonefinal.value);
 
                 dataToPost.append("entry.1570452407","Yes");
 
