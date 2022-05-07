@@ -23,9 +23,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 		<div class="col-md-12 offset-md-12 ">
 			<h3>Test Form</h3>
 			<hr style="border: 2px solid blue;">
-
-			<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSentaiL91WEMhNfHpJO8Pg0Hj_tU9WtTBKbaIarV35RIhbtDQ/formResponse">
-
+			
 				<div class="py-2">
 					<label>Διεύθυνση ηλεκτρονικού ταχυδρομείου *</label>
 					<input type="email" class="form-control" name="entry.739531254" style="background-color: lightgray;" id="email">
@@ -52,7 +50,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 				<div class="py-2">
 				<button class="btn btn-danger" id="submitform">Υποβολή Φόρμας</button>
 				</div>
-			</form>
+		
 
 
 
