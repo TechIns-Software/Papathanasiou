@@ -3,7 +3,7 @@
             let url = "https://docs.google.com/forms/u/1/d/e/1FAIpQLSfc593KeuwLJJMhiHkmQ1xaGHc9BtQXXoNbpoaEo-UaWwE4gQ/formResponse"; //action url
             let submitbtn = document.getElementById("submitform"); //form element
 
-            submitbtn.addEventListener("submit", (e) => {
+            submitbtn.addEventListener("click", (e) => {
                 e.preventDefault(); //prevent default behaviour
 
                 fetch(url, {
