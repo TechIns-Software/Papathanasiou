@@ -23,7 +23,9 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 		<div class="col-md-12 offset-md-12 ">
 			<h3>Test Form</h3>
 			<hr style="border: 2px solid blue;">
-			
+
+			<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSentaiL91WEMhNfHpJO8Pg0Hj_tU9WtTBKbaIarV35RIhbtDQ/formResponse">
+
 				<div class="py-2">
 					<label>Διεύθυνση ηλεκτρονικού ταχυδρομείου *</label>
 					<input type="email" class="form-control" name="entry.739531254" style="background-color: lightgray;" id="email">
@@ -58,41 +60,6 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 				<p class=" d-flex py-2 ">* Όροι GDPR </p> <i class="  py-3  align-middle fa-solid fa-down-long  fa-xs"></i>
 			</div>
 
-
-			<script>
-				let url = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSentaiL91WEMhNfHpJO8Pg0Hj_tU9WtTBKbaIarV35RIhbtDQ/formResponse"; //action url
-				let submitbtn = document.getElementById("submitform"); //form element
-
-				submitbtn.addEventListener("submit", (e) => {
-					e.preventDefault(); //prevent default behaviour
-
-					fetch(url, {
-							method: "POST",
-							mode: "no-cors",
-							header: {
-								'Content-Type': 'application/json'
-							},
-							body: getInputData()
-						})
-						.then(data => {
-							console.log(data);
-							alert("Form Submitted");
-						})
-						.catch(err => console.error(err)); //promise based
-				});
-
-				//populating input data
-				function getInputData() {
-					let dataToPost = new FormData(); //formdata API
-
-					//fill name attributes to corresponding values
-					dataToPost.append("entry.739531254", document.querySelector("#email").value);
-					dataToPost.append("entry.1246754399", document.querySelector("#name").value);
-					dataToPost.append("entry.1010677732", document.querySelector("#quest3").value);
-
-					return dataToPost;
-				}
-			</script>
 
 
 

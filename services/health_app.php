@@ -26,14 +26,35 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             <h3> Online Health Insurance Application </h3>
             <hr style="border: 3px solid red;">
 
+            <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfc593KeuwLJJMhiHkmQ1xaGHc9BtQXXoNbpoaEo-UaWwE4gQ/formResponse">
             <div class="py-2">
                 <label>Διεύθυνση ηλεκτρονικού ταχυδρομείου *</label>
                 <input type="email" class="form-control" style="background-color: lightgray;" id="email">
             </div>
 
+
+            <div class="py-2 ">
+                <label>Your first name is: *</label>
+                <div class="d-flex">
+                <input type="text" class="form-control mx-1" style="background-color: lightgray;"  id="name">
+                </div>
+            </div>
+
+
+            
             <div class="py-2">
-                <label>Your full name is: *</label>
-                <input type="text" class="form-control" style="background-color: lightgray;" id="name">
+                <label>Your middle name is: *</label>
+                <div class="d-flex">
+                <input type="text" class="form-control mx-1" style="background-color: lightgray;"  id="midlename">
+                </div>
+            </div>
+
+                        
+            <div class="py-2">
+                <label>Your surname name is: *</label>
+                <div class="d-flex">
+                <input type="text" class="form-control mx-1" style="background-color: lightgray;"  id="surname">
+                </div>
             </div>
 
             <div class="py-2">
@@ -57,14 +78,19 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             </div>
 
             <div class="py-2">
-                <label>Your Greek tax number (optional) and your passport number are:
+                <label>Your Greek tax number (optional) is  :
                     *</label>
                 <input class="form-control " type="text" id="quest2" style="background-color: lightgray;">
             </div>
 
+
             <div class="py-2">
-                <label>How many square meters is your home? *</label>
-                <input class="form-control " type="text" id="quest3" style="background-color: lightgray;">
+                <label>Your passport number is * :</label>
+                <input class="form-control my-1" type="text" id="quest3" style="background-color: lightgray;" placeholder="Parent 1 Passport">
+                <input class="form-control  my-1" type="text" id="quest3_1" style="background-color: lightgray;" placeholder="Parent 2 Passport">
+                <input class="form-control  my-1" type="text" id="quest3_2" style="background-color: lightgray;" placeholder="Child 1 Passport">
+                <input class="form-control my-1" type="text" id="quest3_3" style="background-color: lightgray;" placeholder="Child 2 Passport">
+                <input class="form-control my-1" type="text" id="quest3_4" style="background-color: lightgray;" placeholder="Child 3 Passport">
             </div>
 
 
@@ -77,7 +103,8 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             <div class="py-2">
                 <label>Your profession is:
                 </label>
-                <input class="form-control " type="text" id="quest5" style="background-color: lightgray;">
+                <input class="form-control  my-1" type="text" id="quest5" style="background-color: lightgray;" placeholder="Parrent 1 Profession">
+                <input class="form-control my-1 " type="text" id="quest5_1" style="background-color: lightgray;" placeholder="Parrent 2 Profession">
             </div>
 
             <div class="py-2">
@@ -89,10 +116,13 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label>What is your height (cm)? *
+                <label>What is your height (cm)? * </label>
 
-                </label>
-                <input class="form-control " type="text" id="quest7" style="background-color: lightgray;">
+                <input class="form-control my-1 " type="text" id="quest7" style="background-color: lightgray;" placeholder="Parrent 1 Height">
+                <input class="form-control  my-1" type="text" id="quest7_1" style="background-color: lightgray;" placeholder="Parrent 2 Height">
+                <input class="form-control my-1 " type="text" id="quest7_2" style="background-color: lightgray;" placeholder="Child 1 Height">
+                <input class="form-control my-1 " type="text" id="quest7_3" style="background-color: lightgray;" placeholder="Child 2 Height">
+                <input class="form-control  my-1" type="text" id="quest7_4" style="background-color: lightgray;" placeholder="Child 3 Height">
             </div>
 
 
@@ -100,7 +130,11 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             <div class="py-2">
                 <label>What is your weight (kg) ? *
                 </label>
-                <input class="form-control " type="text" id="quest8" style="background-color: lightgray;">
+                <input class="form-control my-1" type="text" id="quest8" style="background-color: lightgray;" placeholder="Parrent 1 weight">
+                <input class="form-control my-1 " type="text" id="quest8_1" style="background-color: lightgray;" placeholder="Parrent 2 weight">
+                <input class="form-control my-1" type="text" id="quest8_2" style="background-color: lightgray;"  placeholder="Child 1 weight" >
+                <input class="form-control my-1" type="text" id="quest8_3" style="background-color: lightgray;"  placeholder="Child 2 weight">
+                <input class="form-control my-1" type="text" id="quest8_4" style="background-color: lightgray;"  placeholder="Child 3 weight">
             </div>
 
             <div class="py-2">
@@ -110,116 +144,18 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             </div>
 
             <div class="py-2">
-                <label>Please enter your family members' names and birth dates.
-
-                </label>
-                <input class="form-control " type="text" id="quest10" style="background-color: lightgray;">
+                <label>Please enter your family members' names and birth dates.   </label>
+               
+              
+                <input class="form-control   my-1" type="text" id="quest10" style="background-color: lightgray;" placeholder=" Parent1 09/07/1999">
+                <input class="form-control   my-1 members" type="text" id="quest10_1" style="background-color: lightgray;"  placeholder="Parent2  09/07/1999">
+                <input class="form-control  my-1 members" type="text" id="quest10_2" style="background-color: lightgray;" placeholder="Child1 09/07/1999">
+                <input class="form-control   my-1 members" type="text" id="quest10_3" style="background-color: lightgray;" placeholder="Child2  09/07/1999">
+                <input class="form-control  my-1 members" type="text" id="quest10_4" style="background-color: lightgray;" placeholder="Child3 09/07/1999">
+         
+                
             </div>
-
-
-
-            <div class="py-2">
-                <label>Do you have social Insurance in Greece? *</label>
-                <select style="background-color: lightgray;" class="form-select " id="quest11">
-                    <option value="Yes">Yes</option>
-                    <option value="Νo">Νo</option>
-                    <option value="Maybe">Maybe</option>
-                </select>
-            </div>
-
-
-            <div class="py-2">
-                <label>About Health Insurance, what is the most important for you?
-                    *</label>
-                <select style="background-color: lightgray;" class="form-select " id="quest12">
-                    <option value="Healthcare in Doctors and Examinations">Healthcare in Doctors and Examinations</option>
-                    <option value="Coverage of Surgeries and Hospital care">Coverage of Surgeries and Hospital care</option>
-                    <option value="Both of them">Both of them</option>
-                </select>
-            </div>
-
-
-            <div class="py-2">
-                <label>About Health Insurance, do you need a basic program just to be usable for a residence card?
-                    *</label>
-                <select style="background-color: lightgray;" class="form-select " id="quest13">
-                    <option value="Yes">Yes</option>
-                    <option value="Νo">Νo</option>
-                    <option value="Maybe">Maybe</option>
-                </select>
-            </div>
-
-
-
-            <div class="py-2">
-                <label>About Health Insurance, would you prefer to pay less money in insurance company and participate in the cost of hospital?
-                    *</label>
-                <select style="background-color: lightgray;" class="form-select " id="quest13">
-                    <option value="Yes">Yes</option>
-                    <option value="Νo">Νo</option>
-                    <option value="Maybe">Maybe</option>
-                </select>
-            </div>
-
-
-            <div class="py-2">
-                <label>In which amount would you prefer to participate in the cost of hospital?
-                    *</label>
-                <select style="background-color: lightgray;" class="form-select " id="quest14">
-                    <option value="0€">0€</option>
-                    <option value="500€">500€</option>
-                    <option value="1500€">1500€</option>
-                    <option value="2000€">2000€</option>
-                    <option value="20%">20%</option>
-                </select>
-            </div>
-
-            <div class="py-2">
-                <label>Is there a Greek private Hospital that you prefer instead of all the others?*</label>
-                <select style="background-color: lightgray;" class="form-select " id="quest15">
-                    <option value="Yes">Yes</option>
-                    <option value="Νo">Νo</option>
-                </select>
-            </div>
-
-
-            <div class="py-2">
-                <label>If there is a Greek private Hospital that you prefer instead of all the others, which one is that? </label>
-                <input class="form-control " type="text" id="quest16" style="background-color: lightgray;">
-            </div>
-
-
-
-
-            <div class="py-2">
-                <label>What is the upper limit of coverage that you would prefer to have for a hospital for each member of your family per year?
-                    *</label>
-                <select style="background-color: lightgray;" class="form-select " id="quest17">
-                    <option value="20.000">20.000</option>
-                    <option value="50.000">50.000</option>
-                    <option value="100.000">100.000</option>
-                    <option value="300.000">300.000</option>
-                    <option value="500.000">500.000</option>
-                    <option value="1.000.000">1.000.000</option>
-                </select>
-            </div>
-
-
-            <div class="py-2">
-                <label>What is the annual budget that you can pay for a Health Insurance Program? </label>
-                <input class="form-control " type="text" id="quest18" style="background-color: lightgray;">
-            </div>
-
-
-            <div class="py-2">
-                <label>Are you willing to stay for more than six months in Greece during the next year?
-                    *</label>
-                <select style="background-color: lightgray;" class="form-select " id="quest19">
-                    <option value="Yes">Yes</option>
-                    <option value="Νo">Νo</option>
-                    <option value="Maybe">Maybe</option>
-                </select>
-            </div>
+        
 
             <div class="py-2">
                 <label>Do you smoke? *</label>
@@ -228,6 +164,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
                     <option value="Νo">Νo</option>
                 </select>
             </div>
+
 
             <div class="py-2">
                 <label>Do you drink a lot of alcohol? *</label>
@@ -243,6 +180,8 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
                 <input class="form-control " type="text" id="quest22" style="background-color: lightgray;">
             </div>
 
+
+            
 
             <div class="py-2">
                 <label>Have you ever used drugs? *</label>
@@ -282,13 +221,13 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             </div>
 
             <div class="py-2">
-                <label>If so please elaborate.</label>
+                <label>If so please elaborate and (which member)</label>
                 <input class="form-control " type="text" id="quest28" style="background-color: lightgray;">
             </div>
 
             <div class="py-2">
                 <label>Do you have any problem with your eyes (e.x. myopia) ? *</label>
-                <select style="background-color: lightgray;" class="form-select " id="quest28">
+                <select style="background-color: lightgray;" class="form-select " id="eyes">
                     <option value="Yes">Yes</option>
                     <option value="Νo">Νo</option>
                 </select>
@@ -296,10 +235,11 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label>If so please elaborate.</label>
+                <label>If so please elaborate and (which member)</label>
                 <input class="form-control " type="text" id="quest29" style="background-color: lightgray;">
             </div>
 
+            
             <div class="py-2">
                 <label>Did any of your parents pass away before they were 60 years old?
                     *</label>
@@ -326,7 +266,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             </div>
 
             <div class="py-2">
-                <label>If so please elaborate.</label>
+                <label>If so please elaborate (and which member)</label>
                 <input class="form-control " type="text" id="quest33" style="background-color: lightgray;">
             </div>
 
@@ -344,26 +284,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
                 <input class="form-control " type="text" id="quest35" style="background-color: lightgray;">
             </div>
 
-            <div class="py-2">
-                <label>Would you like an Insurance Broker from Greek Insurance Leaders to contact with you?
-                    *</label>
-                <select style="background-color: lightgray;" class="form-select " id="quest36">
-                    <option value="Yes">Yes</option>
-                    <option value="Νo">Νo</option>
-                    <option value="Maybe">Maybe</option>
-                </select>
-            </div>
 
-
-            <div class="py-2">
-                <label>What is the best way for you to contact?
-                    *</label>
-                <select style="background-color: lightgray;" class="form-select " id="quest37">
-                    <option value="By messenger">By messenger</option>
-                    <option value="By E-mail">By E-mail</option>
-                    <option value="By telephone">By telephone</option>
-                </select>
-            </div>
 
             <div class="py-2">
                 <label>What is your name?</label>
@@ -401,6 +322,8 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             <div class="py-2">
                 <button class="btn btn-danger">Submit Form</button>
             </div>
+
+            </form>
 
             <div class=" d-flex  fs-4 px-2 justify-content-between  daybutton  " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                 <p class=" d-flex py-2 ">* GDPR Terms</p> <i class="  py-3  align-middle fa-solid fa-down-long  fa-xs"></i>
@@ -548,7 +471,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 </div>
 
 
-
+<script src="../jsforms/health_app.js"></script>
 
 
 

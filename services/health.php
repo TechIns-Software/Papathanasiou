@@ -12,9 +12,6 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 ?>
 
 
-
-
-
 <section>
     <div class="container text-center">
 
@@ -31,15 +28,16 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             <h3>Προσφορά Ασφάλισης Υγείας</h3>
             <hr style="border: 2px solid blue;">
 
+           <form  action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeF8OL86cETw1M3bvk_ufoclxbBUVjetsF_zefJwX6RJ-f7MQ/formResponse">
             <div class="py-2">
                 <label >Διεύθυνση ηλεκτρονικού ταχυδρομείου *</label>
-                <input type="email" class="form-control" style="background-color: lightgray;" id="email">
+                <input type="email" class="form-control" name="emailAddress"  style="background-color: lightgray;" id="email">
             </div>
 
             <div class="py-2">
 
                 <label >Το ονοματεπώνυμό σας </label>
-                <input type="text" class="form-control" style="background-color: lightgray;" id="name">
+                <input type="text" class="form-control" name="entry.122799716" style="background-color: lightgray;" id="name">
             </div>
 
 
@@ -47,20 +45,20 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             <div class="py-2">
 
                 <label >Ημερομηνία γέννησης (εάν η προσφορά αφορά τον υιό/ την κόρη σας, πληκτρολογήστε τη δικιά του/της ημερομηνία γέννησης) *</label>
-                <input type="text" class="form-control" style="background-color: lightgray;" id="date_birth">
+                <input type="text" class="form-control"  name="entry.606906244" style="background-color: lightgray;" id="date_birth">
             </div>
 
             <div class="py-2">
 
                 <label >Ζείτε στο Νομό; *</label>
-                <input type="text" class="form-control" style="background-color: lightgray;" id="loc">
+                <input type="text" class="form-control" name="entry.907161857" style="background-color: lightgray;" id="loc">
             </div>
 
 
 
             <div class="py-2">
                 <label >Η προσφορά Υγείας είναι: *</label>
-                <select style="background-color: lightgray;" class="form-select" name="" id="offerfor">
+                <select style="background-color: lightgray;" name="entry.619773039" class="form-select"  id="offerfor">
                     <option value="Για εσάς μόνο ή για κάποιο άλλο μέλος της οικογένειάς σας ">Για εσάς μόνο ή για κάποιο άλλο μέλος της οικογένειάς σας </option>
                     <option value="Για εσάς και τον/την σύντροφό σας">Για εσάς και τον/την σύντροφό σας</option>
                     <option value="Για εσάς και δύο ακόμα μέλη της οικογένειας σας">Για εσάς και δύο ακόμα μέλη της οικογένειας σας</option>
@@ -72,7 +70,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
             <div class="py-2">
                 <label > Το ονοματεπώνυμο και η ημερομηνία γέννησης του/της/των μελών που θέλετε να λάβετε πρόταση ασφάλισης είναι:</label>
-                <input type="text" class="form-control" id="familynames" style="background-color: lightgray;">
+                <input type="text" class="form-control" name="entry.1583976706"  id="familynames" style="background-color: lightgray;">
             </div>
 
 
@@ -80,7 +78,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
             <div class="py-2">
                 <label >Ποιο είναι το ποσό που θα σας έκανε να αισθανθείτε ασφαλής, εφόσον υπήρχε διαθέσιμο μόνο για επείγουσες περιπτώσεις ΥΓΕΙΑΣ για το κάθε μέλος της οικογένειάς σας ξεχωριστά :</label>
-                <select style="background-color: lightgray;" class="form-select " id="safeamount">
+                <select style="background-color: lightgray;" name="entry.82583277" class="form-select " id="safeamount">
                     <option value="20.000">20.000 €</option>
                     <option value="50.000">50.000</option>
                     <option value="100.000">100.000</option>
@@ -93,7 +91,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
             <div class="py-2">
                 <label >Ποια είναι η Ιδιωτική Κλινική που θα επιλέγατε σε περίπτωση νοσηλείας ή επέμβασης ; </label>
-                <select style="background-color: lightgray;" class="form-select " id="safehospital">
+                <select style="background-color: lightgray;" class="form-select" name="entry.1758492893" id="safehospital">
                     <option value="Metropolitan General Αθηνών">Metropolitan General Αθηνών</option>
                     <option value="Διαβαλκανικό Ιατρικό Κέντρο Θεσσαλονίκης">Διαβαλκανικό Ιατρικό Κέντρο Θεσσαλονίκης</option>
                     <option value="Υγεία Αθηνών">Υγεία Αθηνών</option>
@@ -111,7 +109,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
             <div class="py-2">
                 <label >Δικαιούστε κοινωνική ασφάλιση; (ΕΟΠΥΥ/ΕΦΚΑ); </label>
-                <select class="form-select " id="koinasfalia" style="background-color: lightgray;">
+                <select class="form-select " id="koinasfalia" name="entry.1724228595" style="background-color: lightgray;">
                     <option value="NAI">NAI</option>
                     <option value=" OXI">OXI</option>
                 </select>
@@ -120,7 +118,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
             <div class="py-2">
                 <label >Θα προτιμούσατε να πληρώνετε λιγότερα στην Ασφαλιστική εταιρία, αλλά να συμμετέχετε στην περίπτωση νοσηλείας; </label>
-                <select class="form-select " id="quest1" style="background-color: lightgray;">
+                <select class="form-select " id="quest1"  name="entry.1081812867" style="background-color: lightgray;">
                     <option value="NAI">NAI</option>
                     <option value=" OXI">OXI</option>
                 </select>
@@ -129,7 +127,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
             <div class="py-2">
                 <label >Θα θέλατε να συμμετέχετε σε περίπτωση νοσηλείας με το ποσό ή το ποσοστό; </label>
-                <select class="form-select " id="quest2" style="background-color: lightgray;">
+                <select class="form-select " id="quest2" name="entry.457555376" style="background-color: lightgray;">
                     <option value="0€">0€ </option>
                     <option value=" 500€">500€</option>
                     <option value=" 1500€">1500€</option>
@@ -141,7 +139,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
             <div class="py-2">
                 <label >Θα σας ενδιέφερε να μπορείτε να επισκεφτείτε Ιατρούς και Διαγνωστικά Κέντρα πληρώνοντας μόνο μία μικρή συμμετοχή;</label>
-                <select class="form-select " id="quest3" style="background-color: lightgray;">
+                <select class="form-select " id="quest3"  name="entry.799554824" style="background-color: lightgray;">
                     <option value="NAI">NAI</option>
                     <option value=" OXI">OXI</option>
                 </select>
@@ -152,7 +150,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
             <div class="py-2">
                 <label >Σας ενδιαφέρει η νοσηλεία εκτός Ευρώπης;</label>
-                <select class="form-select " id="quest4" style="background-color: lightgray;">
+                <select class="form-select " id="quest4" name="entry.1538654494" style="background-color: lightgray;">
                     <option value="NAI">NAI</option>
                     <option value=" OXI">OXI</option>
                 </select>
@@ -161,7 +159,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
             <div class="py-2">
                 <label>Σας ενδιαφέρει η αποκατάσταση μετά από μεγάλες επεμβάσεις;</label>
-                <select class="form-select " id="quest5" style="background-color: lightgray;">
+                <select class="form-select " id="quest5" name="entry.1044707729" style="background-color: lightgray;">
                     <option value="NAI">NAI</option>
                     <option value=" OXI">OXI</option>
                 </select>
@@ -171,7 +169,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
             <div class="py-2">
                 <label>Ποιο είναι το ποσό που είστε διατεθιμένοι να διαθέσετε μηνιαίως για την ασφάλιση Υγείας;</label>
-                <select class="form-select " id="quest6" style="background-color: lightgray;">
+                <select class="form-select " id="quest6" name="entry.1247490115" style="background-color: lightgray;">
                     <option value="€ 20">€ 20</option>
                     <option value=" € 50">€ 50</option>
                     <option value=" € 100">€ 100</option>
@@ -184,22 +182,22 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
             <div class="py-2">
                 <label>Ονοματεπώνυμο *</label>
-                <input class="form-control " type="text" id="fullname" style="background-color: lightgray;">
+                <input class="form-control " type="text"  name="entry.351314268" id="fullname" style="background-color: lightgray;">
             </div>
 
             <div class="py-2">
                 <label>Τηλέφωνο *</label>
-                <input class="form-control " type="text" id="phone" style="background-color: lightgray;">
+                <input class="form-control " type="text" name="entry.2142741617" id="phone" style="background-color: lightgray;">
             </div>
 
             <div class="py-2">
                 <label>Πως μας βρήκατε; </label>
-                <input class="form-control " type="text" id="findhow" style="background-color: lightgray;">
+                <input class="form-control " type="text" name="entry.423784677" id="findhow" style="background-color: lightgray;">
             </div>
 
             <div class="py-2">
                 <label>Επικοινωνήσατε ήδη με κάποιο Συνεργάτη;</label>
-                <input class="form-control " type="text" id="synergathepikinonia" style="background-color: lightgray;">
+                <input class="form-control " type="text" name="entry.1038893661" id="synergathepikinonia" style="background-color: lightgray;">
             </div>
 
 
@@ -214,7 +212,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
             <div class="py-2">
                 <label>Έχω ενημερωθεί για την επεξεργασία των προσωπικών μου δεδομένων και συναινώ σε αυτήν, όπως ειδικά ορίζεται στο κεφάλαιο "Όροι GDPR" (βλέπε κάτω μέρος σελίδας) *</label>
-                <input class=" form-check" type="checkbox" id="gdpr">
+                <input class=" form-check" type="checkbox" name="entry.1240101745" id="gdpr">
 
             </div>
 
@@ -222,7 +220,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
             <div class="py-2">
                 <label>Επιθυμώ να ενημερώνομαι για μελλοντικές προωθητικές ενέργειες που αφορούν σε προϊόντα και υπηρεσίες της Greek Insurance Leaders</label>
-                <input class=" form-check" type="checkbox" id="newsletter">
+                <input class=" form-check" type="checkbox" name="entry.306761765" id="newsletter">
             </div>
 
             <p class="text-muted"> Ένα αντίγραφο των απαντήσεών σας θα σταλεί μέσω ηλεκτρονικού ταχυδρομείου στη διεύθυνση που παρείχατε.</p>
@@ -234,7 +232,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             </div>
 
 
-            
+            </form>
 
             <div class=" d-flex  fs-4 px-2 justify-content-between  daybutton  " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                 <p class=" d-flex py-2 ">* Όροι GDPR  </p>   <i class="  py-3  align-middle fa-solid fa-down-long  fa-xs"></i>
