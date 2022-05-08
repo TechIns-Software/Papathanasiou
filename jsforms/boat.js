@@ -1,4 +1,4 @@
-let url =
+const url =
     "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfOmHqdANgrb21fpOW5EXt57OTIq24QbFD6OtZIJ0vdVXE90w/formResponse"; //action url
 let submitbtn = document.getElementById("submitform"); //form element
 
