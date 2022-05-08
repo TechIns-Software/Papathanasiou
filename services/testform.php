@@ -237,7 +237,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 			'entry.1010677732':nomos.value,
 		}
 
-		console.log(testobj);
+	
 
    
 		        fetch(url, {
@@ -246,7 +246,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 		            header: {
 		                'Content-Type': 'application/json'
 		            },
-		            body: testobj
+		            body: JSON.stringify(testobj)
 		        })
 		            .then(data => {
 		                console.log(data);
