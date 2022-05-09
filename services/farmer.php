@@ -26,6 +26,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             <h3>Αγροτική Ασφάλιση</h3>
             <hr style="border: 2px solid green;">
 
+            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe9dIVVrXRfh8XsXPsjkiFN2jJKKiUVeMtqSrUcxptdTK7OPA/formResponse">
             <div class="py-2">
                 <label>Διεύθυνση ηλεκτρονικού ταχυδρομείου *</label>
                 <input type="email" class="form-control" style="background-color: lightgray;" id="email">
@@ -33,7 +34,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
             <div class="py-2">
 
-                <label >Το ονοματεπώνυμό σας </label>
+                <label >Ονοματεπώνυμο *</label>
                 <input type="text" class="form-control" style="background-color: lightgray;" id="name">
             </div>
 
@@ -45,9 +46,16 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             </div>
 
             <div class="py-2">
+                <label>Ποιά είναι η ημερομηνία γέννησής σας; *</label>
+                <input class="form-control " type="date" id="date_birth" style="background-color: lightgray;">
+            </div>
+
+
+            <div class="py-2">
                 <label>Σε ποιά περιφέρεια της Ελλάδας μένετε;*</label>
                 <select style="background-color: lightgray;" class="form-select" id="quest1">
                     <option value="Ανατολική Μακεδονία και Θράκη">Ανατολική Μακεδονία και Θράκη </option>
+                    <option value="Κεντρική Μακεδονία">Κεντρική Μακεδονία </option>
                     <option value="Δυτική Μακεδονία">Δυτική Μακεδονία</option>
                     <option value="Ήπειρος">Ήπειρος</option>
                     <option value="Θεσσαλία"> Θεσσαλία</option>
@@ -64,7 +72,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
             <div class="py-2">
                 <label>Σε ποιά περιοχή, συγκεκριμένα, βρίσκεται η καλλιέργειάς σας; (Τ.Κ) *</label>
-                <input class="form-control " type="text" id="quest1" style="background-color: lightgray;">
+                <input class="form-control " type="text" id="postcode" style="background-color: lightgray;">
             </div>
 
 
@@ -82,7 +90,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
             <div class="py-2">
                 <label>Πώς θα επιθυμούσατε να επικοινωνήσουμε μαζί σας; *</label>
-                <select class="form-select " id="quest16" style="background-color: lightgray;">
+                <select class="form-select " id="contact" style="background-color: lightgray;">
                     <option value="Τηλεφωνικά">Τηλεφωνικά</option>
                     <option value=" Μέσω e-mail">Μέσω e-mail</option>
 
@@ -104,10 +112,11 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
          
 
             <div class="py-2">
-                <button class="btn btn-danger">Υποβολή Φόρμας</button>
+                <button class="btn btn-danger" id="submitform">Υποβολή Φόρμας</button>
             </div>
 
 
+            </form>
             
 
   
@@ -264,7 +273,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
 
-
+<!-- <script src="../jsforms/farmer.js"></script> -->
 
 
 <?php

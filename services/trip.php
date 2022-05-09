@@ -80,7 +80,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
                 <select style="background-color: lightgray;" class="form-select " id="quest2">
                 <option value="" selected disabled hidden>Διάλεξε εδώ</option>
                         <option value="Ναι">Ναι</option>
-                        <option value=" Όχι">Όχι</option>
+                        <option value="Όχι">Όχι</option>
      
                     </select>
             </div>
@@ -104,7 +104,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
                 <select style="background-color: lightgray;" class="form-select " id="quest5">
                 <option value="" selected disabled hidden>Διάλεξε εδώ</option>
                         <option value="Ναι">Ναι</option>
-                        <option value=" Όχι">Όχι</option>
+                        <option value="Όχι">Όχι</option>
      
                     </select>
             </div>
@@ -114,7 +114,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
                 <select style="background-color: lightgray;" class="form-select " id="quest6">
                 <option value="" selected disabled hidden>Διάλεξε εδώ</option>
                         <option value="Ναι">Ναι</option>
-                        <option value=" Όχι">Όχι</option>
+                        <option value="Όχι">Όχι</option>
      
                     </select>
             </div>
@@ -124,7 +124,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
                     <select style="background-color: lightgray;" class="form-select " id="quest7">
                     <option value="" selected disabled hidden>Διάλεξε εδώ</option>
                         <option value="Τηλεφωνικά">Τηλεφωνικά</option>
-                        <option value=" Μέσω e-mail">Μέσω e-mail</option>
+                        <option value="Μέσω e-mail">Μέσω e-mail</option>
                     </select>
             </div>
 

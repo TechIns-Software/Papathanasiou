@@ -118,7 +118,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
                     <select class="form-select " id="quest10" style="background-color: lightgray;">
                         <option value="" selected disabled hidden>Διάλεξε εδώ</option>
                         <option value="Ναι">Ναι </option>
-                        <option value=" Όχι">Όχι</option>
+                        <option value="Όχι">Όχι</option>
 
                     </select>
                 </div>
@@ -129,7 +129,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
                     <label>Επιθυμείτε συμπληρωματική κάλυψη αστικής ευθύνης κατά τη διάρκεια ενασχόλησης με θαλάσσια σπόρ (Μόνο για σκάφη ιδιωτικής αναψυχής);</label>
                     <select class="form-select " id="quest11" style="background-color: lightgray;">
                         <option value="Ναι">Ναι </option>
-                        <option value=" Όχι">Όχι</option>
+                        <option value="Όχι">Όχι</option>
                         <option value="" selected disabled hidden>Διάλεξε εδώ</option>
 
                     </select>
@@ -140,7 +140,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
                     <label>Επιθυμείτε συμπληρωματική κάλυψη έκρηξης και πυρκαγιάς;</label>
                     <select class="form-select " id="quest12" style="background-color: lightgray;">
                         <option value="Ναι">Ναι </option>
-                        <option value=" Όχι">Όχι</option>
+                        <option value="Όχι">Όχι</option>
                         <option value="" selected disabled hidden>Διάλεξε εδώ</option>
 
                     </select>
@@ -151,7 +151,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
                     <label>Επιθυμείτε συμπληρωματική κάλυψη αμέλειας χειριστή, κακόβουλης βλάβης και κινδύνων της θάλασσας;</label>
                     <select class="form-select " id="quest13" style="background-color: lightgray;">
                         <option value="Ναι">Ναι </option>
-                        <option value=" Όχι">Όχι</option>
+                        <option value="Όχι">Όχι</option>
                         <option value="" selected disabled hidden>Διάλεξε εδώ</option>
                     </select>
                 </div>
@@ -162,7 +162,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
                     <label>Επιθυμείτε συμπληρωματική κάλυψη ιδίων ζημιών κατά τη μεταφορά;</label>
                     <select class="form-select " id="quest14" style="background-color: lightgray;">
                         <option value="Ναι">Ναι </option>
-                        <option value=" Όχι">Όχι</option>
+                        <option value="Όχι">Όχι</option>
                         <option value="" selected disabled hidden>Διάλεξε εδώ</option>
 
                     </select>
@@ -174,7 +174,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
                     <label>Επιθυμείτε συμπληρωματική κάλυψη προσωπικών αντικειμένων έως 1.500€;</label>
                     <select class="form-select " id="quest15" style="background-color: lightgray;">
                         <option value="Ναι">Ναι </option>
-                        <option value=" Όχι">Όχι</option>
+                        <option value="Όχι">Όχι</option>
                         <option value="" selected disabled hidden>Διάλεξε εδώ</option>
                     </select>
                 </div>
@@ -183,7 +183,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
                     <label>Πώς θα επιθυμούσατε να επικοινωνήσουμε μαζί σας;  <span style="color: red;">  *</span></label>
                     <select class="form-select " id="quest16" style="background-color: lightgray;">
                         <option value="Τηλεφωνικά">Τηλεφωνικά</option>
-                        <option value=" Μέσω e-mail">Μέσω e-mail</option>
+                        <option value="Μέσω e-mail">Μέσω e-mail</option>
                         <option value="" selected disabled hidden>Διάλεξε εδώ</option>
                     </select>
                 </div>

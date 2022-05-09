@@ -39,7 +39,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             <div class="py-2">
 
                 <label>Ονοματεπώνυμο* </label>
-                <input type="text" class="form-control" style="background-color: lightgray;" id="name">
+                <input type="text" class="form-control" style="background-color: lightgray;" id="fullname">
             </div>
 
             <div class="py-2">
@@ -52,13 +52,19 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             <div class="py-2">
 
                 <label>Ποιά είναι η ημερομηνία γέννησης του παιδιού/ των παιδιών σας ; *</label>
-                <input type="text" class="form-control" style="background-color: lightgray;" id="date_birth">
+                <input type="text" class="form-control my-1" style="background-color: lightgray;" id="date_birth" placeholder="Παιδί 1">
+                <input type="text" class="form-control my-1" style="background-color: lightgray;" id="date_birth_1" placeholder="Παιδί 2">
+                <input type="text" class="form-control my-1" style="background-color: lightgray;" id="date_birth_2" placeholder="Παιδί 3">
+                <input type="text" class="form-control my-1" style="background-color: lightgray;" id="date_birth_3" placeholder="Παιδί 4">
+
             </div>
 
             <div class="py-2">
-                <label>Σε ποιά περιφέρεια της Ελλάδας δραστηριοποιείται η επιχείρησή σας;</label>
+                <label>Σε ποιά περιφέρεια της Ελλάδας μένετε;
+*;</label>
                 <select style="background-color: lightgray;" class="form-select" id="quest1">
                     <option value="Ανατολική Μακεδονία και Θράκη">Ανατολική Μακεδονία και Θράκη </option>
+                    <option value="Κεντρική Μακεδονία">Κεντρική Μακεδονία</option>
                     <option value="Δυτική Μακεδονία">Δυτική Μακεδονία</option>
                     <option value="Ήπειρος">Ήπειρος</option>
                     <option value="Θεσσαλία"> Θεσσαλία</option>
@@ -76,14 +82,82 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             <div class="py-2">
                 <label>Ποιο είναι το ποσό που θα σας έκανε να αισθανθείτε ασφαλής, εφόσον υπήρχε διαθέσιμο μόνο για επείγουσες περιπτώσεις ΥΓΕΙΑΣ για το κάθε τέκνο σας ξεχωριστά :</label>
                 <select style="background-color: lightgray;" class="form-select " id="quest2">
-                    <option value="20.000">20.000 €</option>
-                    <option value="50.000">50.000</option>
-                    <option value="100.000">100.000</option>
-                    <option value="300.000"> 300.000</option>
-                    <option value="500.000"> 500.000</option>
-                    <option value=" 100.000.000"> 100.000.000</option>
+                    <option value="20.000€">20.000€</option>
+                    <option value="50.000€">50.000€</option>
+                    <option value="100.000€">100.000€</option>
+                    <option value="300.000€">300.000€</option>
+                    <option value="500.000€">500.000€</option>
+                    <option value="1.000.000€">1.000.000€</option>
                 </select>
             </div>
+
+
+             
+            <div class="py-2">
+                <label>Ποιο είναι το ποσό που θα σας έκανε να αισθανθείτε ασφαλής, εφόσον υπήρχε διαθέσιμο μόνο για επείγουσες περιπτώσεις ΥΓΕΙΑΣ για το κάθε τέκνο σας ξεχωριστά : *</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" value="20.000€" name="prices" id="price1">
+                    <label class="form-check-label">
+                    20.000€
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" value="50.000€" name="prices" id="price2">
+                    <label class="form-check-label">
+                    50.000€
+                    </label>
+                </div>
+
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" value="100.000€" name="prices" id="price3">
+                    <label class="form-check-label">
+                    100.000€
+                    </label>
+                </div>
+
+
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" value="300.000€" name="prices" id="price4">
+                    <label class="form-check-label">
+                    300.000€
+                    </label>
+                </div>
+
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" value="500.000€" name="prices" id="price5">
+                    <label class="form-check-label">
+                    500.000€
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" value="1.000.000€" name="prices" id="price5">
+                    <label class="form-check-label">
+                    1.000.000€
+                    </label>
+                </div>
+
+
+
+
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" value="Άλλο" name="prices" id="price7">
+                    <label class="form-check-label">
+                        Άλλο:
+                    </label>
+                    <input class="form-control " type="text" id="priceanwser" disabled style="background-color: lightgray;">
+                </div>
+            </div>
+
+
+       
+
+
+            
 
             <div class="py-2">
                 <label>Ποια/ποιές είναι η Ιδιωτική/ες Κλινική/ες που θα επιλέγατε σε περίπτωση νοσηλείας ή επέμβασης του παιδιού σας ;*</label>
@@ -171,8 +245,8 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             <div class="py-2">
                 <label>Είναι καλυμένο/α το παιδί/ τα παιδιά σας από κοινωνική ασφάλιση; (ΕΟΠΥΥ/ΕΦΚΑ)</label>
                 <select class="form-select " id="quest3" style="background-color: lightgray;">
-                    <option value="NAI">NAI</option>
-                    <option value=" OXI">OXI</option>
+                    <option value="Ναι">Ναι</option>
+                    <option value="Όχι">Όχι</option>
                 </select>
             </div>
 
@@ -180,8 +254,8 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             <div class="py-2">
                 <label>Θα προτιμούσατε να πληρώνετε λιγότερα στην Ασφαλιστική εταιρία, αλλά να συμμετέχετε στην περίπτωση νοσηλείας;</label>
                 <select class="form-select " id="quest4" style="background-color: lightgray;">
-                    <option value="NAI">NAI</option>
-                    <option value=" OXI">OXI</option>
+                <option value="Ναι">Ναι</option>
+                    <option value="Όχι">Όχι</option>
                 </select>
             </div>
 
@@ -189,18 +263,18 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
                 <label>Θα θέλατε να συμμετέχετε σε περίπτωση νοσηλείας με το ποσό ή το ποσοστό;</label>
                 <select class="form-select " id="quest5" style="background-color: lightgray;">
                     <option value="0€">0€</option>
-                    <option value=" 500€">500€</option>
-                    <option value=" 1500€">1500€</option>
-                    <option value=" 2000€">2000€</option>
-                    <option value=" 20%">20%</option>
+                    <option value="500€">500€</option>
+                    <option value="1500€">1500€</option>
+                    <option value="2000€">2000€</option>
+                    <option value="20%">20%</option>
                 </select>
             </div>
 
             <div class="py-2">
                 <label>Θα σας ενδιέφερε να μπορεί το παιδί σας να επισκέπτεται Ιατρούς και Διαγνωστικά Κέντρα πληρώνοντας μόνο μία μικρή συμμετοχή;</label>
                 <select class="form-select " id="quest6" style="background-color: lightgray;">
-                    <option value="NAI">NAI</option>
-                    <option value=" OXI">OXI</option>
+                <option value="Ναι">Ναι</option>
+                    <option value="Όχι">Όχι</option>
                 </select>
             </div>
 
@@ -208,16 +282,16 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             <div class="py-2">
                 <label>Σας ενδιαφέρει η νοσηλεία εκτός Ευρώπης ; *</label>
                 <select class="form-select " id="quest7" style="background-color: lightgray;">
-                    <option value="NAI">NAI</option>
-                    <option value="OXI">OXI</option>
+                <option value="Ναι">Ναι</option>
+                    <option value="Όχι">Όχι</option>
                 </select>
             </div>
 
             <div class="py-2">
                 <label>Σας ενδιαφέρει η αποκατάσταση μετά από μεγάλες επεμβάσεις ;*</label>
                 <select class="form-select " id="quest8" style="background-color: lightgray;">
-                    <option value="NAI">NAI</option>
-                    <option value="OXI">OXI</option>
+                <option value="Ναι">Ναι</option>
+                    <option value="Όχι">Όχι</option>
                 </select>
             </div>
 
@@ -241,16 +315,16 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             <div class="py-2">
                 <label>Έχετε σκεφτεί με ποιόν τρόπο θα  εξασφαλίσετε τις σπουδές του παιδιού/ των παιδιών σας;</label>
                 <select class="form-select " id="quest11" style="background-color: lightgray;">
-                    <option value="NAI">NAI</option>
-                    <option value="OXI">OXI</option>
+                <option value="Ναι">Ναι</option>
+                    <option value="Όχι">Όχι</option>
                 </select>
             </div>
 
             <div class="py-2">
                 <label>Αν όχι, θα θέλατε να σχεδιάσουμε μαζί έναν τρόπο αποταμίευσης για να βοηθήσετε τα παιδιά σας να πετύχουν στο μέλλον τους στόχους και τα όνειρά τους;</label>
                 <select class="form-select " id="quest12" style="background-color: lightgray;">
-                    <option value="NAI">NAI</option>
-                    <option value="OXI">OXI</option>
+                <option value="Ναι">Ναι</option>
+                    <option value="Όχι">Όχι</option>
                 </select>
             </div>
 
@@ -266,7 +340,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label>Τι κεφάλαιο επιθυμείτε να βάζετε μηνιαίως για αποταμίευση, για το κάθε τέκνο σας;</label>
+                <label>Πώς θα επιθυμούσατε να επικοινωνήσουμε μαζί σας; *</label>
                 <select class="form-select " id="quest14" style="background-color: lightgray;">
                     <option value="Τηλεφωνικά">Τηλεφωνικά</option>
                     <option value="Μέσω e-mail">Μέσω e-mail</option>
@@ -291,7 +365,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <button class="btn btn-danger" id="submit-form">Υποβολή Φόρμας</button>
+                <button class="btn btn-danger" id="submitform">Υποβολή Φόρμας</button>
 
             </div>
 
@@ -450,11 +524,10 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
 
-
+<script src="../jsforms/child.js"></script>
 
 
 <?php
 include_once 'serv_footer.php';
 ?>
 
-<script src="../jsforms/healthform.js"></script>

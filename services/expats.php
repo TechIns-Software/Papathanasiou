@@ -31,6 +31,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             <h3>Private Insurance Questionnaire</h3>
             <hr style="border: 2px solid red;">
 
+            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf18O_YnSXCrXpkpcr1e-2dSW_EpRyJ3ehu6rKPP3U_qKUSdA/formResponse">
             <div class="py-2">
                 <label >Διεύθυνση ηλεκτρονικού ταχυδρομείου *</label>
                 <input type="email" class="form-control" style="background-color: lightgray;" id="email">
@@ -39,8 +40,8 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label >Your Family is: *</label>
-                <select style="background-color: lightgray;" class="form-select" name="" id="familytype">
+                <label >Your Family is: </label>
+                <select style="background-color: lightgray;" class="form-select"  id="familytype">
                     <option value="It is just me">It is just me </option>
                     <option value="It is me and my partner">It is me and my partner</option>
                     <option value="More than two people with kids">More than two people with kids</option>
@@ -50,7 +51,11 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
             <div class="py-2">
                 <label >Your birth date is/Your Family's members birth dates are:</label>
-                <input type="text" class="form-control" style="background-color: lightgray;" id="date_birth">
+                <input type="text" class="form-control my-1" style="background-color: lightgray;" id="date_birth" placeholder="Parent1">
+                <input type="text" class="form-control  my-1" style="background-color: lightgray;" id="date_birth_1" placeholder="Parent2">
+                <input type="text" class="form-control  my-1" style="background-color: lightgray;" id="date_birth_2" placeholder="Child 1">
+                <input type="text" class="form-control  my-1" style="background-color: lightgray;" id="date_birth_3"placeholder="Child 2">
+                <input type="text" class="form-control  my-1" style="background-color: lightgray;" id="date_birth_4" placeholder="Child 3">
             </div>
 
 
@@ -92,6 +97,16 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
+                <label >Do you have/ Will you buy a house from Greece?</label>
+                <select style="background-color: lightgray;" class="form-select " id="housebuy">
+                    <option value="Yes">Yes </option>
+                    <option value="No">No </option>
+                    <option value="Maybe">Maybe </option>
+                </select>
+            </div>
+
+
+            <div class="py-2">
                 <label >Do you have/ Will you buy a Boat from Greece?</label>
                 <select style="background-color: lightgray;" class="form-select " id="boatbuy">
                     <option value="Yes">Yes </option>
@@ -113,7 +128,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
             
             <div class="py-2">
-                <label >if you do have your own Business in Greece, do you need Liability?</label>
+                <label >If you do have your own Business in Greece, do you need Liability?</label>
                 <select style="background-color: lightgray;" class="form-select " id="liability">
                     <option value="Yes">Yes </option>
                     <option value="No">No </option>
@@ -136,6 +151,15 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             <div class="py-2">
                 <label >About Health Insurance, do you need a basic program just to be usable for a residence card?</label>
                 <select style="background-color: lightgray;" class="form-select " id="basicprogram">
+                    <option value="Yes">Yes </option>
+                    <option value="No">No </option>
+                    <option value="Maybe">Maybe </option>
+                </select>
+            </div>
+
+            <div class="py-2">
+                <label >About Health Insurance, would you prefer to pay less money in insurance company and participate in the cost of hospital?</label>
+                <select style="background-color: lightgray;" class="form-select " id="payless">
                     <option value="Yes">Yes </option>
                     <option value="No">No </option>
                     <option value="Maybe">Maybe </option>
@@ -170,7 +194,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label >What is the upper limit of coverage that you would prefer to have for a hospital for each member of your family per year?</label>
+                <label >What is the upper limit of coverage that you would prefer to have for a hospital for each member of your family per year? </label>
                 <select style="background-color: lightgray;" class="form-select " id="upperlimithospital">
                     <option value="20.000">20.000 </option>
                     <option value="50.000">50.000 </option>
@@ -228,7 +252,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label>I have been informed of the processing of my personal data and consent to it, as specifically defined in the chapter "GDPR Terms" (see bottom of page)  *</label>
+                <label>* I have been informed of the processing of my personal data and consent to it, as specifically defined in the chapter "GDPR Terms" (see bottom of page)  </label>
                 <input class=" form-check" type="checkbox" id="gdpr">
 
             </div>
@@ -236,15 +260,16 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class="py-2">
-                <label>I would like to be informed about future promotions related to products and services of Greek Insurance Leaders</label>
+                <label>* I would like to be informed about future promotions related to products and services of Greek Insurance Leaders</label>
                 <input class=" form-check" type="checkbox" id="newsletter">
             </div>
 
             <p class="text-muted"> A copy of your answers will be emailed to the address you provide.</p>
 
             <div class="py-2">
-                <button class="btn btn-danger">Submit Form</button>
+                <button class="btn btn-danger" id="submitform">Submit Form</button>
             </div>
+            </form>
 
             <div class=" d-flex  fs-4 px-2 justify-content-between  daybutton   " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                 <p class=" d-flex py-2 ">* GDPR Terms</p> <i class="  py-3  align-middle fa-solid fa-down-long  fa-xs"></i>
@@ -394,7 +419,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
 
-
+<script src="../jsforms/expats.js"></script>
 
 <?php
 include_once 'serv_footer.php';

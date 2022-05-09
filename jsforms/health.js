@@ -5,6 +5,47 @@ let submitbtn = document.getElementById("submitform"); //form element
 submitbtn.addEventListener("click", (e) => {
     e.preventDefault(); //prevent default behaviour
 
+
+    const email = document.getElementById("email");
+    const loc = document.getElementById("loc");
+    const fullname = document.getElementById("fullname");
+    const phone = document.getElementById("phone");
+    const meeting = document.getElementById("meeting-time").value;
+    const gdpr = document.getElementById("gdpr");
+
+    if (email.value && loc.value && fullname.value && phone.value &&  meeting.value ) {
+
+
+
+        if (gdpr.checked) {
+            fetch(url, {
+                method: "POST",
+                mode: "no-cors",
+                header: {
+                    'Content-Type': 'application/json'
+                },
+                body: getInputData()
+            })
+                .then(data => {
+                    console.log(data);
+                    alert("Form Submitted");
+                })
+                .catch(err => console.error(err)); //promise based
+        } else {
+            alert("GDPR ALERT");
+        }
+
+    } else {
+        alert(" ΠΡΕΠΕΙ ΝΑ ΣΥΜΠΛΗΡΩΣΕΙΣ ΤΑ ΑΠΑΡΑΙΤΗΤΑ ΠΕΔΙΑ ΓΙΑ ΝΑ ΓΙΝΕΙ ΥΠΟΒΟΛΗ ΤΗΣ ΦΟΡΜΑΣ");
+    }
+
+
+});
+
+
+
+function getInputData() {
+
     const dataToPost = new FormData(); //formdata API
     const email = document.getElementById("email");
     const name = document.getElementById("name");
@@ -40,72 +81,41 @@ submitbtn.addEventListener("click", (e) => {
     const minute = meeting.substr(14, 2);
 
     const gdpr = document.getElementById("gdpr");
-    const newsletter = document.getElementById("newsletter");
+    const newsletter = document.getElementById("newsletter")
+    
 
+    dataToPost.append("emailAddress", email.value);
+    dataToPost.append("entry.122799716", name.value);
+    dataToPost.append("entry.606906244", date_birth.value);
+    dataToPost.append("entry.907161857", loc.value);
+    dataToPost.append("entry.619773039", offerfor.value);
+    dataToPost.append("entry.1583976706", familyinfo.value+" , "+  familyinfo1.value +" , "+  familyinfo2.value +" , "+ familyinf3.value+" , "+ familyinf4.value);
 
+    dataToPost.append("entry.82583277", safeamount.value);
+    dataToPost.append("entry.1758492893", safehospital.value);
+    dataToPost.append("entry.1724228595", koinasfalia.value);
+    dataToPost.append("entry.1081812867", lessmoney.value);
+    dataToPost.append("entry.457555376", nosilia.value);
+    dataToPost.append("entry.799554824", doctors.value);
+    dataToPost.append("entry.1538654494", outeurope.value);
+    dataToPost.append("entry.1044707729", aftersurgery.value);
+    dataToPost.append("entry.1247490115", insuranceamount.value);
+    dataToPost.append("entry.351314268", fullname.value);
+    dataToPost.append("entry.2142741617", phone.value);
+    dataToPost.append("entry.423784677", findhow);
+    dataToPost.append("entry.1038893661", synergathepikinonia.value);
 
-
-
-    if (email.value && loc.value && fullname.value && phone.value &&  meeting.value ) {
-
-        //  //fill name attributes to corresponding values
-
-
-        dataToPost.append("emailAddress", email.value);
-        dataToPost.append("entry.122799716", name.value);
-        dataToPost.append("entry.606906244", date_birth.value);
-        dataToPost.append("entry.907161857", loc.value);
-        dataToPost.append("entry.619773039", offerfor.value);
-        dataToPost.append("entry.1583976706", familyinfo.value+" , "+  familyinfo1.value +" , "+ familyinf3.value+" , "+ familyinf4.value);
-
-        dataToPost.append("entry.82583277", safeamount.value);
-        dataToPost.append("entry.1758492893", safehospital.value);
-        dataToPost.append("entry.1724228595", koinasfalia.value);
-        dataToPost.append("entry.1081812867", lessmoney.value);
-        dataToPost.append("entry.457555376", nosilia.value);
-        dataToPost.append("entry.799554824", doctors.value);
-        dataToPost.append("entry.1538654494", outeurope.value);
-        dataToPost.append("entry.1044707729", aftersurgery.value);
-        dataToPost.append("entry.1247490115", insuranceamount.value);
-        dataToPost.append("entry.351314268", fullname.value);
-        dataToPost.append("entry.2142741617", phone.value);
-        dataToPost.append("entry.423784677", findhow);
-        dataToPost.append("entry.1038893661", synergathepikinonia.value);
-
-        dataToPost.append("entry.232618529_day", day);
-        dataToPost.append("entry.232618529_month", month);
-        dataToPost.append("entry.232618529_year", year);
-        dataToPost.append("entry.232618529_hour", hour);
-        dataToPost.append("entry.232618529_minute", minute);
-        
-        if (newsletter.checked){
-            dataToPost.append("entry.306761765","Επιθυμώ να ενημερώνομαι για μελλοντικές προωθητικές ενέργειες που αφορούν σε προϊόντα και υπηρεσίες της Greek Insurance Leaders")  
-        }
-
-        console.log(dataToPost)
-
-        if (gdpr.checked) {
-            fetch(url, {
-                method: "POST",
-                mode: "no-cors",
-                header: {
-                    'Content-Type': 'application/json'
-                },
-                body: getInputData()
-            })
-                .then(data => {
-                    console.log(data);
-                    alert("Form Submitted");
-                })
-                .catch(err => console.error(err)); //promise based
-        } else {
-            alert("GDPR ALERT");
-        }
-
-    } else {
-        alert(" ΠΡΕΠΕΙ ΝΑ ΣΥΜΠΛΗΡΩΣΕΙΣ ΤΑ ΑΠΑΡΑΙΤΗΤΑ ΠΕΔΙΑ ΓΙΑ ΝΑ ΓΙΝΕΙ ΥΠΟΒΟΛΗ ΤΗΣ ΦΟΡΜΑΣ");
+    dataToPost.append("entry.232618529_day", day);
+    dataToPost.append("entry.232618529_month", month);
+    dataToPost.append("entry.232618529_year", year);
+    dataToPost.append("entry.232618529_hour", hour);
+    dataToPost.append("entry.232618529_minute", minute);
+    
+    if (newsletter.checked){
+        dataToPost.append("entry.306761765","Επιθυμώ να ενημερώνομαι για μελλοντικές προωθητικές ενέργειες που αφορούν σε προϊόντα και υπηρεσίες της Greek Insurance Leaders")  
     }
 
 
-});
+    return  dataToPost;
+}
 

@@ -34,16 +34,17 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 				<div class="py-2">
 
 					<label>Το ονοματεπώνυμό σας </label>
-					<input type="text" class="form-control"  style="background-color: lightgray;" id="name">
+					<input type="text" class="form-control" style="background-color: lightgray;" id="name">
 				</div>
 
 
 				<div class="py-2">
 					<label>Ζείτε στο Νομό;</label>
-					<select style="background-color: lightgray;"  class="form-select" id="quest3">
+					<select style="background-color: lightgray;" class="form-select" id="quest3">
 						<option value="Νομός1">Νομός1 </option>
 						<option value="Νομός2">Νομός2</option>
 						<option value="Νομός3">Νομός3</option>
+						<option value="Νομός4">Νομός4</option>
 					</select>
 				</div>
 
@@ -211,54 +212,48 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
 <script>
-	const url =
-		"https://docs.google.com/forms/u/0/d/e/1FAIpQLSentaiL91WEMhNfHpJO8Pg0Hj_tU9WtTBKbaIarV35RIhbtDQ/formResponse"; //action url
+	const url = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSentaiL91WEMhNfHpJO8Pg0Hj_tU9WtTBKbaIarV35RIhbtDQ/formResponse"; //action url
+
+
 	let submitbtn = document.getElementById("submitform"); //form element
 
 	submitbtn.addEventListener("click", (e) => {
 		e.preventDefault(); //prevent default behaviour
 
+		fetch(url, {
+				method: "POST",
+				mode: "no-cors",
+				header: {
+					'Content-Type': 'application/json'
+				},
+				body: getInputData()
+			})
+			.then(data => {
+				console.log(data);
+				alert("Form Submitted");
+			})
+			.catch(err => console.error(err)); //promise based
+
+
+	});
+
+	//populating input data
+	function getInputData() {
 		let dataToPost = new FormData(); //formdata API
+
 		const email = document.getElementById("email");
 		const name = document.getElementById("name");
 		const nomos = document.getElementById("quest3");
 
-		console.log(email.value)
-		console.log(name.value)
-		console.log(nomos.value)
-
-		// dataToPost.append("entry.739531254", email.value);
-		// dataToPost.append("entry.1246754399", name.value);
-		// dataToPost.append("entry.1010677732", nomos.value);
-	
-		let testobj ={
-			'entry.739531254':email.value,
-			'entry.1246754399': name.value,
-			'entry.1010677732':nomos.value,
-		}
-
-	
-
-   
-		        fetch(url, {
-		            method: "POST",
-		            mode: "no-cors",
-		            header: {
-		                'Content-Type': 'application/json'
-		            },
-		            body: JSON.stringify(testobj)
-		        })
-		            .then(data => {
-		                console.log(data);
-		                alert("Form Submitted");
-		            })
-		            .catch(err => console.error(err)); //promise based
 
 
+		//fill name attributes to corresponding values
+		dataToPost.append("entry.739531254", email.value);
+		dataToPost.append("entry.1246754399", name.value);
+		dataToPost.append("entry.1010677732", nomos.value);
 
-
-
-	});
+		return dataToPost;
+	}
 </script>
 
 

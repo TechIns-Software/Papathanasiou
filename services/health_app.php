@@ -27,303 +27,303 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             <hr style="border: 3px solid red;">
 
             <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfc593KeuwLJJMhiHkmQ1xaGHc9BtQXXoNbpoaEo-UaWwE4gQ/formResponse">
-            <div class="py-2">
-                <label>Διεύθυνση ηλεκτρονικού ταχυδρομείου *</label>
-                <input type="email" class="form-control" style="background-color: lightgray;" id="email">
-            </div>
-
-
-            <div class="py-2 ">
-                <label>Your first name is: *</label>
-                <div class="d-flex">
-                <input type="text" class="form-control mx-1" style="background-color: lightgray;"  id="name">
+                <div class="py-2">
+                    <label>Email *</label>
+                    <input type="email" class="form-control" style="background-color: lightgray;" id="email">
                 </div>
-            </div>
 
 
-            
-            <div class="py-2">
-                <label>Your middle name is: *</label>
-                <div class="d-flex">
-                <input type="text" class="form-control mx-1" style="background-color: lightgray;"  id="midlename">
+                <div class="py-2 ">
+                    <label>Your first name is: *</label>
+                    <div class="d-flex">
+                        <input type="text" class="form-control mx-1" style="background-color: lightgray;" id="name">
+                    </div>
                 </div>
-            </div>
 
-                        
-            <div class="py-2">
-                <label>Your surname name is: *</label>
-                <div class="d-flex">
-                <input type="text" class="form-control mx-1" style="background-color: lightgray;"  id="surname">
+
+
+                <div class="py-2">
+                    <label>Your middle name is: </label>
+                    <div class="d-flex">
+                        <input type="text" class="form-control mx-1" style="background-color: lightgray;" id="midlename">
+                    </div>
                 </div>
-            </div>
-
-            <div class="py-2">
-                <label>Your father's name is:*</label>
-                <input type="text" class="form-control" style="background-color: lightgray;" id="fathername">
-            </div>
 
 
-            <div class="py-2">
-                <label>Your gender is:*</label>
-                <select style="background-color: lightgray;" class="form-select " id="quest1">
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                </select>
-            </div>
+                <div class="py-2">
+                    <label>Your surname name is: *</label>
+                    <div class="d-flex">
+                        <input type="text" class="form-control mx-1" style="background-color: lightgray;" id="surname">
+                    </div>
+                </div>
+
+                <div class="py-2">
+                    <label>Your father's name is:*</label>
+                    <input type="text" class="form-control" style="background-color: lightgray;" id="fathername">
+                </div>
 
 
-            <div class="py-2">
-                <label>Your birth date is: *</label>
-                <input class="form-control " type="text" id="birthday" style="background-color: lightgray;">
-            </div>
-
-            <div class="py-2">
-                <label>Your Greek tax number (optional) is  :
-                    *</label>
-                <input class="form-control " type="text" id="quest2" style="background-color: lightgray;">
-            </div>
+                <div class="py-2">
+                    <label>Your gender is:*</label>
+                    <select style="background-color: lightgray;" class="form-select " id="quest1">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
 
 
-            <div class="py-2">
-                <label>Your passport number is * :</label>
-                <input class="form-control my-1" type="text" id="quest3" style="background-color: lightgray;" placeholder="Parent 1 Passport">
-                <input class="form-control  my-1" type="text" id="quest3_1" style="background-color: lightgray;" placeholder="Parent 2 Passport">
-                <input class="form-control  my-1" type="text" id="quest3_2" style="background-color: lightgray;" placeholder="Child 1 Passport">
-                <input class="form-control my-1" type="text" id="quest3_3" style="background-color: lightgray;" placeholder="Child 2 Passport">
-                <input class="form-control my-1" type="text" id="quest3_4" style="background-color: lightgray;" placeholder="Child 3 Passport">
-            </div>
+                <div class="py-2">
+                    <label>Your birth date is: *</label>
+                    <input class="form-control " type="text" id="birthday" style="background-color: lightgray;">
+                </div>
+
+                <div class="py-2">
+                    <label>Your Greek tax number (optional) is :
+                    </label>
+                    <input class="form-control" type="text" id="quest2" style="background-color: lightgray;">
+                </div>
 
 
-            <div class="py-2">
-                <label>Your nationality is:
-                    *</label>
-                <input class="form-control " type="text" id="quest4" style="background-color: lightgray;">
-            </div>
-
-            <div class="py-2">
-                <label>Your profession is:
-                </label>
-                <input class="form-control  my-1" type="text" id="quest5" style="background-color: lightgray;" placeholder="Parrent 1 Profession">
-                <input class="form-control my-1 " type="text" id="quest5_1" style="background-color: lightgray;" placeholder="Parrent 2 Profession">
-            </div>
-
-            <div class="py-2">
-                <label>Your Address is (city, street, street number, postal code in Greece) *
-
-                </label>
-                <input class="form-control " type="text" id="quest6" style="background-color: lightgray;">
-            </div>
+                <div class="py-2">
+                    <label>Your passport number is * :</label>
+                    <input class="form-control my-1" type="text" id="quest3" style="background-color: lightgray;" placeholder="Parent 1 Passport">
+                    <input class="form-control  my-1" type="text" id="quest3_1" style="background-color: lightgray;" placeholder="Parent 2 Passport">
+                    <input class="form-control  my-1" type="text" id="quest3_2" style="background-color: lightgray;" placeholder="Child 1 Passport">
+                    <input class="form-control my-1" type="text" id="quest3_3" style="background-color: lightgray;" placeholder="Child 2 Passport">
+                    <input class="form-control my-1" type="text" id="quest3_4" style="background-color: lightgray;" placeholder="Child 3 Passport">
+                </div>
 
 
-            <div class="py-2">
-                <label>What is your height (cm)? * </label>
+                <div class="py-2">
+                    <label>Your nationality is:
+                        *</label>
+                    <input class="form-control " type="text" id="quest4" style="background-color: lightgray;">
+                </div>
 
-                <input class="form-control my-1 " type="text" id="quest7" style="background-color: lightgray;" placeholder="Parrent 1 Height">
-                <input class="form-control  my-1" type="text" id="quest7_1" style="background-color: lightgray;" placeholder="Parrent 2 Height">
-                <input class="form-control my-1 " type="text" id="quest7_2" style="background-color: lightgray;" placeholder="Child 1 Height">
-                <input class="form-control my-1 " type="text" id="quest7_3" style="background-color: lightgray;" placeholder="Child 2 Height">
-                <input class="form-control  my-1" type="text" id="quest7_4" style="background-color: lightgray;" placeholder="Child 3 Height">
-            </div>
+                <div class="py-2">
+                    <label>Your profession is:
+                    </label>
+                    <input class="form-control  my-1" type="text" id="quest5" style="background-color: lightgray;" placeholder="Parrent 1 Profession">
+                    <input class="form-control my-1 " type="text" id="quest5_1" style="background-color: lightgray;" placeholder="Parrent 2 Profession">
+                </div>
 
+                <div class="py-2">
+                    <label>Your Address is (city, street, street number, postal code in Greece) *
 
-
-            <div class="py-2">
-                <label>What is your weight (kg) ? *
-                </label>
-                <input class="form-control my-1" type="text" id="quest8" style="background-color: lightgray;" placeholder="Parrent 1 weight">
-                <input class="form-control my-1 " type="text" id="quest8_1" style="background-color: lightgray;" placeholder="Parrent 2 weight">
-                <input class="form-control my-1" type="text" id="quest8_2" style="background-color: lightgray;"  placeholder="Child 1 weight" >
-                <input class="form-control my-1" type="text" id="quest8_3" style="background-color: lightgray;"  placeholder="Child 2 weight">
-                <input class="form-control my-1" type="text" id="quest8_4" style="background-color: lightgray;"  placeholder="Child 3 weight">
-            </div>
-
-            <div class="py-2">
-                <label>How many family members are going to get insured?
-                </label>
-                <input class="form-control " type="text" id="quest9" style="background-color: lightgray;">
-            </div>
-
-            <div class="py-2">
-                <label>Please enter your family members' names and birth dates.   </label>
-               
-              
-                <input class="form-control   my-1" type="text" id="quest10" style="background-color: lightgray;" placeholder=" Parent1 09/07/1999">
-                <input class="form-control   my-1 members" type="text" id="quest10_1" style="background-color: lightgray;"  placeholder="Parent2  09/07/1999">
-                <input class="form-control  my-1 members" type="text" id="quest10_2" style="background-color: lightgray;" placeholder="Child1 09/07/1999">
-                <input class="form-control   my-1 members" type="text" id="quest10_3" style="background-color: lightgray;" placeholder="Child2  09/07/1999">
-                <input class="form-control  my-1 members" type="text" id="quest10_4" style="background-color: lightgray;" placeholder="Child3 09/07/1999">
-         
-                
-            </div>
-        
-
-            <div class="py-2">
-                <label>Do you smoke? *</label>
-                <select style="background-color: lightgray;" class="form-select " id="quest20">
-                    <option value="Yes">Yes</option>
-                    <option value="Νo">Νo</option>
-                </select>
-            </div>
+                    </label>
+                    <input class="form-control " type="text" id="quest6" style="background-color: lightgray;">
+                </div>
 
 
-            <div class="py-2">
-                <label>Do you drink a lot of alcohol? *</label>
-                <select style="background-color: lightgray;" class="form-select " id="quest21">
-                    <option value="Yes">Yes</option>
-                    <option value="Νo">Νo</option>
-                    <option value="Maybe">Maybe</option>
-                </select>
-            </div>
+                <div class="py-2">
+                    <label>What is your height (cm)? * </label>
 
-            <div class="py-2">
-                <label>If you answered yes/maybe, how many drinks do you have per week?</label>
-                <input class="form-control " type="text" id="quest22" style="background-color: lightgray;">
-            </div>
-
-
-            
-
-            <div class="py-2">
-                <label>Have you ever used drugs? *</label>
-                <select style="background-color: lightgray;" class="form-select " id="quest23">
-                    <option value="Yes">Yes</option>
-                    <option value="Νo">Νo</option>
-                </select>
-            </div>
-
-            <div class="py-2">
-                <label>Has any doctor recommended you to take any medical tests, take medicine or have a surgery?
-                    *</label>
-                <select style="background-color: lightgray;" class="form-select " id="quest24">
-                    <option value="Yes">Yes</option>
-                    <option value="Νo">Νo</option>
-                </select>
-            </div>
-
-
-            <div class="py-2">
-                <label>If so, please elaborate in detail about the nature of the tests or medicine you have been recommended to take.</label>
-                <input class="form-control " type="text" id="quest25" style="background-color: lightgray;">
-            </div>
-
-
-            <div class="py-2">
-                <label>Can you please write down all the surgeries you have had in the past, or any hospitalizations, along with the year that those happened?</label>
-                <input class="form-control " type="text" id="quest26" style="background-color: lightgray;">
-            </div>
-
-            <div class="py-2">
-                <label>Do you have any medical tests that are above or below normal? *</label>
-                <select style="background-color: lightgray;" class="form-select " id="quest27">
-                    <option value="Yes">Yes</option>
-                    <option value="Νo">Νo</option>
-                </select>
-            </div>
-
-            <div class="py-2">
-                <label>If so please elaborate and (which member)</label>
-                <input class="form-control " type="text" id="quest28" style="background-color: lightgray;">
-            </div>
-
-            <div class="py-2">
-                <label>Do you have any problem with your eyes (e.x. myopia) ? *</label>
-                <select style="background-color: lightgray;" class="form-select " id="eyes">
-                    <option value="Yes">Yes</option>
-                    <option value="Νo">Νo</option>
-                </select>
-            </div>
-
-
-            <div class="py-2">
-                <label>If so please elaborate and (which member)</label>
-                <input class="form-control " type="text" id="quest29" style="background-color: lightgray;">
-            </div>
-
-            
-            <div class="py-2">
-                <label>Did any of your parents pass away before they were 60 years old?
-                    *</label>
-                <select style="background-color: lightgray;" class="form-select " id="quest30">
-                    <option value="Yes">Yes</option>
-                    <option value="Νo">Νo</option>
-                </select>
-            </div>
-
-            <div class="py-2">
-                <label>If so please elaborate.</label>
-                <input class="form-control " type="text" id="quest31" style="background-color: lightgray;">
-            </div>
+                    <input class="form-control my-1 " type="text" id="quest7" style="background-color: lightgray;" placeholder="Parrent 1 Height">
+                    <input class="form-control  my-1" type="text" id="quest7_1" style="background-color: lightgray;" placeholder="Parrent 2 Height">
+                    <input class="form-control my-1 " type="text" id="quest7_2" style="background-color: lightgray;" placeholder="Child 1 Height">
+                    <input class="form-control my-1 " type="text" id="quest7_3" style="background-color: lightgray;" placeholder="Child 2 Height">
+                    <input class="form-control  my-1" type="text" id="quest7_4" style="background-color: lightgray;" placeholder="Child 3 Height">
+                </div>
 
 
 
-            <div class="py-2">
-                <label>Have you had/ do you have any psychological conditions?
-                    *</label>
-                <select style="background-color: lightgray;" class="form-select " id="quest32">
-                    <option value="Yes">Yes</option>
-                    <option value="Νo">Νo</option>
-                </select>
-            </div>
+                <div class="py-2">
+                    <label>What is your weight (kg) ? *
+                    </label>
+                    <input class="form-control my-1" type="text" id="quest8" style="background-color: lightgray;" placeholder="Parrent 1 weight">
+                    <input class="form-control my-1 " type="text" id="quest8_1" style="background-color: lightgray;" placeholder="Parrent 2 weight">
+                    <input class="form-control my-1" type="text" id="quest8_2" style="background-color: lightgray;" placeholder="Child 1 weight">
+                    <input class="form-control my-1" type="text" id="quest8_3" style="background-color: lightgray;" placeholder="Child 2 weight">
+                    <input class="form-control my-1" type="text" id="quest8_4" style="background-color: lightgray;" placeholder="Child 3 weight">
+                </div>
 
-            <div class="py-2">
-                <label>If so please elaborate (and which member)</label>
-                <input class="form-control " type="text" id="quest33" style="background-color: lightgray;">
-            </div>
+                <div class="py-2">
+                    <label>How many family members are going to get insured?
+                    </label>
+                    <input class="form-control " type="text" id="quest9" style="background-color: lightgray;">
+                </div>
 
-            <div class="py-2">
-                <label>For Female applicants: Do you have/ had any gynecological conditions?
-                </label>
-                <select style="background-color: lightgray;" class="form-select " id="quest34">
-                    <option value="Yes">Yes</option>
-                    <option value="Νo">Νo</option>
-                </select>
-            </div>
-
-            <div class="py-2">
-                <label>If so please elaborate.</label>
-                <input class="form-control " type="text" id="quest35" style="background-color: lightgray;">
-            </div>
+                <div class="py-2">
+                    <label>Please enter your family members' names and birth dates. </label>
 
 
+                    <input class="form-control   my-1" type="text" id="quest10" style="background-color: lightgray;" placeholder=" Parent1 09/07/1999">
+                    <input class="form-control   my-1 members" type="text" id="quest10_1" style="background-color: lightgray;" placeholder="Parent2  09/07/1999">
+                    <input class="form-control  my-1 members" type="text" id="quest10_2" style="background-color: lightgray;" placeholder="Child1 09/07/1999">
+                    <input class="form-control   my-1 members" type="text" id="quest10_3" style="background-color: lightgray;" placeholder="Child2  09/07/1999">
+                    <input class="form-control  my-1 members" type="text" id="quest10_4" style="background-color: lightgray;" placeholder="Child3 09/07/1999">
 
-            <div class="py-2">
-                <label>What is your name?</label>
-                <input class="form-control " type="text" id="quest38" style="background-color: lightgray;">
-            </div>
 
-            <div class="py-2">
-                <label>Your e-mail address is:
-                    *</label>
-                <input class="form-control " type="text" id="quest39" style="background-color: lightgray;">
-            </div>
+                </div>
 
-            <div class="py-2">
-                <label>What is your Telephone number?</label>
-                <input class="form-control " type="text" id="quest40" style="background-color: lightgray;">
-            </div>
+
+                <div class="py-2">
+                    <label>Do you smoke? *</label>
+                    <select style="background-color: lightgray;" class="form-select " id="quest20">
+                        <option value="Yes">Yes</option>
+                        <option value="Νo">Νo</option>
+                    </select>
+                </div>
+
+
+                <div class="py-2">
+                    <label>Do you drink a lot of alcohol? *</label>
+                    <select style="background-color: lightgray;" class="form-select " id="quest21">
+                        <option value="Yes">Yes</option>
+                        <option value="Νo">Νo</option>
+                        <option value="Maybe">Maybe</option>
+                    </select>
+                </div>
+
+                <div class="py-2">
+                    <label>If you answered yes/maybe, how many drinks do you have per week?</label>
+                    <input class="form-control " type="text" id="quest22" style="background-color: lightgray;">
+                </div>
 
 
 
 
-            <div class="py-2">
-                <label>* I have been informed of the processing of my personal data and consent to it, as specifically defined in the chapter "GDPR Terms" (see bottom of page)</label>
-                <input class=" form-check" type="checkbox" id="gdpr">
+                <div class="py-2">
+                    <label>Have you ever used drugs? *</label>
+                    <select style="background-color: lightgray;" class="form-select " id="quest23">
+                        <option value="Yes">Yes</option>
+                        <option value="Νo">Νo</option>
+                    </select>
+                </div>
 
-            </div>
+                <div class="py-2">
+                    <label>Has any doctor recommended you to take any medical tests, take medicine or have a surgery?
+                        *</label>
+                    <select style="background-color: lightgray;" class="form-select " id="quest24">
+                        <option value="Yes">Yes</option>
+                        <option value="Νo">Νo</option>
+                    </select>
+                </div>
 
-            <div class="py-2">
-                <label>I would like to be informed about future promotions related to products and services of Greek Insurance Leaders.</label>
-                <input class=" form-check" type="checkbox" id="newsletter">
-            </div>
 
-            <p class="text-muted"> A copy of your replies will be emailed to the address you provided.</p>
+                <div class="py-2">
+                    <label>If so, please elaborate in detail about the nature of the tests or medicine you have been recommended to take.</label>
+                    <input class="form-control " type="text" id="quest25" style="background-color: lightgray;">
+                </div>
 
 
-            <div class="py-2">
-                <button class="btn btn-danger" id="submitform">Submit Form</button>
-            </div>
+                <div class="py-2">
+                    <label>Can you please write down all the surgeries you have had in the past, or any hospitalizations, along with the year that those happened?</label>
+                    <input class="form-control " type="text" id="quest26" style="background-color: lightgray;">
+                </div>
+
+                <div class="py-2">
+                    <label>Do you have any medical tests that are above or below normal? *</label>
+                    <select style="background-color: lightgray;" class="form-select " id="quest27">
+                        <option value="Yes">Yes</option>
+                        <option value="Νo">Νo</option>
+                    </select>
+                </div>
+
+                <div class="py-2">
+                    <label>If so please elaborate and (which member)</label>
+                    <input class="form-control " type="text" id="quest28" style="background-color: lightgray;">
+                </div>
+
+                <div class="py-2">
+                    <label>Do you have any problem with your eyes (e.x. myopia) ? *</label>
+                    <select style="background-color: lightgray;" class="form-select " id="eyes">
+                        <option value="Yes">Yes</option>
+                        <option value="Νo">Νo</option>
+                    </select>
+                </div>
+
+
+                <div class="py-2">
+                    <label>If so please elaborate and (which member)</label>
+                    <input class="form-control " type="text" id="quest29" style="background-color: lightgray;">
+                </div>
+
+
+                <div class="py-2">
+                    <label>Did any of your parents pass away before they were 60 years old?
+                        *</label>
+                    <select style="background-color: lightgray;" class="form-select " id="quest30">
+                        <option value="Yes">Yes</option>
+                        <option value="Νo">Νo</option>
+                    </select>
+                </div>
+
+                <div class="py-2">
+                    <label>If so please elaborate.</label>
+                    <input class="form-control " type="text" id="quest31" style="background-color: lightgray;">
+                </div>
+
+
+
+                <div class="py-2">
+                    <label>Have you had/ do you have any psychological conditions?
+                        *</label>
+                    <select style="background-color: lightgray;" class="form-select " id="quest32">
+                        <option value="Yes">Yes</option>
+                        <option value="Νo">Νo</option>
+                    </select>
+                </div>
+
+                <div class="py-2">
+                    <label>If so please elaborate (and which member)</label>
+                    <input class="form-control " type="text" id="quest33" style="background-color: lightgray;">
+                </div>
+
+                <div class="py-2">
+                    <label>For Female applicants: Do you have/ had any gynecological conditions?
+                    </label>
+                    <select style="background-color: lightgray;" class="form-select " id="quest34">
+                        <option value="Yes">Yes</option>
+                        <option value="Νo">Νo</option>
+                    </select>
+                </div>
+
+                <div class="py-2">
+                    <label>If so please elaborate.</label>
+                    <input class="form-control " type="text" id="quest35" style="background-color: lightgray;">
+                </div>
+
+
+
+                <div class="py-2">
+                    <label>What is your name?</label>
+                    <input class="form-control " type="text" id="quest38" style="background-color: lightgray;">
+                </div>
+
+                <div class="py-2">
+                    <label>Your e-mail address is:
+                        *</label>
+                    <input class="form-control " type="text" id="quest39" style="background-color: lightgray;">
+                </div>
+
+                <div class="py-2">
+                    <label>What is your Telephone number?</label>
+                    <input class="form-control " type="text" id="quest40" style="background-color: lightgray;">
+                </div>
+
+
+
+
+                <div class="py-2">
+                    <label>* I have been informed of the processing of my personal data and consent to it, as specifically defined in the chapter "GDPR Terms" (see bottom of page)</label>
+                    <input class=" form-check" type="checkbox" id="gdpr">
+
+                </div>
+
+                <div class="py-2">
+                    <label>I would like to be informed about future promotions related to products and services of Greek Insurance Leaders.</label>
+                    <input class=" form-check" type="checkbox" id="newsletter">
+                </div>
+
+                <p class="text-muted"> A copy of your replies will be emailed to the address you provided.</p>
+
+
+                <div class="py-2">
+                    <button class="btn btn-danger" id="submitform">Submit Form</button>
+                </div>
             </form>
-            <!-- </form> -->
+         
 
             <div class=" d-flex  fs-4 px-2 justify-content-between  daybutton  " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                 <p class=" d-flex py-2 ">* GDPR Terms</p> <i class="  py-3  align-middle fa-solid fa-down-long  fa-xs"></i>

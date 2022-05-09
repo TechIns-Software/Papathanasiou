@@ -32,17 +32,17 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             <hr style="border: 2px solid blue;">
             <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf5PVJy_rK_Mn9lFeocImW5EvMge-GXddGkOQTxqcGpjeF_Dw/formResponse">
                 <div class="py-2">
-                    <label>Διεύθυνση ηλεκτρονικού ταχυδρομείου <span style="color: red;">  *</span></label>
+                    <label>Διεύθυνση ηλεκτρονικού ταχυδρομείου <span style="color: red;"> *</span></label>
                     <input type="email" class="form-control" style="background-color: lightgray;" id="email">
                 </div>
 
                 <div class="py-2">
 
-                    <label>Το ονοματεπώνυμό σας  <span style="color: red;">  *</span></label>
+                    <label>Ονοματεπώνυμο <span style="color: red;"> *</span></label>
                     <input type="text" class="form-control" style="background-color: lightgray;" id="fullname">
                 </div>
 
-                
+
                 <div class="py-2">
 
                     <label>Το τηλέφωνό σας είναι: </label>
@@ -53,37 +53,37 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
                 <div class="py-2">
 
-                    <label>Ποιό είναι το έτος κατασκευής του επαγγελματικού χώρου σας; <span style="color: red;">  *</span></label>
+                    <label>Ποιό είναι το έτος κατασκευής του επαγγελματικού χώρου σας; <span style="color: red;"> *</span></label>
                     <input type="text" class="form-control" style="background-color: lightgray;" id="store_creation">
                 </div>
 
                 <div class="py-2">
 
-                    <label>Πόσα τετραγωνικά μέτρα είναι ο επαγγελματικός χώρος σας; <span style="color: red;">  *</span></label>
+                    <label>Πόσα τετραγωνικά μέτρα είναι ο επαγγελματικός χώρος σας; <span style="color: red;"> *</span></label>
                     <input type="text" class="form-control" style="background-color: lightgray;" id="store_long">
                 </div>
 
 
 
                 <div class="py-2">
-                    <label> Ποιός είναι ο Τ.Κ. (ταχυδρομικός κώδικας) του επαγγελματικού χώρου σας; <span style="color: red;">  *</span></label>
+                    <label> Ποιός είναι ο Τ.Κ. (ταχυδρομικός κώδικας) του επαγγελματικού χώρου σας; <span style="color: red;"> *</span></label>
                     <input type="text" class="form-control" id="postcode" style="background-color: lightgray;">
                 </div>
 
 
                 <div class="py-2">
-                    <label> Τι είδος επιχείρησης στεγάζεται στον επαγγελματικό σας χώρο; <span style="color: red;">  *</span></label>
+                    <label> Τι είδος επιχείρησης στεγάζεται στον επαγγελματικό σας χώρο; <span style="color: red;"> *</span></label>
                     <input type="text" class="form-control" id="quest1" style="background-color: lightgray;">
                 </div>
 
 
 
                 <div class="py-2">
-                    <label>Είστε ο ιδιοκτήτης του επαγγελματικού χώρου; <span style="color: red;">  *</span></label>
+                    <label>Είστε ο ιδιοκτήτης του επαγγελματικού χώρου; <span style="color: red;"> *</span></label>
                     <select style="background-color: lightgray;" class="form-select" name="" id="quest2">
-                    <option value="" selected disabled hidden>Διάλεξε εδώ</option>
-                        <option value="ΝΑΙ">ΝΑΙ </option>
-                        <option value="ΟΧΙ">ΟΧΙ</option>
+                        <option value="" selected disabled hidden>Διάλεξε εδώ</option>
+                        <option value="Ναι">Ναι </option>
+                        <option value="Όχι">Όχι</option>
                     </select>
                 </div>
 
@@ -92,11 +92,11 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
                 <div class="py-2">
-                    <label>Εργάζεστε σε αυτόν; <span style="color: red;">  *</span></label>
+                    <label>Εργάζεστε σε αυτόν; <span style="color: red;"> *</span></label>
                     <select style="background-color: lightgray;" class="form-select" id="quest3">
-                    <option value="" selected disabled hidden>Διάλεξε εδώ</option>
-                        <option value="ΝΑΙ">ΝΑΙ </option>
-                        <option value="ΟΧΙ">ΟΧΙ</option>
+                        <option value="" selected disabled hidden>Διάλεξε εδώ</option>
+                        <option value="Ναι">Ναι </option>
+                        <option value="Όχι">Όχι</option>
                     </select>
                 </div>
 
@@ -104,9 +104,9 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
                 <div class="py-2">
-                    <label>Είναι ισόγειο ή βρίσκεται σε όροφο; <span style="color: red;">  *</span></label>
+                    <label>Είναι ισόγειο ή βρίσκεται σε όροφο; <span style="color: red;"> *</span></label>
                     <select style="background-color: lightgray;" class="form-select" id="quest4">
-                    <option value="" selected disabled hidden>Διάλεξε εδώ</option>
+                        <option value="" selected disabled hidden>Διάλεξε εδώ</option>
                         <option value="Ισόγειο">Ισόγειο </option>
                         <option value="Σε όροφο">Σε όροφο</option>
                     </select>
@@ -121,31 +121,31 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
                 <div class="py-2">
-                    <label>Επιθυμείτε κάλυψη σεισμού; <span style="color: red;">  *</span></label>
+                    <label>Επιθυμείτε κάλυψη σεισμού; <span style="color: red;"> *</span></label>
                     <select style="background-color: lightgray;" class="form-select" id="quest6">
-                    <option value="" selected disabled hidden>Διάλεξε εδώ</option>
-                        <option value="ΝΑΙ">ΝΑΙ </option>
-                        <option value="ΟΧΙ">ΟΧΙ</option>
+                        <option value="" selected disabled hidden>Διάλεξε εδώ</option>
+                        <option value="Ναι">Ναι </option>
+                        <option value="Όχι">Όχι</option>
                     </select>
                 </div>
 
 
                 <div class="py-2">
-                    <label>Έχει υπάρξει κάποια ζημία τα τελευταία 5 χρόνια στον επαγγελματικό σας χώρο; <span style="color: red;">  *</span></label>
+                    <label>Έχει υπάρξει κάποια ζημία τα τελευταία 5 χρόνια στον επαγγελματικό σας χώρο; <span style="color: red;"> *</span></label>
                     <select style="background-color: lightgray;" class="form-select" id="quest7">
-                    <option value="" selected disabled hidden>Διάλεξε εδώ</option>
-                        <option value="ΝΑΙ">ΝΑΙ </option>
-                        <option value="ΟΧΙ">ΟΧΙ</option>
+                        <option value="" selected disabled hidden>Διάλεξε εδώ</option>
+                        <option value="Ναι">Ναι </option>
+                        <option value="Όχι">Όχι</option>
                     </select>
                 </div>
 
 
                 <div class="py-2">
-                    <label>Επιθυμείτε ασφάλιση περιεχομένου; <span style="color: red;">  *</span></label>
+                    <label>Επιθυμείτε ασφάλιση περιεχομένου; <span style="color: red;"> *</span></label>
                     <select style="background-color: lightgray;" class="form-select" id="quest8">
-                    <option value="" selected disabled hidden>Διάλεξε εδώ</option>
-                        <option value="ΝΑΙ">ΝΑΙ </option>
-                        <option value="ΟΧΙ">ΟΧΙ</option>
+                        <option value="" selected disabled hidden>Διάλεξε εδώ</option>
+                        <option value="Ναι">Ναι </option>
+                        <option value="Όχι">Όχι</option>
                     </select>
                 </div>
 
@@ -153,9 +153,9 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
                 <div class="py-2">
-                    <label>Πώς θα επιθυμούσατε να επικοινωνήσουμε μαζί σας; <span style="color: red;">  *</span></label>
+                    <label>Πώς θα επιθυμούσατε να επικοινωνήσουμε μαζί σας; <span style="color: red;"> *</span></label>
                     <select style="background-color: lightgray;" class="form-select " id="quest9">
-                    <option value="" selected disabled hidden>Διάλεξε εδώ</option>
+                        <option value="" selected disabled hidden>Διάλεξε εδώ</option>
                         <option value="Τηλεφωνικά">Τηλεφωνικά</option>
                         <option value="Μέσω e-mail">Μέσω e-mail</option>
 
@@ -164,7 +164,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
                 <div class="py-2">
-                    <label><span style="color: red;">  *</span> Έχω ενημερωθεί για την επεξεργασία των προσωπικών μου δεδομένων και συναινώ σε αυτήν, όπως ειδικά ορίζεται στο κεφάλαιο "Όροι GDPR" (βλέπε κάτω μέρος σελίδας) </label>
+                    <label><span style="color: red;"> *</span> Έχω ενημερωθεί για την επεξεργασία των προσωπικών μου δεδομένων και συναινώ σε αυτήν, όπως ειδικά ορίζεται στο κεφάλαιο "Όροι GDPR" (βλέπε κάτω μέρος σελίδας) </label>
                     <input class=" form-check" type="checkbox" id="gdpr">
 
                 </div>
@@ -180,7 +180,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
                 <div class="py-2">
-                    <button class="btn btn-danger"  id="submitform">Υποβολή Φόρμας</button>
+                    <button class="btn btn-danger" id="submitform">Υποβολή Φόρμας</button>
 
                 </div>
             </form>
@@ -188,7 +188,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
             <div class=" d-flex  fs-4 px-2 justify-content-between  daybutton  " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                <p class=" d-flex py-2 "><span style="color: red;">  *</span> Όροι GDPR </p> <i class="  py-3  align-middle fa-solid fa-down-long  fa-xs"></i>
+                <p class=" d-flex py-2 "><span style="color: red;"> *</span> Όροι GDPR </p> <i class="  py-3  align-middle fa-solid fa-down-long  fa-xs"></i>
             </div>
 
 

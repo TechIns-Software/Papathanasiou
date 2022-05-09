@@ -21,9 +21,10 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 <div class="container formcont">
     <div class="row">
         <div class="col-md-12 offset-md-12 ">
-            <h3>Προσφορά Ασφάλισης Υγείας</h3>
+            <h3>Προσφορά Ομαδικής Ασφάλισης</h3>
             <hr style="border: 2px solid blue;">
 
+            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfPVUd3Tmu_VycUGqHc5Kld-jUtIW2uqubaVktw9bRF2UBpOw/formResponse">
             <div class="py-2">
                 <label>Διεύθυνση ηλεκτρονικού ταχυδρομείου *</label>
                 <input type="email" class="form-control" style="background-color: lightgray;" id="email">
@@ -31,8 +32,14 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
             <div class="py-2">
 
-                <label>Το ονοματεπώνυμό σας </label>
+                <label>Ονοματεπώνυμο *</label>
                 <input type="text" class="form-control" style="background-color: lightgray;" id="name">
+            </div>
+
+            <div class="py-2">
+
+                <label>Το τηλέφωνό σας είναι:  </label>
+                <input type="text" class="form-control" style="background-color: lightgray;" id="phone">
             </div>
 
 
@@ -40,7 +47,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             <div class="py-2">
 
                 <label>Ποιά είναι η ημερομηνία γέννησής σας; *</label>
-                <input type="text" class="form-control" style="background-color: lightgray;" id="date_birth">
+                <input type="date" class="form-control" style="background-color: lightgray;" id="date_birth">
             </div>
 
             <div class="py-2">
@@ -59,6 +66,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
                 <label>Σε ποιά περιφέρεια της Ελλάδας δραστηριοποιείται η επιχείρησή σας;</label>
                 <select style="background-color: lightgray;" class="form-select" id="quest3">
                     <option value="Ανατολική Μακεδονία και Θράκη">Ανατολική Μακεδονία και Θράκη </option>
+                    <option value="Κεντρική Μακεδονία">Κεντρική Μακεδονία</option>
                     <option value="Δυτική Μακεδονία">Δυτική Μακεδονία</option>
                     <option value="Ήπειρος">Ήπειρος</option>
                     <option value="Θεσσαλία"> Θεσσαλία</option>
@@ -83,7 +91,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
                     <option value="51-100">51-100</option>
                     <option value="101-150">101-150</option>
                     <option value="151-200"> 151-200</option>
-                    <option value="200 +"> 200 +</option>
+                    <option value="200+"> 200+</option>
                 </select>
             </div>
 
@@ -180,8 +188,6 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
             </div>
 
-
-
             <div class="py-2">
                 <label>Επιθυμώ να ενημερώνομαι για μελλοντικές προωθητικές ενέργειες που αφορούν σε προϊόντα και υπηρεσίες της Greek Insurance Leaders</label>
                 <input class=" form-check" type="checkbox" id="newsletter">
@@ -193,14 +199,14 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
                 <button class="btn btn-danger">Υποβολή Φόρμας</button>
             </div>
 
-
+            </form>
 
             <div class=" d-flex  fs-4 px-2 justify-content-between  daybutton  " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                <p class=" d-flex py-2 ">* Όροι GDPR  </p>   <i class="  py-3  align-middle fa-solid fa-down-long  fa-xs"></i>
+                <p class=" d-flex py-2 ">* Όροι GDPR </p> <i class="  py-3  align-middle fa-solid fa-down-long  fa-xs"></i>
             </div>
 
-            
-            
+
+
             <div class="col-12 my-3">
                 <div class="row">
                     <div class="collapse" id="collapseExample">
@@ -246,15 +252,16 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
                                     </ul>
 
-                                    <p> 
-                                    <b>
-                                        1.  Κάθε πληροφορία που αφορά ταυτοποιημένο ή ταυτοποιήσιμο φυσικό πρόσωπο («υποκείμενο των δεδομένων») όπως αναγνωριστικό στοιχείο ταυτότητας [όνομα, αριθμό ταυτότητας, σωματική, φυσιολογική, ψυχολογική, οικονομική, πολιτιστική ή κοινωνική ταυτότητα του φυσικού προσώπου (Άρθρο 4 Κανονισμού ΕΕ 2016/679)].</b>
-                                        </p>
+                                    <p>
+                                        <b>
+                                            1. Κάθε πληροφορία που αφορά ταυτοποιημένο ή ταυτοποιήσιμο φυσικό πρόσωπο («υποκείμενο των δεδομένων») όπως αναγνωριστικό στοιχείο ταυτότητας [όνομα, αριθμό ταυτότητας, σωματική, φυσιολογική, ψυχολογική, οικονομική, πολιτιστική ή κοινωνική ταυτότητα του φυσικού προσώπου (Άρθρο 4 Κανονισμού ΕΕ 2016/679)].</b>
+                                    </p>
 
-                                     
 
-                                        <p> 
-                                    <b> 2. Πρόκειται για δεδομένα που αφορούν ενδεικτικά την υγεία, καθώς και την φυλετική ή εθνοτική καταγωγή κ.λπ. (Άρθρο 9 Κανονισμού ΕΕ 2016/679). </b></p>
+
+                                    <p>
+                                        <b> 2. Πρόκειται για δεδομένα που αφορούν ενδεικτικά την υγεία, καθώς και την φυλετική ή εθνοτική καταγωγή κ.λπ. (Άρθρο 9 Κανονισμού ΕΕ 2016/679). </b>
+                                    </p>
 
                                     <b> Για πόσο χρόνο θα κρατάτε τα δεδομένα μου σε αρχείο;</b>
 
