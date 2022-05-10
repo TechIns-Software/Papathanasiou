@@ -38,8 +38,23 @@ function getInputData() {
     const dataToPost = new FormData(); //formdata API
     const email = document.getElementById("email");
     const name = document.getElementById("name");
+    const name1 = document.getElementById("name_1");
+    const name2= document.getElementById("name_2");
+    const name3 = document.getElementById("name_3");
+    const name4 = document.getElementById("name_4");
+
     const mildename = document.getElementById("midlename");
+    const mildename1 = document.getElementById("midlename_1");
+    const mildename2 = document.getElementById("midlename_2");
+    const mildename3 = document.getElementById("midlename_3");
+    const mildename4 = document.getElementById("midlename_4");
+
     const surname = document.getElementById("surname");
+    const surname1 = document.getElementById("surname_1");
+    const surname2 = document.getElementById("surname_2");
+    const surname3 = document.getElementById("surname_3");
+    const surname4 = document.getElementById("surname_4");
+
     const fathername = document.getElementById("fathername");
     const gender = document.getElementById("quest1");
     const birthday = document.getElementById("birthday");
@@ -110,9 +125,9 @@ function getInputData() {
 
     //fill name attributes to corresponding values
     dataToPost.append("emailAddress", email.value);
-    dataToPost.append("entry.1467056452", name.value);
-    dataToPost.append("entry.38558212", mildename.value);
-    dataToPost.append("entry.1997424253", surname.value);
+    dataToPost.append("entry.1467056452", name.value + " , "+name1.value + " , "+name2.value + " , "+name3.value + " , "+name4.value);
+    dataToPost.append("entry.38558212", mildename.value  + " , "+mildename1.value + " , "+mildename2.value + " , "+mildename3.value + " , "+mildename4.value);
+    dataToPost.append("entry.1997424253", surname.value + " , "+surname1.value + " , "+surname2.value + " , "+surname3.value + " , "+surname4.value);
     dataToPost.append("entry.1379425539", fathername.value);
     dataToPost.append("entry.469925385", gender.value);
     dataToPost.append("entry.941613957", birthday.value);

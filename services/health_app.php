@@ -35,26 +35,38 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
                 <div class="py-2 ">
                     <label>Your first name is: *</label>
-                    <div class="d-flex">
-                        <input type="text" class="form-control mx-1" style="background-color: lightgray;" id="name">
-                    </div>
+                  
+                        <input type="text" class="form-control my-1" style="background-color: lightgray;" id="name" placeholder="Parrent 1">
+                        <input type="text" class="form-control my-1" style="background-color: lightgray;" id="name_1" placeholder="Parrent 2">
+                        <input type="text" class="form-control my-1" style="background-color: lightgray;" id="name_2" placeholder="Child 1">
+                        <input type="text" class="form-control my-1" style="background-color: lightgray;" id="name_3" placeholder="Child 2">
+                        <input type="text" class="form-control my-1" style="background-color: lightgray;" id="name_4" placeholder="Child 3">
+                  
                 </div>
 
 
 
                 <div class="py-2">
                     <label>Your middle name is: </label>
-                    <div class="d-flex">
-                        <input type="text" class="form-control mx-1" style="background-color: lightgray;" id="midlename">
-                    </div>
+                 
+                        <input type="text" class="form-control my-1" style="background-color: lightgray;" id="midlename" placeholder="Parrent 1">
+                        <input type="text" class="form-control my-1" style="background-color: lightgray;" id="midlename_1" placeholder="Parrent 2">
+                        <input type="text" class="form-control my-1" style="background-color: lightgray;" id="midlename_2" placeholder="Child 1">
+                        <input type="text" class="form-control my-1" style="background-color: lightgray;" id="midlename_3" placeholder="Child 2">
+                        <input type="text" class="form-control my-1" style="background-color: lightgray;" id="midlename_4" placeholder="Child 3">
+                   
                 </div>
 
 
                 <div class="py-2">
                     <label>Your surname name is: *</label>
-                    <div class="d-flex">
-                        <input type="text" class="form-control mx-1" style="background-color: lightgray;" id="surname">
-                    </div>
+                   
+                        <input type="text" class="form-control my-1" style="background-color: lightgray;" id="surname"  placeholder="Parrent 1">
+                        <input type="text" class="form-control my-1" style="background-color: lightgray;" id="surname_1"  placeholder="Parrent 2">
+                        <input type="text" class="form-control my-1" style="background-color: lightgray;" id="surname_2" placeholder="Child 1">
+                        <input type="text" class="form-control my-1" style="background-color: lightgray;" id="surname_3" placeholder="Child 2">
+                        <input type="text" class="form-control my-1" style="background-color: lightgray;" id="surname_4" placeholder="Child 3">
+                   
                 </div>
 
                 <div class="py-2">
