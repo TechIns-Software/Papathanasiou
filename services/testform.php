@@ -21,11 +21,11 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 <div class="container formcont">
 	<div class="row">
 		<div class="col-md-12 offset-md-12 ">
-			<h3>Test Form</h3>
-			<hr style="border: 2px solid blue;">
-			
+			<!-- <h3>Test Form</h3>
+			<hr style="border: 2px solid red;"> -->
+<!-- 			
 			<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSentaiL91WEMhNfHpJO8Pg0Hj_tU9WtTBKbaIarV35RIhbtDQ/formResponse">
-			<!-- <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfYge4YMRo4J3ybh7cmiBjmTZVoNuNstefQY5R_drNf4HBkNQ/formResponse"> -->
+	
 
 				<div class="py-2">
 					<label>Διεύθυνση ηλεκτρονικού ταχυδρομείου *</label>
@@ -54,7 +54,9 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 				<div class="py-2">
 					<button class="btn btn-danger" id="submitform">Υποβολή Φόρμας</button>
 				</div>
+			</form> -->
 
+			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSentaiL91WEMhNfHpJO8Pg0Hj_tU9WtTBKbaIarV35RIhbtDQ/viewform?embedded=true" width="100%" height="705" frameborder="0" marginheight="0" marginwidth="0">Φόρτωση…</iframe>
 
 
 
@@ -213,55 +215,50 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
 <script>
-	const url = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSentaiL91WEMhNfHpJO8Pg0Hj_tU9WtTBKbaIarV35RIhbtDQ/formResponse"; //action url 
+	// const url = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSentaiL91WEMhNfHpJO8Pg0Hj_tU9WtTBKbaIarV35RIhbtDQ/formResponse"; //action url 
+	// let submitbtn = document.getElementById("submitform"); //form element
 
-	//const url ="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfYge4YMRo4J3ybh7cmiBjmTZVoNuNstefQY5R_drNf4HBkNQ/formResponse"
+	// submitbtn.addEventListener("click", (e) => {
+	// 	e.preventDefault(); //prevent default behaviour
 
-
-
-	let submitbtn = document.getElementById("submitform"); //form element
-
-	submitbtn.addEventListener("click", (e) => {
-		e.preventDefault(); //prevent default behaviour
-
-		fetch(url, {
-				method: "POST",
-				mode: "no-cors",
-				header: {
-					'Content-Type': 'application/json'
-				},
-				body: getInputData()
-			})
-			.then(data => {
-				console.log(data);
-				alert("Form Submitted");
-			})
-			.catch(err => console.error(err)); //promise based
+	// 	fetch(url, {
+	// 			method: "POST",
+	// 			mode: "no-cors",
+	// 			header: {
+	// 				'Content-Type': 'application/json'
+	// 			},
+	// 			body: getInputData()
+	// 		})
+	// 		.then(data => {
+	// 			console.log(data);
+	// 			alert("Form Submitted");
+	// 		})
+	// 		.catch(err => console.error(err)); //promise based
 
 
-	});
+	// });
 
-	//populating input data
-	function getInputData() {
-		let dataToPost = new FormData(); //formdata API
+	// //populating input data
+	// function getInputData() {
+	// 	let dataToPost = new FormData(); //formdata API
 
-		const email = document.getElementById("email");
-		const name = document.getElementById("name");
-		const nomos = document.getElementById("quest3");
+	// 	const email = document.getElementById("email");
+	// 	const name = document.getElementById("name");
+	// 	const nomos = document.getElementById("quest3");
 
 
 
-		//fill name attributes to corresponding values
-		dataToPost.append("entry.739531254", email.value);
-		dataToPost.append("entry.1246754399", name.value);
-		dataToPost.append("entry.1010677732", nomos.value);
+	// 	//fill name attributes to corresponding values
+	// 	dataToPost.append("entry.739531254", email.value);
+	// 	dataToPost.append("entry.1246754399", name.value);
+	// 	dataToPost.append("entry.1010677732", nomos.value);
 
-		// dataToPost.append("entry.1740445010", email.value);
-		// dataToPost.append("entry.860063123", name.value);
-		// dataToPost.append("entry.1285744255", nomos.value);
+	// 	// dataToPost.append("entry.1740445010", email.value);
+	// 	// dataToPost.append("entry.860063123", name.value);
+	// 	// dataToPost.append("entry.1285744255", nomos.value);
 
-		return dataToPost;
-	}
+	// 	return dataToPost;
+	// }
 </script>
 
 
