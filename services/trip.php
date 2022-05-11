@@ -28,10 +28,11 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 <div class="container formcont" >
     <div class="row">
         <div class="col-md-12 offset-md-12 ">
-        <h3>Προσφορά Ταξιδιωτικής Ασφάλισης</h3>
-        <hr style="border: 2px solid green;">
+        <!-- <h3>Προσφορά Ταξιδιωτικής Ασφάλισης</h3>
+        <hr style="border: 2px solid green;"> -->
            
-        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe-zq63DLJQq71DZtW__I5NpgvBgQCtpF2F2x6Z0OaHVZFWww/formResponse">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe-zq63DLJQq71DZtW__I5NpgvBgQCtpF2F2x6Z0OaHVZFWww/viewform?embedded=true" width="100%" height="2800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <!-- <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe-zq63DLJQq71DZtW__I5NpgvBgQCtpF2F2x6Z0OaHVZFWww/formResponse">
     
             <div class="py-2">
                 <label >Διεύθυνση ηλεκτρονικού ταχυδρομείου  <span style="color: red;">  *</span></label>
@@ -152,7 +153,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
                 <button class="btn btn-danger" id="submitform">Υποβολή Φόρμας</button>
             </div>
 
-        </form>
+        </form> -->
             
             
 
@@ -310,7 +311,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
 
-<script src="../jsforms/trip.js"></script>
+<!-- <script src="../jsforms/trip.js"></script> -->
 
 
 <?php

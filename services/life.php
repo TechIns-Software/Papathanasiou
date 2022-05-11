@@ -28,9 +28,12 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 <div class="container formcont">
     <div class="row">
         <div class="col-md-12 offset-md-12 ">
-            <h3>Προσφορά Ασφάλισης Ζωής</h3>
-            <hr style="border: 2px solid orange;">
-            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfdXRYYuqTPuNByJHiGTqvvreyhMMZY6y4CYb1yXrUrEuGm-w/formResponse">
+            <!-- <h3>Προσφορά Ασφάλισης Ζωής</h3>
+            <hr style="border: 2px solid orange;"> -->
+
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfdXRYYuqTPuNByJHiGTqvvreyhMMZY6y4CYb1yXrUrEuGm-w/viewform?embedded=true" width="100%" height="4466" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+            <!-- <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfdXRYYuqTPuNByJHiGTqvvreyhMMZY6y4CYb1yXrUrEuGm-w/formResponse">        
                 <div class="py-2">
                     <label>Διεύθυνση ηλεκτρονικού ταχυδρομείου *</label>
                     <input type="email" class="form-control" style="background-color: lightgray;" id="email">
@@ -293,7 +296,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
                 </div>
 
-            </form>
+            </form> -->
 
 
             <div class=" d-flex  fs-4 px-2 justify-content-between  daybutton  " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
@@ -450,8 +453,8 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
 
-
-<script src="../jsforms/life.js"></script>
+<!-- 
+<script src="../jsforms/life.js"></script> -->
 
 <?php
 include_once 'serv_footer.php';

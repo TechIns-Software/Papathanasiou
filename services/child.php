@@ -28,9 +28,12 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 <div class="container formcont">
     <div class="row">
         <div class="col-md-12 offset-md-12 ">
-            <h3>Προσφορά Ασφάλειας Παιδιού</h3>
-            <hr style="border: 2px solid blue;">
-
+            <!-- <h3>Προσφορά Ασφάλειας Παιδιού</h3>
+            <hr style="border: 2px solid blue;"> -->
+ 
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeXoACTbT9W8xocoVNBF1YgNW61fZRHFwu6PGE87TRbcxhXow/viewform?embedded=true" width="100%" height="5500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<!-- 
+             
             <div class="py-2">
                 <label>Διεύθυνση ηλεκτρονικού ταχυδρομείου *</label>
                 <input type="email" class="form-control" style="background-color: lightgray;" id="email">
@@ -353,10 +356,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             <div class="py-2">
                 <button class="btn btn-danger" id="submitform">Υποβολή Φόρμας</button>
 
-            </div>
-
-
-
+            </div> -->
 
             <div class=" d-flex  fs-4 px-2 justify-content-between  daybutton  " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                 <p class=" d-flex py-2 ">* Όροι GDPR </p> <i class="  py-3  align-middle fa-solid fa-down-long  fa-xs"></i>
@@ -510,7 +510,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
 
-<script src="../jsforms/child.js"></script>
+<!-- <script src="../jsforms/child.js"></script> -->
 
 
 <?php

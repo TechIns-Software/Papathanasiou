@@ -21,10 +21,12 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 <div class="container formcont">
     <div class="row">
         <div class="col-md-12 offset-md-12 ">
-            <h3>Προσφορά Ομαδικής Ασφάλισης</h3>
-            <hr style="border: 2px solid blue;">
+            <!-- <h3>Προσφορά Ομαδικής Ασφάλισης</h3>
+            <hr style="border: 2px solid blue;"> -->
 
-            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfPVUd3Tmu_VycUGqHc5Kld-jUtIW2uqubaVktw9bRF2UBpOw/formResponse">
+
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfPVUd3Tmu_VycUGqHc5Kld-jUtIW2uqubaVktw9bRF2UBpOw/viewform?embedded=true" width="100%" height="4000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <!-- <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfPVUd3Tmu_VycUGqHc5Kld-jUtIW2uqubaVktw9bRF2UBpOw/formResponse">
             <div class="py-2">
                 <label>Διεύθυνση ηλεκτρονικού ταχυδρομείου *</label>
                 <input type="email" class="form-control" style="background-color: lightgray;" id="email">
@@ -199,7 +201,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
                 <button class="btn btn-danger">Υποβολή Φόρμας</button>
             </div>
 
-            </form>
+            </form> -->
 
             <div class=" d-flex  fs-4 px-2 justify-content-between  daybutton  " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                 <p class=" d-flex py-2 ">* Όροι GDPR </p> <i class="  py-3  align-middle fa-solid fa-down-long  fa-xs"></i>

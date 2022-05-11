@@ -23,10 +23,12 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 <div class="container formcont">
     <div class="row">
         <div class="col-md-12 offset-md-12 ">
-            <h3> Property Insurance</h3>
-            <hr style="border: 2px solid blue;">
+            <!-- <h3> Property Insurance</h3>
+            <hr style="border: 2px solid blue;"> -->
 
-            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeEpwV_HivWEMek4K3-jK5A3eoOQOqjSXNV-RMr9-AU6Pp2WA/formResponse">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeEpwV_HivWEMek4K3-jK5A3eoOQOqjSXNV-RMr9-AU6Pp2WA/viewform?embedded=true" width="100%" height="3400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+            <!-- <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeEpwV_HivWEMek4K3-jK5A3eoOQOqjSXNV-RMr9-AU6Pp2WA/formResponse">
             <div class="py-2">
                 <label>Διεύθυνση ηλεκτρονικού ταχυδρομείου *</label>
                 <input type="email" class="form-control" style="background-color: lightgray;" id="email">
@@ -158,7 +160,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             <div class="py-2">
                 <button class="btn btn-danger" id="submitform" >Submit Form</button>
             </div>
-            </form>
+            </form> -->
 
             <div class=" d-flex  fs-4 px-2 justify-content-between  daybutton  " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                 <p class=" d-flex py-2 ">* GDPR Terms</p> <i class="  py-3  align-middle fa-solid fa-down-long  fa-xs"></i>
@@ -306,7 +308,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 </div>
 
 
-<script src="../jsforms/property.js"></script>
+<!-- <script src="../jsforms/property.js"></script> -->
 
 
 

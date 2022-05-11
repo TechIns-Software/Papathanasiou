@@ -996,6 +996,15 @@ section {
   position: relative;
   overflow: hidden;
 }
+
+.team .member .member-img img {
+width: 400px;
+height: 400px;
+border-radius: 50%;
+border: 1px solid red;
+}
+
+
 .team .member .social {
   position: absolute;
   left: 0;

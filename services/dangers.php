@@ -28,9 +28,12 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 <div class="container formcont" >
     <div class="row">
         <div class="col-md-12 offset-md-12 ">
-        <h3>Διερεύνηση Διαχείρισης Κινδύνων</h3>
-        <hr style="border: 2px solid orange;">
+        <!-- <h3>Διερεύνηση Διαχείρισης Κινδύνων</h3>
+        <hr style="border: 2px solid orange;"> -->
            
+
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScJ6z-olzYFfIfxOQiSlrXfhGmPgHZdYefwHJGPfIWk0K7ALA/viewform?embedded=true"width="100%" height="6500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<!-- 
             <div class="py-2">
                 <label >Διεύθυνση ηλεκτρονικού ταχυδρομείου *</label>
                 <input type="email" class="form-control" style="background-color: lightgray;" id="email">
@@ -280,7 +283,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
             <div class="py-2">
                 <button class="btn btn-danger">Υποβολή Φόρμας</button>
                 
-            </div>
+            </div> -->
 
             
 
