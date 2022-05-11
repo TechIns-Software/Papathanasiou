@@ -15,7 +15,7 @@ submitbtn.addEventListener('click',(e)=>{
 
     $.ajax({
         type: "POST",
-        url: 'contact.php',
+        url: './contact.php',
         data: data,
         success: function(msg) {
             alert("Success");
