@@ -40,7 +40,7 @@
   // echo $contact->send();
 
 //$to = "christosbaztekas@gmail.com";
-$to = "nickspanosf1@gmail.com";
+$to = "thpapathanasiou@gmail.com";
 $subject = "Φόρμα Επικοινωνίας";
 $message = "Θέμα:";
 $message .= urldecode(urldecode($_POST['subject']));
