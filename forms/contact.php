@@ -39,8 +39,6 @@
 
   // echo $contact->send();
 
-  ini_set('display_errors', 1);
-error_reporting(E_ALL);
 //$to = "christosbaztekas@gmail.com";
 $to = "nickspanosf1@gmail.com";
 $subject = "Φόρμα Επικοινωνίας";
