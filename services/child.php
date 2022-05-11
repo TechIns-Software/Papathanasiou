@@ -78,20 +78,6 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
                     <option value="Κρήτη">Κρήτη</option>
                 </select>
             </div>
-
-            <div class="py-2">
-                <label>Ποιο είναι το ποσό που θα σας έκανε να αισθανθείτε ασφαλής, εφόσον υπήρχε διαθέσιμο μόνο για επείγουσες περιπτώσεις ΥΓΕΙΑΣ για το κάθε τέκνο σας ξεχωριστά :</label>
-                <select style="background-color: lightgray;" class="form-select " id="quest2">
-                    <option value="20.000€">20.000€</option>
-                    <option value="50.000€">50.000€</option>
-                    <option value="100.000€">100.000€</option>
-                    <option value="300.000€">300.000€</option>
-                    <option value="500.000€">500.000€</option>
-                    <option value="1.000.000€">1.000.000€</option>
-                </select>
-            </div>
-
-
              
             <div class="py-2">
                 <label>Ποιο είναι το ποσό που θα σας έκανε να αισθανθείτε ασφαλής, εφόσον υπήρχε διαθέσιμο μόνο για επείγουσες περιπτώσεις ΥΓΕΙΑΣ για το κάθε τέκνο σας ξεχωριστά : *</label>

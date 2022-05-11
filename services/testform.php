@@ -23,8 +23,9 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 		<div class="col-md-12 offset-md-12 ">
 			<h3>Test Form</h3>
 			<hr style="border: 2px solid blue;">
-
+			
 			<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSentaiL91WEMhNfHpJO8Pg0Hj_tU9WtTBKbaIarV35RIhbtDQ/formResponse">
+			<!-- <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfYge4YMRo4J3ybh7cmiBjmTZVoNuNstefQY5R_drNf4HBkNQ/formResponse"> -->
 
 				<div class="py-2">
 					<label>Διεύθυνση ηλεκτρονικού ταχυδρομείου *</label>
@@ -212,7 +213,10 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
 <script>
-	const url = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSentaiL91WEMhNfHpJO8Pg0Hj_tU9WtTBKbaIarV35RIhbtDQ/formResponse"; //action url
+	const url = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSentaiL91WEMhNfHpJO8Pg0Hj_tU9WtTBKbaIarV35RIhbtDQ/formResponse"; //action url 
+
+	//const url ="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfYge4YMRo4J3ybh7cmiBjmTZVoNuNstefQY5R_drNf4HBkNQ/formResponse"
+
 
 
 	let submitbtn = document.getElementById("submitform"); //form element
@@ -251,6 +255,10 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 		dataToPost.append("entry.739531254", email.value);
 		dataToPost.append("entry.1246754399", name.value);
 		dataToPost.append("entry.1010677732", nomos.value);
+
+		// dataToPost.append("entry.1740445010", email.value);
+		// dataToPost.append("entry.860063123", name.value);
+		// dataToPost.append("entry.1285744255", nomos.value);
 
 		return dataToPost;
 	}
