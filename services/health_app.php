@@ -23,10 +23,12 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 <div class="container formcont">
     <div class="row">
         <div class="col-md-12 offset-md-12 ">
-            <h3> Online Health Insurance Application </h3>
-            <hr style="border: 3px solid red;">
+            <!-- <h3> Online Health Insurance Application </h3>
+            <hr style="border: 3px solid red;"> -->
 
-            <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfc593KeuwLJJMhiHkmQ1xaGHc9BtQXXoNbpoaEo-UaWwE4gQ/formResponse">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfc593KeuwLJJMhiHkmQ1xaGHc9BtQXXoNbpoaEo-UaWwE4gQ/viewform?embedded=true" width="100%" height="6466" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+            <!-- <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfc593KeuwLJJMhiHkmQ1xaGHc9BtQXXoNbpoaEo-UaWwE4gQ/formResponse">
                 <div class="py-2">
                     <label>Email *</label>
                     <input type="email" class="form-control" style="background-color: lightgray;" id="email">
@@ -334,9 +336,8 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
                 <div class="py-2">
                     <button class="btn btn-danger" id="submitform">Submit Form</button>
                 </div>
-            </form>
+            </form> -->
          
-
             <div class=" d-flex  fs-4 px-2 justify-content-between  daybutton  " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                 <p class=" d-flex py-2 ">* GDPR Terms</p> <i class="  py-3  align-middle fa-solid fa-down-long  fa-xs"></i>
             </div>
@@ -483,7 +484,7 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 </div>
 
 
-<script src="../jsforms/health_app.js"></script>
+<!-- <script src="../jsforms/health_app.js"></script> -->
 
 
 
