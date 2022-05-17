@@ -79,8 +79,8 @@
               <li><a href="../services/health.php">Ασφάλιση Υγείας </a></li>
               <li><a href="../services/child.php">Ασφάλιση Παιδιού</a></li>
               <li><a href="../services/life.php">Ασφάλιση Ζωής</a></li>
-              <li><a href="#">Ασφάλιση Αυτοκινήτου</a></li>
-              <li><a href="#">Ασφάλιση Κατοικίας</a></li>
+              <li><a href="../services/car.php">Ασφάλιση Αυτοκινήτου</a></li>
+              <li><a href="../services/home.php">Ασφάλιση Κατοικίας</a></li>
               <li><a href="../services/apotam.php">Ασφάλιση Αποταμίευσης</a></li>
               <li><a href="../services/store.php">Ασφάλιση Επιχείρησης</a></li>
               <li><a href="../services/boat.php">Ασφάλιση Σκαφών Αναψυχής</a></li>
