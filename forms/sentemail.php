@@ -12,6 +12,6 @@ $message .= $dataform[0]['value'];
 // $headers = "Content-Type: text/html; charset=UTF-8; ";
 $headers = "From: nspanos@insurance-agent-tools.com";
 
-mail($to, $subject, $message, $headers);
+mail($to, $subject, $message);
 
 ?>
