@@ -1000,8 +1000,8 @@ section {
 }
 
 .team .member .member-img img {
-width: 450px;
-height: 450px;
+width: 25em;
+height: 25em;
 border-radius: 50%;
 padding: 0;
 border: 2px solid rgba(255, 0, 0, 0.795);
