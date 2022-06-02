@@ -1031,7 +1031,9 @@
       $.ajax({
           type: "POST",
           url: 'forms/contact.php',
-          data: data,
+          data:{
+            data: data,
+          },
           success: function(msg) {
               alert("Επιτυχής αποστολή φόρμας");
               document.getElementById("form").reset();
@@ -1064,7 +1066,9 @@
       $.ajax({
           type: "POST",
           url: 'forms/sentemail.php',
-          data: data,
+          data:{ 
+            data : data
+          },
           success: function(msg) {
               alert("Επιτυχής εισαγωγή στο newsletter");
               document.getElementById("form2").reset();
