@@ -4,7 +4,6 @@ $dataform=$_POST['data'];
 
 
 $to = "thpapathanasiou@gmail.com";
-$to = "nickspanosf1@gmail.com";
 $subject = "Newsletter";
 $message .= "<br>Email: ";
 $message .= $dataform[0]['value'];

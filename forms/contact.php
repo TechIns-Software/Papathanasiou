@@ -43,9 +43,9 @@
 $formdata=$_POST['data'];
 
 
-//$to = "christosbaztekas@gmail.com";
+
 $to = "thpapathanasiou@gmail.com";
-$to = "nickspanosf1@gmail.com";
+
 $subject = "Φόρμα Επικοινωνίας";
 $message = "Θέμα:";
 $message .= $formdata[0]['value'];
