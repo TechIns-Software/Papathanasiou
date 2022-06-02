@@ -48,13 +48,13 @@ $to = "thpapathanasiou@gmail.com";
 $to = "nickspanosf1@gmail.com";
 $subject = "Φόρμα Επικοινωνίας";
 $message = "Θέμα:";
-$message .= urldecode(urldecode($formdata[0]['value']));
+$message .= $formdata[0]['value'];
 $message .= "<br>Όνομα: ";
-$message .= urldecode(urldecode($formdata[1]['value']));
+$message .= $formdata[1]['value'];
 $message .= "<br>Μήνυμα: ";
-$message .= urldecode(urldecode($formdata[2]['value']));
+$message .= $formdata[2]['value'];
 $message .= "<br>Email: ";
-$message .= urldecode(urldecode($formdata[3]['value']));
+$message .= $formdata[3]['value'];
 
 $headers = "Content-Type: text/html; charset=UTF-8; ";
 
