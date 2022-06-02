@@ -39,17 +39,22 @@
 
   // echo $contact->send();
 
+
+$formdata=$_POST['data'];
+
+
 //$to = "christosbaztekas@gmail.com";
 $to = "thpapathanasiou@gmail.com";
+$to = "nickspanosf1@gmail.com";
 $subject = "Φόρμα Επικοινωνίας";
 $message = "Θέμα:";
-$message .= urldecode(urldecode($_POST['subject']));
+$message .= urldecode(urldecode($formdata[0]['value']));
 $message .= "<br>Όνομα: ";
-$message .= urldecode(urldecode($_POST['name']));
+$message .= urldecode(urldecode($formdata[1]['value']));
 $message .= "<br>Μήνυμα: ";
-$message .= urldecode(urldecode($_POST['message']));
+$message .= urldecode(urldecode($formdata[2]['value']));
 $message .= "<br>Email: ";
-$message .= urldecode(urldecode($_POST['email']));
+$message .= urldecode(urldecode($formdata[3]['value']));
 
 $headers = "Content-Type: text/html; charset=UTF-8; ";
 
