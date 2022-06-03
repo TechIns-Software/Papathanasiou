@@ -3,7 +3,8 @@
 $dataform=$_POST['data'];
 
 
-$to = "thpapathanasiou@gmail.com";
+// $to = "thpapathanasiou@gmail.com";
+$to = "gil@gileaders.gr";
 $subject = "Newsletter";
 $message .= "<br>Email: ";
 $message .= $dataform[0]['value'];
