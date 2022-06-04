@@ -1,22 +1,132 @@
-<?php
-$title = "Ασφάλιση Αυτοκινήτου | G.I.L";
-include_once 'serv_header.php';
+<!DOCTYPE html>
+<html lang="en">
 
-$todayyear = date('Y');
-$todaymonth = date('m');
-$todayday = date('d');
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Αγροτική Ασφάλιση| G.I.L</title>
+  <meta content="Greek Insurance Leaders  | Στην Greek Insurance Leaders διερευνούμε τις ανάγκες σας με προσοχή και ενδιαφέρον, για να καταλήξουμε στην κατάλληλη για εσάς ασφάλιση " name="description">
+  <meta content="Greek Insurance Leaders ,Insurance ,Health,life,Boat, " name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/EmbeddedImage.png" rel="icon">
+  <link href="../assets/img/EmbeddedImage.png" rel="apple-touch-icon">
 
 
-$today = $todayyear . '-' . $todaymonth . '-' . $todayday . 'T00:00';
-$nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:00';
-?>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V2KHQMCWDT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-V2KHQMCWDT');
+</script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/16f09725b0.js" crossorigin="anonymous"></script>
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- <link rel="stylesheet" type="text/css" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="../assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="../assets/vendor/animate/animate.css">
+
+<link rel="stylesheet" type="text/css" href="../assets/vendor/css-hamburgers/hamburgers.min.css">
+
+<link rel="stylesheet" type="text/css" href="../assets/vendor/animsition/css/animsition.min.css">
+
+<link rel="stylesheet" type="text/css" href="../assets/vendor/select2/select2.min.css">
+
+<link rel="stylesheet" type="text/css" href="../assets/vendor/daterangepicker/daterangepicker.css">
+
+<link rel="stylesheet" type="text/css" href="../assets/css/util.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+ -->
 
 
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css?v=1" rel="stylesheet">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+  <!-- =======================================================
+  * Template Name: Valera - v4.7.0
+  * Template URL: https://bootstrapmade.com/valera-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center ">
+    <div class="container-fluid d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0"><a href="index.html"></a></h1>
+      <!-- 
+       <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="gil logo" class="img-fluid"></a> -->
+
+      <nav id="navbar" class="navbar order-last order-lg-0 ">
+        <ul>
+          <li><a class="nav-link scrollto active" href="../index.html#hero">Αρχική</a></li>
+          <li><a class="nav-link scrollto" href="../index.html#about">Γνωριμία</a></li>
+          <li class="dropdown"><a href="../index.html#services"><span>Υπηρεσίες</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="../services/health.html">Ασφάλιση Υγείας </a></li>
+              <li><a href="../services/child.html">Ασφάλιση Παιδιού</a></li>
+              <li><a href="../services/life.html">Ασφάλιση Ζωής</a></li>
+              <li><a href="../services/car.html">Ασφάλιση Αυτοκινήτου</a></li>
+              <li><a href="../services/home.html">Ασφάλιση Κατοικίας</a></li>
+              <li><a href="../services/apotam.html">Ασφάλιση Αποταμίευσης</a></li>
+              <li><a href="../services/store.html">Ασφάλιση Επιχείρησης</a></li>
+              <li><a href="../services/boat.html">Ασφάλιση Σκαφών Αναψυχής</a></li>
+              <li><a href="../services/trip.html"> Ταξιδιωτική Ασφάλιση</a></li>
+              <li><a href="../services/farmer.html">Αγροτική Ασφάλιση</a></li>
+              <li><a href="../services/team.html">Ομαδική Ασφάλιση</a></li>
+              <li><a href="../services/property.html">Property Insurance</a></li>
+              <li><a href="../services/expats.html">Expats Insurance</a></li>
+              <li><a href="../services/health_app.html">Online Health Insurance</a></li>
+              <li><a href="../services/dangers.html">Ας Γνωριστούμε Καλύτερα</a></li>
+
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="../index.html#team">Ομάδα</a></li>
+          <li><a class="nav-link scrollto" href="../index.html#our-values">Blog</a></li>
+          <li><a class="nav-link scrollto" href="../index.html#faq">Συχνές Ερωτήσεις</a></li>
+          <li><a class="nav-link scrollto " href="../index.html#cta">Ευκαιρία Καριέρας</a></li>
+          <li><a class="nav-link scrollto" href="../index.html#contact">Επικοινωνία</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <div class="header-social-links d-flex align-items-center">
+
+        <a target="_blank" href="https://www.facebook.com/GreekInsuranceLeaders" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a target="_blank" href="https://www.instagram.com/greekinsuranceleaders/?hl=en" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/company/greek-insurance-leaders" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
 
 <section>
     <div class="container text-center">
+        <!-- <p class="px-5  mx-5">Η INTERAMERICAN μέσω των προγραμμάτων Υγείας BeWell σας δίνει τη δυνατότητα να δημιουργήσετε τη δική σας πρόταση ασφάλισης, προσαρμοσμένη στις δικές σας ανάγκες, αλλά και στις δικές σας οικονομικές δυνατότητες</p> -->
 
         <img src="../assets/img/logo1.png" class="img-fluid mx-auto text-center" alt="logo">
     </div>
@@ -25,14 +135,111 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 <div class="container formcont">
     <div class="row">
         <div class="col-md-12 offset-md-12 ">
- 
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeRpq_xYMkK6oYxpEsZNZZafR6mhR4Xd8cykmKx31t4XsIRHw/viewform?embedded=true" width="100%" height="2900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <!-- <h3>Αγροτική Ασφάλιση</h3>
+            <hr style="border: 2px solid green;"> -->
 
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe9dIVVrXRfh8XsXPsjkiFN2jJKKiUVeMtqSrUcxptdTK7OPA/viewform?embedded=true" width="100%" height="300" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <!-- <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe9dIVVrXRfh8XsXPsjkiFN2jJKKiUVeMtqSrUcxptdTK7OPA/formResponse">
 
-            <div class=" d-flex  fs-4 px-2 justify-content-between  daybutton  " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                <p class=" d-flex py-2 ">* Όροι GDPR </p> <i class="  py-3  align-middle fa-solid fa-down-long  fa-xs"></i>
+            <div class="py-2">
+                <label>Διεύθυνση ηλεκτρονικού ταχυδρομείου *</label>
+                <input type="email" class="form-control" style="background-color: lightgray;" id="email">
             </div>
 
+            <div class="py-2">
+
+                <label >Ονοματεπώνυμο *</label>
+                <input type="text" class="form-control" style="background-color: lightgray;" id="name">
+            </div>
+
+
+
+            <div class="py-2">
+                <label>Το τηλέφωνό σας είναι:</label>
+                <input class="form-control " type="text" id="phone" style="background-color: lightgray;">
+            </div>
+
+            <div class="py-2">
+                <label>Ποιά είναι η ημερομηνία γέννησής σας; *</label>
+                <input class="form-control " type="date" id="date_birth" style="background-color: lightgray;">
+            </div>
+
+
+            <div class="py-2">
+                <label>Σε ποιά περιφέρεια της Ελλάδας μένετε;*</label>
+                <select style="background-color: lightgray;" class="form-select" id="quest1">
+                    <option value="Ανατολική Μακεδονία και Θράκη">Ανατολική Μακεδονία και Θράκη </option>
+                    <option value="Κεντρική Μακεδονία">Κεντρική Μακεδονία </option>
+                    <option value="Δυτική Μακεδονία">Δυτική Μακεδονία</option>
+                    <option value="Ήπειρος">Ήπειρος</option>
+                    <option value="Θεσσαλία"> Θεσσαλία</option>
+                    <option value="Ιόνιοι Νήσοι">Ιόνιοι Νήσοι</option>
+                    <option value="Δυτική Ελλάδα">Δυτική Ελλάδα</option>
+                    <option value="Στερεά Ελλάδα">Στερεά Ελλάδα</option>
+                    <option value="Αττική">Αττική</option>
+                    <option value="Πελοπόννησος">Πελοπόννησος</option>
+                    <option value="Βόρειο Αιγαίο">Βόρειο Αιγαίο</option>
+                    <option value="Νότιο Αιγαίο">Νότιο Αιγαίο</option>
+                    <option value="Κρήτη">Κρήτη</option>
+                </select>
+            </div>
+
+            <div class="py-2">
+                <label>Σε ποιά περιοχή, συγκεκριμένα, βρίσκεται η καλλιέργειάς σας; (Τ.Κ) *</label>
+                <input class="form-control " type="text" id="postcode" style="background-color: lightgray;">
+            </div>
+
+
+
+            <div class="py-2">
+                <label>Τι είδους καλλιέργειας θέλετε να ασφαλίσετε; *</label>
+                <input class="form-control " type="text" id="quest2" style="background-color: lightgray;">
+            </div>
+
+            <div class="py-2">
+                <label>Παρακαλούμε επισυνάψτε την δήλωση ΟΣΔΕ σας, προκειμένου να είμαστε ακριβείς ως προς την έκδοση προσφοράς.</label>
+                <input class="form-control " type="file" id="quest3" style="background-color: lightgray;">
+            </div>
+
+
+            <div class="py-2">
+                <label>Πώς θα επιθυμούσατε να επικοινωνήσουμε μαζί σας; *</label>
+                <select class="form-select " id="contact" style="background-color: lightgray;">
+                    <option value="Τηλεφωνικά">Τηλεφωνικά</option>
+                    <option value=" Μέσω e-mail">Μέσω e-mail</option>
+
+                </select>
+            </div>
+
+            <div class="py-2">
+                <label>Έχω ενημερωθεί για την επεξεργασία των προσωπικών μου δεδομένων και συναινώ σε αυτήν, όπως ειδικά ορίζεται στο κεφάλαιο "Όροι GDPR" (βλέπε κάτω μέρος σελίδας) *</label>
+                <input class=" form-check" type="checkbox" id="gdpr">
+
+            </div>
+
+            <div class="py-2">
+                <label>Επιθυμώ να ενημερώνομαι για μελλοντικές προωθητικές ενέργειες που αφορούν σε προϊόντα και υπηρεσίες της Greek Insurance Leaders</label>
+                <input class=" form-check" type="checkbox" id="newsletter">
+            </div>
+
+            <p class="text-muted"> Ένα αντίγραφο των απαντήσεών σας θα σταλεί μέσω ηλεκτρονικού ταχυδρομείου στη διεύθυνση που παρείχατε.</p>
+         
+
+            <div class="py-2">
+                <button class="btn btn-danger" id="submitform">Υποβολή Φόρμας</button>
+            </div>
+
+
+            </form> -->
+            
+
+  
+            <div class=" d-flex  fs-4 px-2 justify-content-between  daybutton  " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <p class=" d-flex py-2 ">* Όροι GDPR  </p>   <i class="  py-3  align-middle fa-solid fa-down-long  fa-xs"></i>
+            </div>
+
+            
+            
             <div class="col-12 my-3">
                 <div class="row">
                     <div class="collapse" id="collapseExample">
@@ -78,16 +285,15 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
                                     </ul>
 
-                                    <p>
-                                        <b>
-                                            1. Κάθε πληροφορία που αφορά ταυτοποιημένο ή ταυτοποιήσιμο φυσικό πρόσωπο («υποκείμενο των δεδομένων») όπως αναγνωριστικό στοιχείο ταυτότητας [όνομα, αριθμό ταυτότητας, σωματική, φυσιολογική, ψυχολογική, οικονομική, πολιτιστική ή κοινωνική ταυτότητα του φυσικού προσώπου (Άρθρο 4 Κανονισμού ΕΕ 2016/679)].</b>
-                                    </p>
+                                    <p> 
+                                    <b>
+                                        1.  Κάθε πληροφορία που αφορά ταυτοποιημένο ή ταυτοποιήσιμο φυσικό πρόσωπο («υποκείμενο των δεδομένων») όπως αναγνωριστικό στοιχείο ταυτότητας [όνομα, αριθμό ταυτότητας, σωματική, φυσιολογική, ψυχολογική, οικονομική, πολιτιστική ή κοινωνική ταυτότητα του φυσικού προσώπου (Άρθρο 4 Κανονισμού ΕΕ 2016/679)].</b>
+                                        </p>
 
+                                     
 
-
-                                    <p>
-                                        <b> 2. Πρόκειται για δεδομένα που αφορούν ενδεικτικά την υγεία, καθώς και την φυλετική ή εθνοτική καταγωγή κ.λπ. (Άρθρο 9 Κανονισμού ΕΕ 2016/679). </b>
-                                    </p>
+                                        <p> 
+                                    <b> 2. Πρόκειται για δεδομένα που αφορούν ενδεικτικά την υγεία, καθώς και την φυλετική ή εθνοτική καταγωγή κ.λπ. (Άρθρο 9 Κανονισμού ΕΕ 2016/679). </b></p>
 
                                     <b> Για πόσο χρόνο θα κρατάτε τα δεδομένα μου σε αρχείο;</b>
 
@@ -181,10 +387,22 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
 
+<!-- <script src="../jsforms/farmer.js"></script> -->
 
 
 
-<?php
-include_once 'serv_footer.php';
-?>
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/purecounter/purecounter.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
 

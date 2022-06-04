@@ -1,20 +1,133 @@
-<?php
-$title = "Ασφάλιση Σκάφους | G.I.L";
-include_once 'serv_header.php';
+<!DOCTYPE html>
+<html lang="en">
 
-$todayyear = date('Y');
-$todaymonth = date('m');
-$todayday = date('d');
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title> Ασφάλιση Αυτοκινήτου | G.I.L</title>
+  <meta content="Greek Insurance Leaders  | Στην Greek Insurance Leaders διερευνούμε τις ανάγκες σας με προσοχή και ενδιαφέρον, για να καταλήξουμε στην κατάλληλη για εσάς ασφάλιση " name="description">
+  <meta content="Greek Insurance Leaders ,Insurance ,Health,life,Boat, " name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/EmbeddedImage.png" rel="icon">
+  <link href="../assets/img/EmbeddedImage.png" rel="apple-touch-icon">
 
 
-$today = $todayyear . '-' . $todaymonth . '-' . $todayday . 'T00:00';
-$nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:00';
-?>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V2KHQMCWDT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-V2KHQMCWDT');
+</script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/16f09725b0.js" crossorigin="anonymous"></script>
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- <link rel="stylesheet" type="text/css" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="../assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="../assets/vendor/animate/animate.css">
+
+<link rel="stylesheet" type="text/css" href="../assets/vendor/css-hamburgers/hamburgers.min.css">
+
+<link rel="stylesheet" type="text/css" href="../assets/vendor/animsition/css/animsition.min.css">
+
+<link rel="stylesheet" type="text/css" href="../assets/vendor/select2/select2.min.css">
+
+<link rel="stylesheet" type="text/css" href="../assets/vendor/daterangepicker/daterangepicker.css">
+
+<link rel="stylesheet" type="text/css" href="../assets/css/util.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+ -->
+
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css?v=1" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- =======================================================
+  * Template Name: Valera - v4.7.0
+  * Template URL: https://bootstrapmade.com/valera-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center ">
+    <div class="container-fluid d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0"><a href="index.html"></a></h1>
+      <!-- 
+       <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="gil logo" class="img-fluid"></a> -->
+
+      <nav id="navbar" class="navbar order-last order-lg-0 ">
+        <ul>
+          <li><a class="nav-link scrollto active" href="../index.html#hero">Αρχική</a></li>
+          <li><a class="nav-link scrollto" href="../index.html#about">Γνωριμία</a></li>
+          <li class="dropdown"><a href="../index.html#services"><span>Υπηρεσίες</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="../services/health.html">Ασφάλιση Υγείας </a></li>
+              <li><a href="../services/child.html">Ασφάλιση Παιδιού</a></li>
+              <li><a href="../services/life.html">Ασφάλιση Ζωής</a></li>
+              <li><a href="../services/car.html">Ασφάλιση Αυτοκινήτου</a></li>
+              <li><a href="../services/home.html">Ασφάλιση Κατοικίας</a></li>
+              <li><a href="../services/apotam.html">Ασφάλιση Αποταμίευσης</a></li>
+              <li><a href="../services/store.html">Ασφάλιση Επιχείρησης</a></li>
+              <li><a href="../services/boat.html">Ασφάλιση Σκαφών Αναψυχής</a></li>
+              <li><a href="../services/trip.html"> Ταξιδιωτική Ασφάλιση</a></li>
+              <li><a href="../services/farmer.html">Αγροτική Ασφάλιση</a></li>
+              <li><a href="../services/team.html">Ομαδική Ασφάλιση</a></li>
+              <li><a href="../services/property.html">Property Insurance</a></li>
+              <li><a href="../services/expats.html">Expats Insurance</a></li>
+              <li><a href="../services/health_app.html">Online Health Insurance</a></li>
+              <li><a href="../services/dangers.html">Ας Γνωριστούμε Καλύτερα</a></li>
+
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="../index.html#team">Ομάδα</a></li>
+          <li><a class="nav-link scrollto" href="../index.html#our-values">Blog</a></li>
+          <li><a class="nav-link scrollto" href="../index.html#faq">Συχνές Ερωτήσεις</a></li>
+          <li><a class="nav-link scrollto " href="../index.html#cta">Ευκαιρία Καριέρας</a></li>
+          <li><a class="nav-link scrollto" href="../index.html#contact">Επικοινωνία</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <div class="header-social-links d-flex align-items-center">
+
+        <a target="_blank" href="https://www.facebook.com/GreekInsuranceLeaders" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a target="_blank" href="https://www.instagram.com/greekinsuranceleaders/?hl=en" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/company/greek-insurance-leaders" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+
 
 
 <section>
     <div class="container text-center">
-        <!-- <p class="px-5  mx-5">Η INTERAMERICAN μέσω των προγραμμάτων Υγείας BeWell σας δίνει τη δυνατότητα να δημιουργήσετε τη δική σας πρόταση ασφάλισης, προσαρμοσμένη στις δικές σας ανάγκες, αλλά και στις δικές σας οικονομικές δυνατότητες</p> -->
 
         <img src="../assets/img/logo1.png" class="img-fluid mx-auto text-center" alt="logo">
     </div>
@@ -23,200 +136,13 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 <div class="container formcont">
     <div class="row">
         <div class="col-md-12 offset-md-12 ">
-            <!-- <h3>Προσφορά Ασφάλισης Σκάφους</h3>
-            <hr style="border: 2px solid blue;"> -->
-
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfOmHqdANgrb21fpOW5EXt57OTIq24QbFD6OtZIJ0vdVXE90w/viewform?embedded=true" width="100%" height="4400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-            <!-- <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfOmHqdANgrb21fpOW5EXt57OTIq24QbFD6OtZIJ0vdVXE90w/formResponse">
-                <div class="py-2">
-                    <label>Διεύθυνση ηλεκτρονικού ταχυδρομείου  <span style="color: red;">  *</span></label>
-                    <input type="email" class="form-control" style="background-color: lightgray;" id="email">
-                </div>
-
-                <div class="py-2">
-
-                    <label>Το ονοματεπώνυμό σας  <span style="color: red;">  *</span> </label>
-                    <input type="text" class="form-control" style="background-color: lightgray;" id="fullname">
-                </div>
-
-
-
-                <div class="py-2">
-                    <label>Το τηλέφωνό σας είναι:</label>
-                    <input class="form-control " type="text" id="phone" style="background-color: lightgray;">
-                </div>
-
-                <div class="py-2">
-                    <label>Ποιό είναι το όνομα του σκάφους σας;  <span style="color: red;">  *</span></label>
-                    <input class="form-control " type="text" id="quest1" style="background-color: lightgray;">
-                </div>
-
-
-
-                <div class="py-2">
-                    <label>Ποιό είναι το έτος κατασκευής του σκάφους σας;  <span style="color: red;">  *</span></label>
-                    <input class="form-control " type="text" id="quest2" style="background-color: lightgray;">
-                </div>
-
-                <div class="py-2">
-                    <label>Ποιός είναι ο αριθμός Νηολογίου του σκάφους σας;  <span style="color: red;">  *</span></label>
-                    <input class="form-control " type="text" id="quest3" style="background-color: lightgray;">
-                </div>
-
-
-                <div class="py-2">
-                    <label>Ποιό είναι το λιμάνι νηολόγησης;  <span style="color: red;">  *</span></label>
-                    <input class="form-control " type="text" id="quest4" style="background-color: lightgray;">
-                </div>
-
-
-
-                <div class="py-2">
-                    <label>Ποιό είναι το είδος του σκάφους σας;  <span style="color: red;">  *</span></label>
-                    <select style="background-color: lightgray;" class="form-select" id="quest5">
-                        <option value="" selected disabled hidden>Διάλεξε εδώ</option>
-                        <option value="L/S Μη ταχύπλοο">L/S Μη ταχύπλοο </option>
-                        <option value="S/B Ταχύπλοο">S/B Ταχύπλοο</option>
-                        <option value="S/Y Ιστιοπλοϊκό">S/Y Ιστιοπλοϊκό</option>
-                        <option value="J/S Jet Ski"> J/S Jet Ski</option>
-                        <option value="I/B Φουσκωτό"> I/B Φουσκωτό</option>
-                    </select>
-                </div>
-
-
-                <div class="py-2">
-                    <label>Ποιά είναι χρήση του σκάφους σας;  <span style="color: red;">  *</span></label>
-                    <select style="background-color: lightgray;" class="form-select " id="quest6">
-                        <option value="" selected disabled hidden>Διάλεξε εδώ</option>
-                        <option value="Επαγγελματικής Αναψυχής με μόνιμο πλήρωμα">Επαγγελματικής Αναψυχής με μόνιμο πλήρωμα</option>
-                        <option value="Επαγγελματικής Αναψυχής χωρίς μόνιμο πλήρωμα">Επαγγελματικής Αναψυχής χωρίς μόνιμο πλήρωμα</option>
-                        <option value="Ιδιωτικής Αναψυχής">Ιδιωτικής Αναψυχής</option>
-                    </select>
-                </div>
-
-
-
-                <div class="py-2">
-                    <label>Πόση συνολική ιπποδύναμη έχει το σκάφος σας;  <span style="color: red;">  *</span> </label>
-                    <input class="form-control " type="text" id="quest7" style="background-color: lightgray;">
-                </div>
-
-
-                <div class="py-2">
-                    <label>Ποιό είναι το μήκος του σκάφους σας;  <span style="color: red;">  *</span></label>
-                    <input class="form-control " type="text" id="quest8" style="background-color: lightgray;">
-                </div>
-
-
-                <div class="py-2">
-                    <label>Ποιά είναι η αξία του σκάφους σας;  <span style="color: red;">  *</span></label>
-                    <input class="form-control " type="text" id="quest9" style="background-color: lightgray;">
-                </div>
-
-
-                <div class="py-2">
-                    <label>Έχει υπάρξει κάποια ζημία τα τελευταία 5 χρόνια στο σκάφος σας;  <span style="color: red;">  *</span></label>
-                    <select class="form-select " id="quest10" style="background-color: lightgray;">
-                        <option value="" selected disabled hidden>Διάλεξε εδώ</option>
-                        <option value="Ναι">Ναι </option>
-                        <option value="Όχι">Όχι</option>
-
-                    </select>
-                </div>
-
-
-
-                <div class="py-2">
-                    <label>Επιθυμείτε συμπληρωματική κάλυψη αστικής ευθύνης κατά τη διάρκεια ενασχόλησης με θαλάσσια σπόρ (Μόνο για σκάφη ιδιωτικής αναψυχής);</label>
-                    <select class="form-select " id="quest11" style="background-color: lightgray;">
-                        <option value="Ναι">Ναι </option>
-                        <option value="Όχι">Όχι</option>
-                        <option value="" selected disabled hidden>Διάλεξε εδώ</option>
-
-                    </select>
-                </div>
-
-
-                <div class="py-2">
-                    <label>Επιθυμείτε συμπληρωματική κάλυψη έκρηξης και πυρκαγιάς;</label>
-                    <select class="form-select " id="quest12" style="background-color: lightgray;">
-                        <option value="Ναι">Ναι </option>
-                        <option value="Όχι">Όχι</option>
-                        <option value="" selected disabled hidden>Διάλεξε εδώ</option>
-
-                    </select>
-                </div>
-
-
-                <div class="py-2">
-                    <label>Επιθυμείτε συμπληρωματική κάλυψη αμέλειας χειριστή, κακόβουλης βλάβης και κινδύνων της θάλασσας;</label>
-                    <select class="form-select " id="quest13" style="background-color: lightgray;">
-                        <option value="Ναι">Ναι </option>
-                        <option value="Όχι">Όχι</option>
-                        <option value="" selected disabled hidden>Διάλεξε εδώ</option>
-                    </select>
-                </div>
-
-
-
-                <div class="py-2">
-                    <label>Επιθυμείτε συμπληρωματική κάλυψη ιδίων ζημιών κατά τη μεταφορά;</label>
-                    <select class="form-select " id="quest14" style="background-color: lightgray;">
-                        <option value="Ναι">Ναι </option>
-                        <option value="Όχι">Όχι</option>
-                        <option value="" selected disabled hidden>Διάλεξε εδώ</option>
-
-                    </select>
-                </div>
-
-
-
-                <div class="py-2">
-                    <label>Επιθυμείτε συμπληρωματική κάλυψη προσωπικών αντικειμένων έως 1.500€;</label>
-                    <select class="form-select " id="quest15" style="background-color: lightgray;">
-                        <option value="Ναι">Ναι </option>
-                        <option value="Όχι">Όχι</option>
-                        <option value="" selected disabled hidden>Διάλεξε εδώ</option>
-                    </select>
-                </div>
-
-                <div class="py-2">
-                    <label>Πώς θα επιθυμούσατε να επικοινωνήσουμε μαζί σας;  <span style="color: red;">  *</span></label>
-                    <select class="form-select " id="quest16" style="background-color: lightgray;">
-                        <option value="Τηλεφωνικά">Τηλεφωνικά</option>
-                        <option value="Μέσω e-mail">Μέσω e-mail</option>
-                        <option value="" selected disabled hidden>Διάλεξε εδώ</option>
-                    </select>
-                </div>
-
-                <div class="py-2">
-                    <label>Έχω ενημερωθεί για την επεξεργασία των προσωπικών μου δεδομένων και συναινώ σε αυτήν, όπως ειδικά ορίζεται στο κεφάλαιο "Όροι GDPR" (βλέπε κάτω μέρος σελίδας)  <span style="color: red;">  *</span></label>
-                    <input class=" form-check" type="checkbox" id="gdpr">
-
-                </div>
-
-                <div class="py-2">
-                    <label>Επιθυμώ να ενημερώνομαι για μελλοντικές προωθητικές ενέργειες που αφορούν σε προϊόντα και υπηρεσίες της Greek Insurance Leaders</label>
-                    <input class=" form-check" type="checkbox" id="newsletter">
-                </div>
-
-                <p class="text-muted"> Ένα αντίγραφο των απαντήσεών σας θα σταλεί μέσω ηλεκτρονικού ταχυδρομείου στη διεύθυνση που παρείχατε.</p>
-
-
-                <div class="py-2">
-                    <button class="btn btn-danger" id="submitform">Υποβολή Φόρμας</button>
-                </div>
-
-            </form> -->
-
-
+ 
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeRpq_xYMkK6oYxpEsZNZZafR6mhR4Xd8cykmKx31t4XsIRHw/viewform?embedded=true" width="100%" height="2900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 
             <div class=" d-flex  fs-4 px-2 justify-content-between  daybutton  " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                <p class=" d-flex py-2 "> <span style="color: red;">  *</span> Όροι GDPR </p> <i class="  py-3  align-middle fa-solid fa-down-long  fa-xs"></i>
+                <p class=" d-flex py-2 ">* Όροι GDPR </p> <i class="  py-3  align-middle fa-solid fa-down-long  fa-xs"></i>
             </div>
-
-
 
             <div class="col-12 my-3">
                 <div class="row">
@@ -367,8 +293,18 @@ $nextyeartoday = ($todayyear + 1) . '-' . $todaymonth . '-' . $todayday . 'T00:0
 
 
 
-<!-- <script src="../jsforms/boat.js"></script> -->
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/purecounter/purecounter.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
 
-<?php
-include_once 'serv_footer.php';
-?>
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
+
