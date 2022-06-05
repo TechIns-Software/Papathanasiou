@@ -992,25 +992,29 @@ section {
   /* background: #fff; */
   background: unset;
   /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.05); */
+  margin: auto!important;
 }
 .team .member .member-img {
   position: relative;
   overflow: hidden;
+  margin: auto!important;
   
 }
 
 .team .member .member-img img {
-width: 25em;
-height: 25em;
+width: 350px;
+height: 400px;
 border-radius: 50%;
 padding: 0;
 border: 2px solid rgba(255, 0, 0, 0.795);
+margin: auto!important;
+
 }
 
 
 .team .member .social {
   position: absolute;
-  left: 0;
+  left: -20px;
   bottom: 30px;
   right: 0;
   opacity: 0;
