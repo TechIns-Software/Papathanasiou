@@ -72,8 +72,6 @@
     <video id="videoloop"  src="assets/img/vid4.mp4" autoplay loop playsinline muted></video>
     <div class="hero-container">
       <img src="assets/img/logo1.png" class="img-fluid "  alt="gillogo">
-      <!-- <h1> <span class="theme-color"> G</span>reek  <span class="theme-color">I</span>nsurance <span class="theme-color">L</span>eaders</h1> -->
-      <!-- <h2>Γιατί ασφαλίζοντας την υγεία και την περιουσία μας,ασφαλίζουμε το παρόν και το μέλλον μας!</h2> -->
       <h2>Financial life planning is not about money. The human life comes first !</h2>
       <a href="#about" class="btn-get-started scrollto">Γνωριμία</a>
     </div>
@@ -1012,6 +1010,19 @@
     }]
   });
 });
+
+/// This dissapear video background for small devices 
+window.addEventListener("resize" , ()=>{
+const  screenWidth = window.innerWidth;
+
+if (screenWidth < 816){
+  $("#videoloop").addClass("dissapear")
+}else{
+  $("#videoloop").removeClass("dissapear")
+}
+
+})
+
   </script>
 
 
