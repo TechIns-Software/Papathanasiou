@@ -448,7 +448,7 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   position: relative;
   margin-bottom: -70px;
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
   
 }
 
@@ -526,7 +526,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 816px) {
 
-  #hero #videoloop{
+  /* #hero #videoloop{
     display: none;
   }
 
@@ -540,7 +540,7 @@ h1, h2, h3, h4, h5, h6 {
     background: #e00000;
     color: white;
   }
-
+ */
 
 }
 
