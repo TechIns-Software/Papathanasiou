@@ -526,7 +526,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 816px) {
 
-  /* #hero #videoloop{
+   #hero #videoloop{
     display: none;
   }
 
@@ -540,7 +540,6 @@ h1, h2, h3, h4, h5, h6 {
     background: #e00000;
     color: white;
   }
- */
 
 }
 
@@ -1687,4 +1686,11 @@ border-radius: 1em;
 
 .dissapear{
   display: none;
+}
+
+.responsive_img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  /* Prevent the image from stretching. So it crops the image to prevent from awkward stretching */
 }
