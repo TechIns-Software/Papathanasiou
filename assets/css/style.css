@@ -848,7 +848,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: url("../img/office1.webp") center center no-repeat;
+  background: url("../img/office1.jpg") center center no-repeat;
  background-color: #0f0909be; 
   background-size: cover;
   padding: 60px 0;
@@ -1426,7 +1426,7 @@ margin: auto!important;
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: url("../img/office2.webp") center center no-repeat;
+  background: url("../img/office2.jpg") center center no-repeat;
   background-color: rgba(209, 13, 13, 0.616);
   background-size: cover;
   background-blend-mode: color;
