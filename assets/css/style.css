@@ -1701,3 +1701,15 @@ border-radius: 1em;
   line-height: 1.5em;
 
 }
+.espa-container {
+  position: fixed;
+  bottom:20px;
+  left: 10px;
+  z-index: 9999;
+}
+
+.espa-container img {
+  width: 30%;
+  aspect-ratio: 30/9;
+}
+
