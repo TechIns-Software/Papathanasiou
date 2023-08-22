@@ -1031,11 +1031,11 @@ section {
 }
 
 .team .member .member-img img {
-width: 350px;
 height: 400px;
-border-radius: 50%;
+aspect-ratio: 1/1;
 padding: 0;
-border: 2px solid rgba(255, 0, 0, 0.795);
+  -webkit-box-shadow: 5px 5px 18px 5px rgba(0,0,0,0.45);
+  box-shadow: 5px 5px 18px 5px rgba(0,0,0,0.45);
 margin: auto!important;
 
 }
@@ -1709,7 +1709,7 @@ border-radius: 1em;
 }
 
 .espa-container img {
-  width: 30%;
+  width: 25%;
   aspect-ratio: 30/9;
 }
 
