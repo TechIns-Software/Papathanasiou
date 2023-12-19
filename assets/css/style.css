@@ -87,6 +87,7 @@ h1, h2, h3, h4, h5, h6 {
  aspect-ratio: 1/1;
   border-radius: 4px;
   transition: all 0.4s;
+
 }
 .back-to-top i {
   font-size: 28px;
@@ -102,6 +103,15 @@ h1, h2, h3, h4, h5, h6 {
 .back-to-top img{
   height: 110px;
   aspect-ratio: 1/1;
+}
+
+@media screen and (max-width: 712px) {
+  .back-to-top {
+    width: 70px;
+  }
+  .back-to-top img {
+    height: 100%;
+  }
 }
 
 /*--------------------------------------------------------------
