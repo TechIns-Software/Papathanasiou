@@ -1806,7 +1806,13 @@ border: none;
   color: #333;
   margin-bottom: 10px;
 }
+.awardPicture img{
+  display: block;
+  width: 50%;
+aspect-ratio: 3/1;
+  margin: 1em auto;
 
+}
 
 
 
