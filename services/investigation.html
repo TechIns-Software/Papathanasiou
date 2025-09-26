@@ -64,12 +64,6 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-  <!-- =======================================================
-  * Template Name: Valera - v4.7.0
-  * Template URL: https://bootstrapmade.com/valera-free-bootstrap-theme/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
